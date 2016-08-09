@@ -67,7 +67,7 @@ This simulates a "chat app", but the work-flow applies equally to a variety of a
 
 After creating the Rails chat application, setting up redis, and deploying the application to our instance, we immediately observed a memory leak in the application that was visible just by refreshing a browser tab and watching the memory grow; to never be freed. The following recording shows this in action (sped up 10x):
 
-![](http://i.imgur.com/jQOIhkX.gifv)
+![](//i.imgur.com/jQOIhkX.gifv)
 
 We searched recently reported bugs around this area, and found an issue related to Action Cable [failing to call `socket.close` when cleaning up connections](https://github.com/rails/rails/pull/25615/files). This patch has been applied to the `5-0-stable` branch, so we updated the app to the unreleased branch and re-ran the tests. The memory leak persisted.
 
@@ -88,20 +88,20 @@ We set the memory leak issue aside and proceeded with our tests for the followin
 
 **Rails**: 50 rooms, 2500 users:
 
-![](http://i.imgur.com/l8mJ966.gifv)
+![](//i.imgur.com/l8mJ966.gifv)
 
 Responsiveness was speedy at 50 rooms, so we upped the room count to 75, giving us 3750 users.
 
 **Rails:** 75 rooms, 3750 users:
 
-![](http://i.imgur.com/2Mb2gpT.gifv)
+![](//i.imgur.com/2Mb2gpT.gifv)
 
 Here, we can see Action Cable falling behind on availability when broadcasting, with messages taking an average of 8s to be broadcast to all 50 users for the given room. For most applications, this level of latency is not acceptable, so the level of performance for maxinum rooms on this server would be somewhere between 50 and 75 rooms, given 50 users per room.
 
 
 **Phoenix:** 1100 rooms, 55,000 users (maxed 55,000 client connections)
 
-![](http://i.imgur.com/0Qu0pM5.gifv)
+![](//i.imgur.com/0Qu0pM5.gifv)
 
 We can see that Phoenix responds on average in 0.25s, and only is maxed at 1100 rooms because of the 55,000 client limit on the tsung box.
 
@@ -116,20 +116,20 @@ For load planning, horizontal scalability will be required with 50-75 companies 
 
 **Rails:** 8 rooms, 1600 users:
 
-![](http://i.imgur.com/rBbjAxr.gifv)
+![](//i.imgur.com/rBbjAxr.gifv)
 
 We can see Action Cable starts off with acceptable latency, but begins to quickly fall behind as broadcast latency grows with each message. Broadcast latency grows longer than 10s. Next, we upped the room count by 1, to see where the limit was.
 
 **Rails:** 9 rooms, 1800 users before availability was compromised when broadcasting.
 
-![](http://i.imgur.com/S7tpHLm.gifv)
+![](//i.imgur.com/S7tpHLm.gifv)
 
 At 200 users per room, Action Cable is unable to maintain the broadcast load and supported just 9 rooms before we experienced messages stop arriving or subscriptions failing to establish. At these levels, the only consistent performance we could get for 200 users per room, was limiting the server to 7 rooms, or 1400 users.
 
 
 **Phoenix:** 275 rooms, 55,000 users (maxed 55,000 client connections)
 
-![](http://i.imgur.com/noizwRP.gifv)
+![](//i.imgur.com/noizwRP.gifv)
 
 We can see that Phoenix responds on average in 0.24s, and only is maxed at 275 rooms because of the 55,000 client limit on the tsung box. Additionally, it's important to note that Phoenix maintains the same responsiveness when broadcasting for both the 50 and 200 users per room tests.
 
