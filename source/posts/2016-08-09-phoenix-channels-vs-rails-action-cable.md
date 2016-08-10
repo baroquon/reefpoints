@@ -22,7 +22,7 @@ For our measurements, we used the [tsung](http://tsung.erlang-projects.org) benc
 The work-flows for each tsung client connection were as follows:
 
 - open a WebSocket connection to the server
-- create a single a channel subscription on the connection, to a chat room chosen at random
+- create a single channel subscription on the connection, to a chat room chosen at random
 - Periodically send a message to the chat room, randomly once every 10s-60s to simulate messaging across members in the room
 
 On the server, the channel code for Rails and Phoenix is quite simple:
@@ -136,16 +136,16 @@ We can see that Phoenix responds on average in 0.24s, and only is maxed at 275 r
 
 ### Making sense of the results, 200 users per room
 
-You may be thinking, "but my application isn't a chat app, and only needs simple page updates". These tests apply equally to many scenarios. Imagine you have an information system where you want to publish periodic updates to pages. This could be for a news site where visitors see articles updates, or a booking site where visitors see "20 other people are currently viewing this hotel".
+You may be thinking, "but my application isn't a chat app, and only needs simple page updates". These tests apply equally to many scenarios. Imagine you have an information system where you want to publish periodic updates to pages. This could be for a news site where visitors see new comments, or a booking site where visitors see "20 other people are currently viewing this hotel".
 
-Now, imagine you need to publish new comments on articles that viewers are reading. This tests shows that if your app receives a sudden spike in visitors and more than 7 articles have 200 or more readers, the server won't be able to keep up with the notification demand for both the popular articles, *as well as the low traffic ones*.
+This tests shows that if your app receives a sudden spike in visitors and more than 7 articles have 200 or more readers, the server won't be able to keep up with the notification demand for both the popular articles, *as well as the low traffic ones*.
 
-For a booking site, imagine 7 hotels across a city release a discount rate and customers jump online for the deal. Suddenly, you need to spin up extra servers up to maintain booking notifications, and the severity of the delays becomes worse if critical functionality of your application relies on these notifications.
+For a booking site, imagine 7 hotels across the country release a discount rate and customers jump online for the deal. Suddenly, you need to spin up extra servers up to maintain booking notifications, and the severity of the delays becomes worse if critical functionality of your application relies on these notifications.
 
 
 ## Conclusions
 
-If memory leaks can be ruled out or addressed, the sweet-spot for Action Cable today is small workloads with few subscribers on any given topic. Higher workloads with broadcasts to more than a few dozen subscribers risks availability.
+If memory leaks can be ruled out or addressed, the sweet-spot for Action Cable today is small workloads with few subscribers on any given topic. Higher workloads with broadcasts to more than a few dozen subscribers risks availability. Horizontal deployments will also be required to keep up with load, but the central redis bottleneck and increased costs should also be considered. With Phoenix, we've shown that channels performance remains consistent as notification demand increases, which is essential for handling traffic spikes and avoiding overload. 
 
 When I started my own real-time Rails features with [Sync](https://github.com/chrismccord/render_sync) several years ago, memory leaks and consistent performance were my main fears that drove me to look elsewhere, find Elixir, and create Phoenix. The rails-core team has done a great job putting a real-time story in place, but wrangling Ruby's lack of concurrency features will continue to be a challenge.
 
