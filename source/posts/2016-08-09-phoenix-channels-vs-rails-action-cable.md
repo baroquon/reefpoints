@@ -145,7 +145,7 @@ For a booking site, imagine 7 hotels across the country release a discount rate 
 
 ## Conclusions
 
-If memory leaks can be ruled out or addressed, the sweet-spot for Action Cable today is small workloads with few subscribers on any given topic. Higher workloads with broadcasts to more than a few dozen subscribers risks availability. Horizontal deployments will also be required to keep up with load, but the central redis bottleneck and increased costs should also be considered. With Phoenix, we've shown that channels performance remains consistent as notification demand increases, which is essential for handling traffic spikes and avoiding overload. 
+If memory leaks can be ruled out or addressed, the sweet-spot for Action Cable today is small workloads with few subscribers on any given topic. Going beyond this means engineering efforts and resources must be spent on managing multiple nodes and optimizing code out of channels. Higher workloads with broadcasts to more than a few dozen subscribers risks availability. With Phoenix, we've shown that channels performance remains consistent as notification demand increases, which is essential for handling traffic spikes and avoiding overload. 
 
 When I started my own real-time Rails features with [Sync](https://github.com/chrismccord/render_sync) several years ago, memory leaks and consistent performance were my main fears that drove me to look elsewhere, find Elixir, and create Phoenix. The rails-core team has done a great job putting a real-time story in place, but wrangling Ruby's lack of concurrency features will continue to be a challenge.
 
