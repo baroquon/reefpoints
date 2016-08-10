@@ -140,7 +140,7 @@ You may be thinking, "but my application isn't a chat app, and only needs simple
 
 This tests shows that if your app receives a sudden spike in visitors and more than 7 articles have 200 or more readers, the server won't be able to keep up with the notification demand for both the popular articles, *as well as the low traffic ones*.
 
-For a booking site, imagine 7 hotels across the country release a discount rate and customers jump online for the deal. Suddenly, you need to spin up extra servers up to maintain booking notifications, and the severity of the delays becomes worse if critical functionality of your application relies on these notifications.
+For a booking site, imagine 7 hotels across the country release a discount rate and customers jump online for the deal. Suddenly, you need to spin up extra servers to maintain booking notifications, and the severity of the delays becomes worse if critical functionality of your application relies on these notifications.
 
 
 ## Conclusions
