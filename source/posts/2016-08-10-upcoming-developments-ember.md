@@ -29,7 +29,7 @@ Why? Well, there are unfortunately a few too many deficiencies with the current 
 
 - Developers have to decide between using the pod or classic app structure.
 - Addons are directly mixed into the codebase and therefore present opportunities for name collision.
-- Module resolution rules are esoteric and and inefficient.
+- Module resolution rules are esoteric and inefficient.
 
 The proposed solution to these problems does a major refactor of default Ember app structure. Replacing `app` at the top level is a new directory called `src` which can contain several subdirectories (`data`, `init`, `ui`, `utils`, and `services`). Here's an example of what this could look like in a blogging application, as shown in the RFC:
 
@@ -111,7 +111,7 @@ src
   router.js
 ```
 
-There are a couple of examples of this in action; namely the [Ghost Admin](https://github.com/rwjblue/--ghost-modules-sample/tree/grouped-collections/src) and [Travis Client](https://github.com/rwjblue/--travis-modules-sample/tree/modules/src). Rob Jackson has also done a fantastic job in releasing a [tool](https://github.com/rwjblue/ember-module-migrator) that allows us to migrate our apps over to this new structure.
+There are a couple of examples of this in action; namely the [Ghost Admin](https://github.com/rwjblue/--ghost-modules-sample/tree/grouped-collections/src) and [Travis Client](https://github.com/rwjblue/--travis-modules-sample/tree/modules/src). [Rob Jackson](https://twitter.com/rwjblue) has also done a fantastic job in releasing a [tool](https://github.com/rwjblue/ember-module-migrator) that allows us to migrate our apps over to this new structure.
 
 The RFC goes into a great amount of detail regarding other changes that will need to take place, such as renaming and reorganizing modules, and a refactor of the Ember Resolver. You can read the whole thing [here](https://github.com/dgeb/rfcs/blob/module-unification/text/0000-module-unification.md).
 
@@ -135,7 +135,7 @@ In all seriousness, routable components are a pretty big deal, and received an a
 
 As the description above concisely states, routable components essentially mean the death and deprecation of controllers. This is a good thing. For many months now, controllers have been a key point of confusion for new developers, and stick out as a remnant of pre-2.0 Ember. One of the biggest complaints about the framework in the early years was that the architectural pattern was far too complicated ("MVC? MVVM? What's the difference between a view and a controller?"). Ember continuing to simplify and mature these patterns is great news.
 
-Routable components hope to replace controllers by absorbing the few functional responsibilities that they still have, such as query parameters and setting a route's model on the template or top-level component. Discussing the implementation for these changes, however, is a tricky subject due to the length of time passed since the concept of routable components was first introduced. Original proposals included removing older model hooks (such as beforeModel and afterModel) and introducing a new, automatically invoked hook called "attributes", that would allow a route to specify the positional and query parameters to be passed into a rendered component.
+Routable components hope to replace controllers by absorbing the few functional responsibilities that they still have, such as query parameters and setting a route's model on the template or top-level component. Discussing the implementation for these changes, however, is a tricky subject due to the length of time passed since the concept of routable components was first introduced. Original proposals included removing older model hooks (such as `beforeModel` and `afterModel`) and introducing a new, automatically invoked hook called "attributes", that would allow a route to specify the positional and query parameters to be passed into a rendered component.
 
 
 
