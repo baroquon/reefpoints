@@ -42,14 +42,14 @@ Both are means to the same end but have their advantages and disadvantages.
 - Brittle
 - Not a substitute for server side validation
 
-Generally client side validations are optional, faster, and provide better UX, while server side validations are necessary, stronger, and better tied to your data model.
+Generally client side validations are optional, faster, and provide better UX, while server side validations are necessary, stronger, and better tied to your data schema.
 
 Ideally you utilize both, but they're a pain to keep in sync.  In a perfect world your application's back end validations automatically apply to the client. We're going to explore how Phoenix and Ecto give us the power to help us do exactly that.
 
-We can leverage [Phoenix](http://www.phoenixframework.org/), [Ecto.Changeset](https://hexdocs.pm/ecto/Ecto.Changeset.html) on our front end with just a few lines of code. This doesn't work for everything (uniqueness constraints for example), but there are some nice things we can validate for: min/max, length, and required fields.
+We can leverage [Phoenix](http://www.phoenixframework.org/) and [Ecto.Changeset](https://hexdocs.pm/ecto/Ecto.Changeset.html) on our front end with just a few lines of code. This doesn't work for everything (uniqueness constraints for example), but there are some nice things we can validate for: min/max, length, and required fields.
 Ecto changesets within Phoenix support [validate_length](https://github.com/phoenixframework/phoenix_ecto/blob/master/lib/phoenix_ecto/html.ex#L143), [validate_number](https://github.com/phoenixframework/phoenix_ecto/blob/master/lib/phoenix_ecto/html.ex#L161), [validate_required](https://github.com/phoenixframework/phoenix_ecto/blob/master/lib/phoenix_ecto/html.ex#L114) which correspond to the [HTML input validations](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation) `minlength`/`maxlength`, `min`/`max`, and `required`.
 
-Our goal is to have the validations defined in a model's changeset function automatically apply the correct HTML input validation to our form.
+Our goal is to have the validations defined in a schema's changeset function automatically apply the correct HTML input validation to our form.
 
 Let's write some code.
 
@@ -57,7 +57,7 @@ Let's write some code.
 
 ## The Code
 
-Let's work with a model named `foo` with the following changeset function:
+Let's work with a schema named `foo` with the following changeset function:
 
 ```elixir
 def changeset(struct, params \\ %{}) do
@@ -171,7 +171,7 @@ def view do
     use Phoenix.HTML
 
     # vvvv BEGIN OUR CODE vvvv
-    import Phoenix.HTML.Form, except: [number_input: 3, text_input: 3]
+    import Phoenix.HTML.Form, except: [number_input: 2, number_input: 3, text_input: 3]
     import HelloPhoenix.ValidInputs
     # ^^^^ END OUR CODE ^^^^
 
@@ -211,7 +211,7 @@ end
 <input class="form-control" id="foo_email" name="foo[email]" pattern=".+@.+" type="text">
 ```
 
-Because we're just composing and calling functions, we can extend our initial implementation easily without having to inherit or monkey patch from an existing View class. Going further, you can tweak your `text_input` and `number_input` to, for example, take an optional `validate` parameter to include opt in/opt out functionality.
+Because we're just composing and calling functions, we can extend our initial implementation easily without having to inherit or monkey patch from an existing View module. Going further, you can tweak your `text_input` and `number_input` to, for example, take an optional `validate` parameter to include opt in/opt out functionality.
 
 ## The takeaway
 
