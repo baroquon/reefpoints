@@ -186,7 +186,7 @@ And we're done! Now that your inputs have constraints, you can use CSS selectors
 
 ## Custom Validations
 
-There's also a letter known `pattern` HTML attribute for regex validations.  The JavaScript and Elixir regex engine's are not 100% compatible so it's not supported by default in `input_validations` but we can add it ourselves as an exercise in custom validations.
+There's also a lesser known `pattern` HTML attribute for regex validations.  The JavaScript and Elixir regex engines are not 100% compatible so it's not supported by default in `input_validations` but we can add it ourselves as an exercise in custom validations.
 
 ```
 |> validate_format(:email, ~r/.+@.+/)
