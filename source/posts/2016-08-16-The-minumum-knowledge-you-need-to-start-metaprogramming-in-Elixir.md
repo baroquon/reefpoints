@@ -16,6 +16,8 @@ if true do
   IO.puts "yea"
 end
 
+# becomes
+
 case(true) do
   x when x in [false, nil] ->
     nil
@@ -26,7 +28,7 @@ end
 
 ## The Abstract Syntax Tree (AST) and AST literal
 
-The internal representation of Elixir code which is called abstract syntax tree is the protagonist in program transformation. Elixir also calls AST `quoted expression`.
+The internal representation of Elixir code which is called [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) is the protagonist in program transformation. Elixir also calls AST `quoted expression`.
 
 The quoted expression is composed of three-element tuples:
 
@@ -73,11 +75,11 @@ The following example shows the differences between normal type and Elixir liter
 
 ### Return AST
 
-There are three ways to create quoted expression in Elixir:
+There are three ways to create quoted expressions in Elixir:
 
 1. Manually construct it
-2. Macro.escape
-3. Quote/Unquote to compose AST
+2. `Macro.escape`
+3. `quote`/`unquote` to compose AST
 
 ```elixir
 defmodule MyMacro do
@@ -126,13 +128,13 @@ end
 #=> %{time: :am}
 ```
 
-In this example, we define three macros using `defmacro`, both of them return quoted expression, then we import `MyMacro` module into `MyModule`. During compilation, these macros will be expanded and the returned AST will be injected into `MyModule's` compile tree.
+In this example, we define three macros using `defmacro`, both of them return quoted expressions, then we import `MyMacro` module into `MyModule`. During compilation, these macros will be expanded and the returned AST will be injected into `MyModule's` compile tree.
 
-When it comes to a complex situation, it will be very hard to construct AST manually, we should use `Quote` and `Macro.escape`. The main differences between these two are:
+When it comes to a complex situation, it will be very hard to construct AST manually, we should use `quote` and `Macro.escape`. The main differences between these two are:
 
-* Quote returns AST of passed in code block.
+* `quote` returns AST of passed in code block.
 
-* Macro.escape returns AST of passed in value.
+* `Macro.escape` returns AST of passed in value.
 
 Here are some examples:
 
@@ -154,7 +156,8 @@ quote do: IO.inspect(data)
 Macro.escape(data)
 #=> {:{}, [], [1, 2, 3]}
 
-Macro.escape(IO.inpect(1))
+IO.inspect(1)
+|> Macro.escape()
 #=> :error
 ```
 Notice that `data` variable is not injected into AST returned by `quote` block, in order to do that, we need to use `unquote` which we will discuss later.
@@ -176,15 +179,15 @@ end
 {:+, [line: 22], [1, 1]}
 2
 ```
-After compiling the module, we can see the results: `{{:+, [line: 22], [1, 1]}}` and `2`, they are both quoted expression. Remember that number is AST literal so its quoted expression remains the same as itself.
+After compiling the module, we can see the results: `{{:+, [line: 22], [1, 1]}}` and `2`, they are both quoted expressions. Remember that number is AST literal so its quoted expressions remains the same as itself.
 
 Combining this fact with the pattern of AST, we can easily do pattern matching to get what we want from the argument for further AST composition.
 
 Keep in mind that code passed into macro is not evaluated/excuted.
 
-### Unquote
+### unquote
 
-`Unquote` injects quoted expression into AST returned by `Quote`. **You can only use `unquote` inside `quote blocks`**.
+`unquote` injects quoted expressions into AST returned by `quote`. **You can only use `unquote` inside `quote blocks`**.
 
 To make it easier to understand, you can think **quote/unquote** as **string interpolation**. When you do `quote`, it's like creating string using `""`. When you do `unquote`, it's like injecting value into string by `"#{}"`. However, instead of manipulating string, we are composing AST.
 
@@ -204,9 +207,9 @@ It looks correct, but when we evaluate the AST, we will get error:
 ![](http://d.pr/i/7adz+)
 
 How come? It's because we forget an important concept:
-> Unquote injects AST into AST returned by quote.
+> unquote injects AST into AST returned by quote.
 
-`{1, 2, 3}` is not AST literal, so we need to get the quoted expression first by using `Macro.escape`.
+`{1, 2, 3}` is not AST literal, so we need to get the quoted expressions. first by using `Macro.escape`.
 
 ```elixir
 data = {1, 2, 3}
@@ -360,7 +363,7 @@ Code.eval_quoted(ast)
 
 * Macro.to_string
 
-It converts the given quoted expression to a string.
+It converts the given quoted expressions to a string.
 
 ```
 Macro.to_string(ast)
