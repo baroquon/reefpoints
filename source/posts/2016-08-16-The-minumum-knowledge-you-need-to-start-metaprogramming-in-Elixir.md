@@ -56,11 +56,14 @@ During compilation, all of our source code will be **transformed into AST** befo
 
 ![](http://d.pr/i/1ddgz+)
 
-The following example shows the differences between normal type and Elixir literal:
+The following example shows the differences between Elixir literal and other normal data types:
 
 ```elixir
 # AST for {1, 2, 3}
 {:{}, [], [1, 2, 3]}
+
+# AST for %{a: :hello}
+{:%{}, [], [a: :hello]}
 
 # AST for {1, 2} (AST literal)
 {1, 2}
@@ -128,7 +131,7 @@ end
 #=> %{time: :am}
 ```
 
-In this example, we define three macros using `defmacro`, both of them return quoted expressions, then we import `MyMacro` module into `MyModule`. During compilation, these macros will be expanded and the returned AST will be injected into `MyModule's` compile tree.
+In this example, we define three macros using `defmacro`, all of them return quoted expressions, then we import `MyMacro` module into `MyModule`. During compilation, these macros will be expanded and the returned AST will be injected into `MyModule's` compile tree.
 
 When it comes to a complex situation, it will be very hard to construct AST manually, we should use `quote` and `Macro.escape`. The main differences between these two are:
 
@@ -183,7 +186,7 @@ After compiling the module, we can see the results: `{{:+, [line: 22], [1, 1]}}`
 
 Combining this fact with the pattern of AST, we can easily do pattern matching to get what we want from the argument for further AST composition.
 
-Keep in mind that code passed into macro is not evaluated/excuted.
+Keep in mind that code passed into macro is not evaluated/executed.
 
 ### unquote
 
@@ -247,7 +250,7 @@ Besides, we need `quote(v)` inside function body because of scope rule in Elixir
 
 `bind_quoted` does two things:
 
-* prevent accidental reevaluation of bindings.
+**1.** prevent accidental reevaluation of bindings.
 
 If we have two same `unquote` inside `quote` block, the `unquote` will be evaluated twice, this can cause problem.
 We can use `bind_quoted` to fix it:
@@ -268,7 +271,7 @@ defmacro my_macro(x) do
 end
 ```
 
-* Defer the execution of `unquote` via `unquote: false`
+**2.** Defer the execution of `unquote` via `unquote: false`
 
 `unquote: false` is the default behavior of `bind_quoted`.
 
@@ -341,7 +344,7 @@ Our code will still work because the `each` function is executed before the inje
 
 ## How to do experiments
 
-The best way to learn is trial and error, Elixir provides a few functions that can help us:
+The best way to learn is trial and error. Elixir provides a few functions that can help us: `IO.inspect`, `Code.eval_quoted`, `Macro.to_string`, and `Macro.expand/Macro.expand_once`. Let's find out more about each one:
 
 * IO.inspect
 
