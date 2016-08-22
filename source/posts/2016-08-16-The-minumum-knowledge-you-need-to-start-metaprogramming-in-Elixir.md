@@ -9,7 +9,7 @@ published: true
 tags: Elixir
 ---
 
-Basically, metaprogramming is `writing code that writes code`. In Elixir, we use `Macro` to transform our internal program structure (AST) in compile time to something else. For example, the `if` macro is transformed to `case` during compilation, we call this `macro expansion`.
+Metaprogramming is `writing code that writes code`. In Elixir, we use macros to transform our internal program structure (AST) in compile time to something else. For example, the `if` macro is transformed to `case` during compilation, we call this `macro expansion`.
 
 ```elixir
 if true do
@@ -28,7 +28,7 @@ end
 
 ## The Abstract Syntax Tree (AST) and AST literal
 
-The internal representation of Elixir code which is called [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) is the protagonist in program transformation. Elixir also calls AST `quoted expression`.
+The internal representation of Elixir code is an [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) which is the protagonist in program transformation. Elixir also refers to an AST as a `quoted expression`.
 
 The quoted expression is composed of three-element tuples:
 
@@ -90,7 +90,7 @@ defmodule MyMacro do
 
   # case 1
   defmacro one_plus_two do
- 	{:+, [], [1, 2]}
+    {:+, [], [1, 2]}
   end
 
   # case 2
@@ -102,7 +102,7 @@ defmodule MyMacro do
 
   # case 3
   defmacro ops do
-  	Macro.escape(@opts)
+    Macro.escape(@opts)
   end
 end
 
@@ -110,15 +110,15 @@ defmodule MyModule do
   import Mymacro
 
   def case1 do
-  	IO.puts one_plus_two()
+    IO.puts one_plus_two()
   end
 
   def case2 do
-  	say_hi()
+    say_hi()
   end
 
   def case3 do
-  	IO.inspect ops()
+    IO.inspect ops()
   end
 end
 
@@ -133,7 +133,7 @@ end
 
 In this example, we define three macros using `defmacro`, all of them return quoted expressions, then we import `MyMacro` module into `MyModule`. During compilation, these macros will be expanded and the returned AST will be injected into `MyModule's` compile tree.
 
-When it comes to a complex situation, it will be very hard to construct AST manually, we should use `quote` and `Macro.escape`. The main differences between these two are:
+It's difficult to construct an AST by hand. We should almost always should use `quote` and `Macro.escape` to build up an AST using Elixir's own syntax. The main differences between these two are:
 
 * `quote` returns AST of passed in code block.
 
@@ -163,7 +163,7 @@ IO.inspect(1)
 |> Macro.escape()
 #=> :error
 ```
-Notice that `data` variable is not injected into AST returned by `quote` block, in order to do that, we need to use `unquote` which we will discuss later.
+Notice that `data` variable is not injected into the AST returned by `quote` block, in order to do that, we need to use `unquote`, which we will discuss later.
 
 
 ### Receive AST
@@ -182,15 +182,15 @@ end
 {:+, [line: 22], [1, 1]}
 2
 ```
-After compiling the module, we can see the results: `{{:+, [line: 22], [1, 1]}}` and `2`, they are both quoted expressions. Remember that number is AST literal so its quoted expressions remains the same as itself.
+After compiling the module, we can see the results: `{{:+, [line: 22], [1, 1]}}` and `2`, they are both quoted expressions. Remember that number is an AST literal so its quoted expressions remains the same as itself.
 
 Combining this fact with the pattern of AST, we can easily do pattern matching to get what we want from the argument for further AST composition.
 
-Keep in mind that code passed into macro is not evaluated/executed.
+Keep in mind that code passed into a macro is not evaluated or executed. As we saw earlier, **Macros receive AST as arguments and provide AST as return values**.
 
 ### unquote
 
-`unquote` injects quoted expressions into AST returned by `quote`. **You can only use `unquote` inside `quote blocks`**.
+`unquote` injects quoted expressions into the AST returned by `quote`. **You can only use `unquote` inside `quote blocks`**.
 
 To make it easier to understand, you can think **quote/unquote** as **string interpolation**. When you do `quote`, it's like creating string using `""`. When you do `unquote`, it's like injecting value into string by `"#{}"`. However, instead of manipulating string, we are composing AST.
 
@@ -205,14 +205,14 @@ quote do
 end
 ```
 
-It looks correct, but when we evaluate the AST, we will get error:
+It looks correct, but when we evaluate the AST, we will get an error:
 
 ![](http://d.pr/i/7adz+)
 
 How come? It's because we forget an important concept:
 > unquote injects AST into AST returned by quote.
 
-`{1, 2, 3}` is not AST literal, so we need to get the quoted expressions. first by using `Macro.escape`.
+`{1, 2, 3}` is not an AST literal, so we need to get the quoted expressions. first by using `Macro.escape`.
 
 ```elixir
 data = {1, 2, 3}
@@ -250,7 +250,7 @@ Besides, we need `quote(v)` inside function body because of scope rule in Elixir
 
 `bind_quoted` does two things:
 
-**1.** prevent accidental reevaluation of bindings.
+**1** prevent accidental reevaluation of bindings.
 
 If we have two same `unquote` inside `quote` block, the `unquote` will be evaluated twice, this can cause problem.
 We can use `bind_quoted` to fix it:
@@ -271,7 +271,7 @@ defmacro my_macro(x) do
 end
 ```
 
-**2.** Defer the execution of `unquote` via `unquote: false`
+**2** Defer the execution of `unquote` via `unquote: false`
 
 `unquote: false` is the default behavior of `bind_quoted`.
 
