@@ -54,7 +54,7 @@ Essentially, All tuples in the AST follow the same pattern:
 
 During compilation, all of our source code will be **transformed into AST** before producing final bytecode. However, there are **five** Elixir literals that will remain the same format as their high-level source.
 
-![](http://d.pr/i/1ddgz+)
+![](https://i.imgur.com/Pl3zRn8.png)
 
 The following example shows the differences between Elixir literal and other normal data types:
 
@@ -207,7 +207,7 @@ end
 
 It looks correct, but when we evaluate the AST, we will get an error:
 
-![](http://d.pr/i/7adz+)
+![](https://i.imgur.com/M7fHcmu.png)
 
 How come? It's because we forget an important concept:
 > unquote injects AST into AST returned by quote.
