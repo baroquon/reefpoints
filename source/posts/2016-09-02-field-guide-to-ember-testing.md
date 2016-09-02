@@ -31,9 +31,21 @@ Everything else should be tested with just unit tests. If the unit under test be
 What kind of test a test is, is not decided by in which folder it is put in, but by which kind of test module is used. `moduleForAcceptance`, as the name implies, sets up an acceptance test; `moduleFor` sets up either an integration or unit test. There are also a few test modules specifically for one kind of Ember concept, namely `moduleForComponent` to test components and `moduleForModel` to test models.
 
 
+#### moduleFor as unit test
 
+This module will be the meat and potatoes of your unit testing. It's pretty much a slightly enhanced version of QUnit's `module`. The biggest distinction is that in this case you state what kind of module it's for. An example:
 
+```js
+moduleFor('model:user', 'Unit | Model | User');
+```
 
+This declares a test module that has the `User` model as subject and that it should be resolved through Ember's DI system as `'model:user'`. In subsequent tests you can use the `subject` method from the `this` context to construct a `User` model.
 
+If the user depends on another model, for example a `Profile`, then it might be possible that you will face an error that states that it can not find the `Profile` model. To fix this, you need to declare in the module that this module also needs the `Profile` model, using the `needs` option.
 
+```js
+moduleFor('model:user, 'Unit | Model | User', {
+  needs: ['model:profile']
+});
+```
 
