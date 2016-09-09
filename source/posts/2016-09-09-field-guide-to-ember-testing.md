@@ -16,7 +16,7 @@ Practicing Test Driven Development with Ember can be tricky. Certainly when you'
 
 I've written the following post to help guide you to become proficient enough to be able to always write tests in mosts of the situations that may arise when developing an Ember app.
 
-### A well placed test
+## A well placed test
 
 Before writing tests it's good to know where a test goes. Should your test be an acceptance, integration or unit test? That of course depends on what kind of Ember thing you're working on.
 
@@ -26,7 +26,31 @@ Use acceptance test to test the data loading and route transitioning part of the
 
 Everything else should be tested with just unit tests. If the unit under test becomes hard to test because it depends on Ember's dependency injection system, then it's best to promote the test to an integration test, I'll discuss later how this is done.
 
-### Test module basics
+## QUnit
+
+Ember CLI supplies you with a [QUnit](http://qunitjs.com) test environment out of the box. I'm going assume that you have basic knowledge of how to work with QUnit. If you don't have the basics of QUnit down yet, I suggest you take some time to read the [QUnit introduction](http://qunitjs.com/cookbook/#introduction).
+
+## A simple unit test
+
+Let's start out with a code example and then walk through it:
+
+```js
+import { moduleFor, test } from 'ember-qunit';
+
+moduleFor('util:calculator', 'Unit | Util | Calculator');
+
+test('can calculate addition', function(assert) {
+  let calculator = this.subject();
+  assert.equal(calculator.add(2, 2), 4, '2 + 2 = 4');
+});
+```
+
+Starting with the `moduleFor` line, this function works slightly different from the QUnit's own `module` function.
+`moduleFor` means "a QUnit module set up for the given Ember module". The thing under test must extend from `Ember.Object` and be resolvable by Ember's resolver. The first argument should be a string that uses Ember's [dependency injection system](https://guides.emberjs.com/v2.7.0/applications/dependency-injection/)'s format. In this example we are testing the `calculator` object, which is an `util`.
+
+`moduleFor` adds a `subject` function to the context of the test function. The subject function resolves the module declared in the `moduleFor` function and then creates an instance of it.
+
+## Test module basics
 
 What kind of test a test is, is not decided by in which folder it is put in, but by which kind of test module is used. `moduleForAcceptance`, as the name implies, sets up an acceptance test; `moduleFor` sets up either an integration or unit test. There are also a few test modules specifically for one kind of Ember concept, namely `moduleForComponent` to test components and `moduleForModel` to test models.
 
@@ -81,3 +105,5 @@ moduleForComponent('my-component', 'Integration | Component | {{my-component}}',
 #### moduleForAcceptance
 
 The `moduleForAcceptance` module is just a plain QUnit module, except that it takes care of starting and destroying your Ember app for each test.
+
+###
