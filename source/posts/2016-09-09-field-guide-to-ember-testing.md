@@ -56,7 +56,10 @@ To demonstrate dependency injection, I'm going to show you how to approach `modu
 
 ```js
 moduleFor('model:user', 'Unit | Model | User', {
-  needs: ['service:store'],
+  needs: [
+    'service:store',
+    'model:profile'
+  ],
   
   store() {
     return this.container.lookup('service:store');
@@ -69,6 +72,14 @@ moduleFor('model:user', 'Unit | Model | User', {
     });
   }
 });
+
+test('Adding a profile to a User model', function(assert) {
+  let profile = Ember.run(() => this.store().createRecord('profile'));
+  let user = this.subject({ profile });
+  
+  assert.equal(user.get('profile'), profile);
+});
+```
 
 ## Test module basics
 
