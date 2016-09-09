@@ -48,5 +48,23 @@ moduleFor('model:user', 'Unit | Model | User', {
 });
 ```
 
+#### moduleFor as integration test
 
+Switching from a unit to an intregration test is very simple, all you have to do is to remove the `needs` property (if present) and add the `integration` property. The switch means that you don't have to manually specify all your dependencies in the `needs` hook anymore. In integration mode, all dependencies will be resolved automatically. This is the only distinction between the two modes.
+
+```js
+moduleFor('model:user', 'Integration | Model | User', {
+  integration: true
+});
+```
+
+With this setup, adding dependencies to the `needs` array is a thing of the past.
+
+#### moduleForModel
+
+The `moduleForModel` module is a slightly enhanced version of the regular `moduleFor` module. It sets up Ember Data's store on the test context and it alters the `this.subject` function to create a model into that store (I'll talk about `this.subject` more in detail later). Another slight change is you can just put the model's name into the first argument of the module function.
+
+```js
+moduleForModel('user', 'Unit | Model | User');
+```
 
