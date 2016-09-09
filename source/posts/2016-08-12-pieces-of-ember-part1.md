@@ -17,7 +17,7 @@ What these developers probably don't know is that many of the core pieces that m
 
 <br><br>
 <div style="text-align:center;">
-  <img src="http://i.imgur.com/PfqFoEW.png">
+  <img src="https://i.imgur.com/PfqFoEW.png">
 </div>
 <br><br>
 
