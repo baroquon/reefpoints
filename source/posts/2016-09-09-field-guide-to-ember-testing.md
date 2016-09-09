@@ -68,3 +68,16 @@ The `moduleForModel` module is a slightly enhanced version of the regular `modul
 moduleForModel('user', 'Unit | Model | User');
 ```
 
+#### moduleForComponent
+
+The `moduleForComponent` module adds the ability to render arbitrary templates and being able to interact with them to your tests in integration mode. The module also has a unit test mode, but I recommend not using it, components are best tested with integration tests.
+
+```js
+moduleForComponent('my-component', 'Integration | Component | {{my-component}}', {
+  integration: true
+});
+```
+
+#### moduleForAcceptance
+
+The `moduleForAcceptance` module is just a plain QUnit module, except that it takes care of starting and destroying your Ember app for each test.
