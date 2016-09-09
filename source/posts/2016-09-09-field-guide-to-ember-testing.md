@@ -48,7 +48,8 @@ test('can calculate addition', function(assert) {
 Starting with the `moduleFor` line, this function works slightly different from the QUnit's own `module` function.
 `moduleFor` means "a QUnit module set up for the given Ember module". The thing under test must extend from `Ember.Object` and be resolvable by Ember's resolver. The first argument should be a string that uses Ember's [dependency injection system](https://guides.emberjs.com/v2.7.0/applications/dependency-injection/)'s format. In this example we are testing the `calculator` object, which is an `util`.
 
-`moduleFor` adds a `subject` function to the context of the test function. The subject function resolves the module declared in the `moduleFor` function and then creates an instance of it.
+`moduleFor` adds a `this` context to the test functions, it has quite a few functions, but the one I want to mention now is the `subject` function. The subject function resolves the module declared in the `moduleFor` function and then creates an instance of it. You can optionally pass in an object with properties, as if you're calling `create` on an Ember object.
+
 
 ## Test module basics
 
