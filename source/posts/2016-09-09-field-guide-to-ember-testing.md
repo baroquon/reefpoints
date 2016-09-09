@@ -50,6 +50,25 @@ Starting with the `moduleFor` line, this function works slightly different from 
 
 `moduleFor` adds a `this` context to the test functions, it has quite a few functions, but the one I want to mention now is the `subject` function. The subject function resolves the module declared in the `moduleFor` function and then creates an instance of it. You can optionally pass in an object with properties, as if you're calling `create` on an Ember object.
 
+## Injecting dependencies
+
+To demonstrate dependency injection, I'm going to show you how to approach `moduleForModule` by just using `moduleFor`, again starting with code and then the explanation.
+
+```js
+moduleFor('model:user', 'Unit | Model | User', {
+  needs: ['service:store'],
+  
+  store() {
+    return this.container.lookup('service:store');
+  },
+  
+  subject(options) {
+    let modelName = this.subjectName.split(':')[1];
+    return Ember.run(function() {
+      this.store().createRecord(modelName, options);
+    });
+  }
+});
 
 ## Test module basics
 
