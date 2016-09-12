@@ -50,16 +50,18 @@ Starting with the `moduleFor` line, this function works slightly different from 
 
 `moduleFor` adds a `this` context to the test functions, it has quite a few functions, but the one I want to mention now is the `subject` function. The subject function resolves the module declared in the `moduleFor` function and then creates an instance of it. You can optionally pass in an object with properties, as if you're calling `create` on an Ember object.
 
-## Injecting dependencies
+## A more advanced setup
 
-To demonstrate dependency injection, I'm going to show you how to approach `moduleForModule` by just using `moduleFor`, again starting with code and then the explanation.
+To show a more advanced setup, I'm going to show you how to approach `moduleForModel` by just using `moduleFor`, again starting with code and then the explanation.
 
 ```js
+import Ember from 'ember';
+import { moduleFor, test } from 'ember-qunit';
+
+const { run } = Ember;
+
 moduleFor('model:user', 'Unit | Model | User', {
-  needs: [
-    'service:store',
-    'model:profile'
-  ],
+  needs: ['model:profile'],
   
   store() {
     return this.container.lookup('service:store');
@@ -74,12 +76,20 @@ moduleFor('model:user', 'Unit | Model | User', {
 });
 
 test('Adding a profile to a User model', function(assert) {
-  let profile = Ember.run(() => this.store().createRecord('profile'));
+  let profile = run(() => this.store().createRecord('profile'));
   let user = this.subject({ profile });
   
   assert.equal(user.get('profile'), profile);
 });
 ```
+
+Breaking down this test, we first see the `needs`, `store` and `subject` property/functions in the object as third argument of the `moduleFor` function call, then a test that creates a `profile` model and then a `user` model with that profile, testing that the user has the profile set.
+
+Starting with the `needs` property, this declares that this module also depends on (needs) the `profile` model. We have to declate this, because in unit testing mode, the resolver will only resolve modules that are pre-registered, `moduleFor` will resolve and pre-register all modules in the needs property before a test is run.
+
+Second is the `store` function, it returns an instance of Ember Data's store, which is looked up on the test's isolated container.
+
+
 
 ## Test module basics
 
