@@ -4,7 +4,7 @@ title: "KISS by Example: Authorization in Phoenix"
 social: true
 author: Nico Mihalich
 github: "nicomihalich"
-summary: "A short example of authorization in Phoenix to show how modules, functions, and mattern matching can easily fill a common web application need."
+summary: "A short example of authorization in Phoenix to show how modules, functions, and pattern matching can easily fill a common web application need."
 published: true
 tags: engineering, elixir, phoenix
 ---
@@ -15,21 +15,17 @@ As a relatively new Elixir developer, I continue to be impressed by the things t
 
 ## Example: Web App Authorization
 
-Lets pretend we're building a web application where users submit talk ideas for a conference and then the best ones are selected to be included.  Users can submit and edit their own proposals, and admins can mark a talk as `chosen`.  We want to enforce a that rogue user can't select random talks or edit other users' talks to be about nonsense.
+Let's pretend we're building a web application where users submit talk ideas for a conference and then the best ones are selected to be included.  Users can submit and edit their own proposals, and admins can mark a talk as `chosen`.  We want to enforce that a rogue user can't select random talks or edit other users' talks to be about nonsense.
 
-Not worrying about how the logic works within the application, lets just lay out some rules for what users can do to talks.
+Not worrying about how the logic works within the application, let's just lay out some rules for what users can do to talks.
 
 
 ```elixir
-defmodule FakeConf.TalkAuthorization do
-
-  alias FakeConf.Talk
-  alias FakeConf.User
+defmodule FakeConf.TalkAuthorizer do
+  alias FakeConf.{Talk, User}
 
   # Anyone can go and create a talk
-  def authorize(:create_talk, %User{} = _user) do
-    :ok
-  end
+  def authorize(:create_talk, %User{} = _user), do: :ok
 
   # Only the user that created a talk can edit it
   def authorize(:edit_talk, %User{} = user, %Talk{} = talk) do
@@ -41,35 +37,26 @@ defmodule FakeConf.TalkAuthorization do
   end
 
   # Only admins can 'choose' talks
-  def authorize(:choose_talk, %User{} = user, %Talk{} = _talk) do
-    if user.is_admin do
-      :ok
-    else
-      {:error, :unauthorized}
-    end
-  end
+  def authorize(:choose_talk, %User{is_admin: true} = user, %Talk{}), do: :ok
+  def authorize(:choose_talk, %User{}, %Talk{}), do: {:error, :unauthorized}
 
   defp owned_by?(%User{} = user, %Talk = talk) do
     talk.user_id == user.id
   end
-
 end
 ```
 
 This keeps our authorization code nice and contained!  When we implement more features, it will be easy to add them to this module.
 
-Now we have these rules, we can use it in our application.  We'll use the new [with](http://elixir-lang.org/docs/stable/elixir/Kernel.SpecialForms.html#with/1) macro here to chain authorization into our existing app logic.
+Now that we have these rules, we can use them in our application.  We'll use the new [with](http://elixir-lang.org/docs/stable/elixir/Kernel.SpecialForms.html#with/1) macro here to chain authorization into our existing app logic.
 
 ```elixir
 defmodule FakeConf.Talks do
-
-  alias FakeConf.Talk
-  alias FakeConf.Repo
-  alias FakeConf.TalkAuthorization
+  alias FakeConf.{Talk, Repo, TalkAuthorizer}
 
   def create_talk(%User{} = user, talk_params) do
     talk = %Talk{user_id: user.id}
-    with :ok <- TalkAuthorization.authorize(:create_talk, user),
+    with :ok <- TalkAuthorizer.authorize(:create_talk, user),
          {:ok, talk} <- Repo.insert(changeset(talk, talk_params)) do
       :ok
     else
@@ -79,7 +66,7 @@ defmodule FakeConf.Talks do
 
   def edit_talk(%User{} = user, talk_id, talk_params) do
     with %Talk{} = talk <- Repo.get(Talk, talk_id),
-         :ok <- TalkAuthorization.authorize(:edit_talk, user, user),
+         :ok <- TalkAuthorizer.authorize(:edit_talk, user, user),
          {:ok, talk} <- Repo.update(changeset(talk, talk_params)) do
       :ok
     else
@@ -90,7 +77,7 @@ defmodule FakeConf.Talks do
 
   def choose_talk(%User{} = user, talk_id) do
     with %Talk{} = talk <- Repo.get(Talk, talk_id),
-         :ok <- TalkAuthorization.authorize(:choose_talk, user, talk),
+         :ok <- TalkAuthorizer.authorize(:choose_talk, user, talk),
          {:ok, talk} <- Repo.insert(changeset(talk, %{chosen: true})) do
       :ok
     else
@@ -103,4 +90,4 @@ end
 
 Super simple, clean, and easy to read because we're combining functions that are organized in modules.  Nothing crazy happening.
 
-This isn't just an example of how to do authorization. When you're looking to add a feature to your application, consider it might be simpler than you think when you take advantage of the tools you have available.
+This isn't just an example of how to do authorization. When you're looking to add a feature to your application, consider it might be simpler than you think when you take advantage of the tools you have available.  When in doubt... 'Keep It Simple, Silly'!
