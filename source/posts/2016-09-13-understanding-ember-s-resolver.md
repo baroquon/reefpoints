@@ -2,21 +2,22 @@
 layout: post
 title: "Understanding Ember's resolver"
 social: true
-author: Jane Doe
-twitter: "janedoe"
-github: janedoe
-summary: "A brief summary of your post"
+author: Marten Schilstra
+twitter: "martndemus"
+github: martndemus
+summary: "An introduction to how Ember's resolver works"
 published: true
-tags: tags, separating each, with commas
+tags: ember, javascript
 ---
 
 Ember's [dependency injection](https://guides.emberjs.com/v2.8.0/applications/dependency-injection/) system is driven by a resolver.
-It is used to lookup javascript modules agnostic from what kind of module system is used, which can be AMD, CommonJS or just plain globals.
+It is used to lookup JavaScript modules agnostic from what kind of module system is used, which can be AMD, CommonJS or just plain globals.
 A resolver works based on a set of rules, which reflects how Ember apps are structured.
 
 ## How the resolver is used
 
-The resolver is used widely throughout an Ember application, it is used to lookup routes, models, components and much more.
+The resolver is used widely throughout an Ember application.
+It is used to lookup routes, models, components and much more.
 
 When your Ember app transitions into a route, the resolver is used to find the corresponding route module. 
 For example: if you navigate to `/blog`, then the blog route needs to be looked up. 
@@ -24,7 +25,7 @@ This is done by asking the resolver to resolve `route:blog`, this will resolve a
 After the route is done loading the model, we need a controller, so we ask the resolver for `controller:blog`. 
 Lastly a template needs to be rendered, so once again we go to the resolver and ask for `template:blog`.
 
-The same thing happens when rendering a component, first the resolver is asked for `component:my-component`,
+The same thing happens when rendering a component. First the resolver is asked for `component:my-component`,
 then `template:component/my-component`.
 
 ## The rules of the resolver
@@ -41,18 +42,18 @@ The `app` part of the path is replaced by the `modulePrefix` variable. So our ex
 
 ### Dissecting a resolver statement
 
-The resolver disects the statement `route:blog` into two parts, a type (`route`) and a name (`blog`), which is then translated into a path which can be used to load a module.
+The resolver disects the statement `route:blog` into two parts, a type (`route`) and a name (`blog`). Those parts are then translated into a path which can be used to load a module.
 In the case of Ember CLI's AMD modules it would give you `my-app/routes/blog`, which is constructed of `modulePrefix` / `type` (pluralized) / `name`.
 
 The resolver can also easily resolve things nested inside subfolders.
-For example: `template:component/my-component`, it'll be resolved to `my-app/templates/components/my-component`.
+For example, `template:component/my-component`, it'll be resolved to `my-app/templates/components/my-component`.
 
 You can also make up your own type, it doesn't have to be one of Ember's types.
-For example: [Ember Validations](https://github.com/DockYard/ember-validations) uses the resolver to look up modules of the `validator` type.
+For example, [Ember Validations](https://github.com/DockYard/ember-validations) uses the resolver to look up modules of the `validator` type.
 
 ### Resolving addon modules 
 
-The resolver has one more trick up it's sleeve, it can resolve things outside of your app, using a custom `modulePrefix`.
+The resolver has one more trick up its sleeve, it can resolve things outside of your app using a custom `modulePrefix`.
 If you prefix the statement asked to the resolver with your custom `modulePrefix` and an `@`, then it'll replace the configured `modulePrefix` with yours.
 The statement `an-addon@component:x-utility` would be resolved to `an-addon/components/x-utility`.
 
