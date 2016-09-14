@@ -7,7 +7,7 @@ twitter: "martndemus"
 github: martndemus
 summary: "An introduction to how Ember's resolver works"
 published: true
-tags: ember, javascript
+tags: ember, javascript, engineering
 ---
 
 Ember's [dependency injection](https://guides.emberjs.com/v2.8.0/applications/dependency-injection/) system is driven by a resolver.
