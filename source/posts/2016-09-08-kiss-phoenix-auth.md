@@ -66,7 +66,7 @@ defmodule FakeConf.Talks do
 
   def edit_talk(%User{} = user, talk_id, talk_params) do
     with %Talk{} = talk <- Repo.get(Talk, talk_id),
-         :ok <- TalkAuthorizer.authorize(:edit_talk, user, user),
+         :ok <- TalkAuthorizer.authorize(:edit_talk, user, talk),
          {:ok, talk} <- Repo.update(changeset(talk, talk_params)) do
       :ok
     else
