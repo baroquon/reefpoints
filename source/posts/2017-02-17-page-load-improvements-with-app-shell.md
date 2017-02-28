@@ -36,8 +36,8 @@ To start out, here are the baseline performance metrics of the current DockYard.
 ![](http://i.imgur.com/pRF7ak0.png)
 
 - First paint: 600ms
-- App boot: 1.175ms (the dip in the CPU graph)
-- Initial render: 1.400ms
+- App boot: 1,175ms (the dip in the CPU graph)
+- Initial render: 1,400ms
  
 #### Baseline Desktop: Page load with warmed cache
 
@@ -51,17 +51,17 @@ To start out, here are the baseline performance metrics of the current DockYard.
 
 ![](http://i.imgur.com/LNL0fSB.png)
 
-- First paint: 1.200ms
-- App boot: 8.900ms
-- Initial render: 10.200ms
+- First paint: 1,200ms
+- App boot: 8,900ms
+- Initial render: 10,200ms
  
 #### Baseline Mobile: Page load with warmed cache.
 
 ![](http://i.imgur.com/Z3Y9JZO.png)
 
 - First paint: 850ms
-- App boot: 2.850ms
-- Initial render: 4.200ms
+- App boot: 2,850ms
+- Initial render: 4,200ms
  
 ### The changes I've made
 
@@ -80,8 +80,8 @@ First off I've added (offline) caching by a Service Worker, using [Ember Service
 ![](http://i.imgur.com/Hq8beZk.png)
 
 - First paint: 300ms
-- App boot: 2.700ms
-- Initial render: 4.000ms
+- App boot: 2,700ms
+- Initial render: 4,000ms
  
 Next I wrote a small [Ember CLI addon](https://github.com/DockYard/ember-cli-one-script) that concats both scripts (`vendor.js` and `dockyard.js`) that Ember CLI produces together. Then I proceeded to load that single JavaScript file using a `` element in the head that was marked `async`. This had no significant improvement on the desktop side, but loading on mobile did improve. There is a small downside to this technique though, the two files aren't cached seperately by the browser anymore, which can increase the amount of data needed to be transfered when deploying new builds often.
 
@@ -90,16 +90,16 @@ Next I wrote a small [Ember CLI addon](https://github.com/DockYard/ember-cli-one
 ![](http://i.imgur.com/s6Uq246.png)
 
 - First paint: 750ms
-- App boot: 7.950ms
-- Initial render: 9.000ms
+- App boot: 7,950ms
+- Initial render: 9,000ms
  
 #### Async'ed script Mobile: Page load with warmed cache
 
 ![](http://i.imgur.com/me4jkYA.png)
 
 - First paint: 200ms
-- App boot: 2.350ms
-- Initial render: 3.550ms
+- App boot: 2,350ms
+- Initial render: 3,550ms
  
 Lastly I extracted all the critical CSS for an initial render and inlined it into the `` section. Then proceeded to asynchronously load the remaining CSS using [loaddCSS](https://github.com/filamentgroup/loadCSS). This made the first paint come slightly earlier in all scenarios, but hurts the initial render by about 150ms on mobile.
 
@@ -124,20 +124,64 @@ Lastly I extracted all the critical CSS for an initial render and inlined it int
 ![](http://i.imgur.com/Y9vAfls.png)
 
 - First paint: 500ms
-- App boot: 8.100ms
-- Initial render: 9.150ms
+- App boot: 8,100ms
+- Initial render: 9,150ms
  
 #### Async'ed CSS Mobile: Page load with warmed cache
 
 ![](http://i.imgur.com/j9JCLsg.png)
 
 - First paint: 125ms
-- App boot: 2.500ms
-- Initial render: 3.700ms
+- App boot: 2,500ms
+- Initial render: 3,700ms
  
 ### All the stats summed up in a table
 
 ![](http://i.imgur.com/7NTHg9u.png)
+
+### Browsers without Service Worker
+
+You might ask: "How does this affect page loading in browsers that not yet support Service Workers?". I've tested the before and after with Safari's timeline tool. The results show no significant speed up in full page load, but actually a slight slowdown. The results do show a significant speed up in first paint time with either empty or warm cache.
+
+After the benchmarks I've noticed that loading the service worker registration script plays a big part in the slowdown. I'd need to fiddle some more with loading that script to see if I can get rid of the slowdown.
+
+Below are the timeline graphs for loading in Safari. Notice the big shift of the blue `DOMContentLoaded` line. That counts as the first paint. The red `Load` line is the app boot. The last green bar is the initial render.
+
+#### Baseline: Page load with empty cache
+
+![](http://i.imgur.com/Skyo7Dk.png)
+
+- First paint: 510ms
+- App boot: 600ms
+- Initial render: 740ms
+ 
+#### After improvements: Page load with empty cache
+
+![](http://i.imgur.com/AZuSkqW.png)
+
+- First paint: 250ms
+- App boot: 650ms
+- Initial render: 820ms
+ 
+#### Baseline: Page load with warm cache
+
+![](http://i.imgur.com/dE536q5.png)
+
+- First paint: 510ms
+- App boot: 575ms
+- Initial render: 730ms
+ 
+#### After improvements: Page load with warm cache
+
+![](http://i.imgur.com/QcDuWBI.png)
+
+- First paint: 250ms
+- App boot: 620ms
+- Initial render: 780ms
+ 
+#### Safari tests summarized
+
+![](http://i.imgur.com/kZT1iWE.png)
 
 ### Conclusion
 
