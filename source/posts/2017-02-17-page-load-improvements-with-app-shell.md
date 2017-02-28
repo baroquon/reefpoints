@@ -95,7 +95,7 @@ First off I've added (offline) caching by a Service Worker, using [Ember Service
 - App boot: 2,700ms
 - Initial render: 4,000ms
  
-Next I wrote a small [Ember CLI addon](https://github.com/DockYard/ember-cli-one-script) that concats both scripts (`vendor.js` and `dockyard.js`) that Ember CLI produces together. Then I proceeded to load that single JavaScript file using a `` element in the head that was marked `async`. This had no significant improvement on the desktop side, but loading on mobile did improve. There is a small downside to this technique though, the two files aren't cached seperately by the browser anymore, which can increase the amount of data needed to be transfered when deploying new builds often.
+Next I wrote a small [Ember CLI addon](https://github.com/DockYard/ember-cli-one-script) that concats both scripts (`vendor.js` and `dockyard.js`) that Ember CLI produces together. Then I proceeded to load that single JavaScript file using a `` element in the head that was marked `async`. This had no significant improvement on the desktop side, but loading on mobile did improve. There is a small downside to this technique though, the two files aren't cached seperately by the browser anymore, which can increase the amount of data needed to be transferred when deploying new builds often.
 
 #### Async'ed script Mobile: Page load with empty cache
 
@@ -205,7 +205,7 @@ Below are the timeline graphs for loading in Safari. Notice the big shift of the
 
 ### Conclusion
 
-A Service Worker and a bit of techniques from the App Shell model can boost your page load times. Your app will show up on the screen earlier and be interactive quicker. Which in turn can improve the conversion rates of your website.
+A Service Worker and a bit of techniques from the App Shell model can boost your page load times. Your app will show up on the screen earlier and be interactive quicker, which in turn can improve the conversion rates of your website.
 
 Please try out these techniques and see for yourself if it improves page load times of your app. In any case let me know how it works out for you.
 
