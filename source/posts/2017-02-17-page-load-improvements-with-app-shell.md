@@ -11,11 +11,15 @@ tags: JavaScript, Ember, PWA
 ---
 *In the past week I have been experimenting with the [App Shell Model](https://developers.google.com/web/fundamentals/architecture/app-shell) to make the [DockYard.com](https://dockyard.com) website load faster. In this blog post I'll walk through which changes I made and how I've made them. Complete with some benchmarks!*
 
+### Why improve page load speed?
+
+According to Google, if [loading a page takes too long](https://www.thinkwithgoogle.com/articles/mobile-page-speed-load-time.html), they'll just abandon it. This hurts your conversion rates. Key metrics that contribute to better conversion rates are when the browser is able to make its first paint and when the page is fully loaded.
+
 ### Tools of the trade
 
 *In this section I'll introduce the tools I've used to measure the loading performance. Please take a minute to follow the links to the mentioned tools and read how they work and what they are for.*
 
-I have used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) and the [Application](https://developers.google.com/web/fundamentals/getting-started/codelabs/debugging-service-workers/), [Network](https://developers.google.com/web/tools/chrome-devtools/network-performance/) and [Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool) DevTools from the Google Chrome team to see if a change made a positive impact on loading speed.
+To be able to measure the performance of DockYard.com I have used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) and the [Application](https://developers.google.com/web/fundamentals/getting-started/codelabs/debugging-service-workers/), [Network](https://developers.google.com/web/tools/chrome-devtools/network-performance/) and [Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool) DevTools from the Google Chrome team to see changes made a positive impact on loading speed.
 
 Lighthouse is the successor of Google's [PageSpeed](https://developers.google.com/speed/pagespeed/) tool. Lighthouse uses your Chrome DevTool to do a host of automated audits. I.E. it checks if a [Service Worker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) is registered and that a [Web App Manifest](https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android) can be found. The audits I'm most interested in are the page load performance audits. These measure the [first meaningful paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint), the [speed index](https://developers.google.com/web/tools/lighthouse/audits/speed-index) and [time to interactive](https://developers.google.com/web/tools/lighthouse/audits/time-to-interactive) performance.
 
@@ -23,13 +27,21 @@ Lighthouse is the successor of Google's [PageSpeed](https://developers.google.co
 
 I'm measuring the page load in two situations. The first situation is as if it's the very first time I'm visiting the website, this means no assets have been cached yet. The second situation is when I'm loading the website on a repeat visit, which means the browser had a chance to cache the assets. I'll also measure the same two scenarios using network and CPU throttling to simulate being out and about on a mobile device. Mobile simulation is done on the 'Regular 3G' network throttling setting and the 'Low end device' cpu throttling setting.
 
-There are three key performance metrics I'm looking for in each test, first I'll look for when the first meaningful paint happens and second I'll look for the moment when the Ember.JS app has booted client side and when the Ember.JS app has done it's initial render on the client side.
+There are three key performance metrics I'm looking for in each test, first I'll look for when the first meaningful paint happens and second I'll look for the moment when the Ember.JS app has booted client side and when the Ember.JS app has done its initial render on the client side. The first meaningful paint and the initial render metric are the two metrics that according to [Google](https://www.thinkwithgoogle.com/articles/mobile-page-speed-load-time.html) contribute the most to abandonment rate.
 
 ### Getting the baseline
 
-*Benchmarks have been made on a standard 15" MacBook Pro, all tests have been done with a wired 500 megabit up/down internet connection. I have about 90ms latency towards the webserver and about 7ms to the assets server.*
+*Benchmarks have been made on a standard mid 2015 15" MacBook Pro, all tests have been done with a wired 500 megabit up/down internet connection. I have about 90ms latency towards the webserver and about 7ms to the assets server.*
 
 To start out, here are the baseline performance metrics of the current DockYard.com website. It is a Ember.js application that is served with [FastBoot](https://ember-fastboot.com).
+
+#### Baseline Lighthouse score
+
+![](http://i.imgur.com/GNrFsfe.png)
+
+*Note: Lighthouse measures without CPU slowdown and a custom network throttling setting*
+
+This initial lighthouse score shows that the first meaningful paint comes just before the time to interactive. This does mean that when the page shows up, it's almost immediately interactive, but you'll see nothing before that.
 
 #### Baseline Desktop: Page load with empty cache
 
@@ -135,9 +147,17 @@ Lastly I extracted all the critical CSS for an initial render and inlined it int
 - App boot: 2,500ms
 - Initial render: 3,700ms
  
-### All the stats summed up in a table
+#### All the stats summed up in a table
 
 ![](http://i.imgur.com/7NTHg9u.png)
+
+#### Final Lighthouse score
+
+![](http://i.imgur.com/B2dq8p5.png)
+
+*Note: To get the perfect 100/100 score we also added a Web App Manifest.*
+
+That's an impressive 10x speed up in first paint and almost a second and a half in time to interactive. This gives your user much more confidence in that your page is loading.
 
 ### Browsers without Service Worker
 
