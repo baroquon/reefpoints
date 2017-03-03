@@ -1,6 +1,5 @@
 require 'builder'
 require 'json'
-require 'byebug'
 require 'middleman-blog/tag_pages'
 require 'active_support/inflector'
 
