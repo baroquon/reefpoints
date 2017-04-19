@@ -1,5 +1,3 @@
-
-
 ---
 layout: post
 title: "What type of business problem are we solving?"
@@ -11,6 +9,7 @@ summary: "The decision about where a problem & solution belong within a business
 published: true
 tags: Design, Design Process, Best Practices, Business, Design Thinking
 ---
+
 Tl;dr: skills or expertise alone don’t guarantee a great business outcome. You also need to know where to apply them.
 
 I was listening to [an episode](http://www.marketingforowners.com/podcast/595/) of _Marketing for Owners_ podcast recently, and one idea stopped me in my tracks. 
