@@ -233,8 +233,12 @@ That's all there to it. Our public interface remained unchanged and we vastly im
 
 ## Here Be Dragons
 
-This just scratched the surface on what's possible with ETS. But before you get too carried away and extract out all your serialized state access from `GenServer`'s and `Agent`'s to ETS, you need to think carefully about which actions in your application are atomic, and which require serialized access. You can easily introduce race conditions by allowing concurrent reads and writes in the pursuit of performance. One of the beautiful things about Elixir's process model is the serial processing of messages. It lets us avoid race conditions exactly because we can serialize access to state that requires atomic operations. In the case of our rate limiter, each user wrote to ets with the atomic `update_counter` operation so concurrent writes are not a problem. The following rule is helpful to keep in mind when thinking about moving serial access to ETS:
+This just scratched the surface on what's possible with ETS. But before you get too carried away and extract out all your serialized state access from `GenServer`'s and `Agent`'s to ETS, you need to think carefully about which actions in your application are atomic, and which require serialized access. You can easily introduce race conditions by allowing concurrent reads and writes in the pursuit of performance. One of the beautiful things about Elixir's process model is the serial processing of messages. It lets us avoid race conditions exactly because we can serialize access to state that requires atomic operations. In the case of our rate limiter, each user wrote to ets with the atomic `update_counter` operation so concurrent writes are not a problem. Use the following rules to determine if you can move from serial access to ETS:
 
-> The operation must be atomic. If clients are reading data from ets in one operation, then writing to ETS based on the result, you have a race condition and the fix is serial access in a server
+  1. The operations must be atomic. If clients are reading data from ets in one operation, then writing to ETS based on the result, you have a race condition and the fix is serial access in a server
+  2. If the operations are not atomic, ensure different processes write to distinct keys. For example, Elixir's registry uses the Pid as key and allows only the current process to change its own entry. This guarantees there are no races as each process work on a different row of the ETS table
+  3. If none of the above apply, consider keeping the operation serial. Concurrent reads with serial writes is a common ETS pattern
+
+> The operation must be atomic. 
 
 If you're curious about using ETS for a dependency-free in-memory cache, check out Saša Jurić's excellent [ConCache](https://github.com/sasa1977/con_cache) library.
