@@ -241,6 +241,5 @@ This just scratched the surface on what's possible with ETS. But before you get 
 
 3. If none of the above apply, consider keeping the operation serial. Concurrent reads with serial writes is a common ETS pattern
 
-> The operation must be atomic. 
 
 If you're curious about using ETS for a dependency-free in-memory cache, check out Saša Jurić's excellent [ConCache](https://github.com/sasa1977/con_cache) library.
