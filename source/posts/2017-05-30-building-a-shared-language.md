@@ -2,9 +2,8 @@
 layout: post
 title: "Building a Shared Language"
 social: true
-Author: Tim Walsh
-twitter: "@Imakemusic"
-github:
+author: Tim Walsh
+twitter: "imakemusic"
 summary: "A process to help understand clients and the industry you’re designing for"
 published: true
 tags: Design
