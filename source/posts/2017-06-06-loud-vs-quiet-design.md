@@ -67,6 +67,4 @@ While content, upkeep, and business decisions after a project completes aren’t
 
 It’s not easy to judge what will happen in the future without experiencing it, but there are a few indicators of a solid product design result. Forward-thinking designers will not only solve your immediate UI problems, but help you with future ones by offering a **style guide**. The files they hand over will document all necessary states, as well as constraints and some history of **decision-making** that led to a solution. Often, a big part of the value a product designer delivers is advising ***not* to implement a feature**. 
 
-I do product UX design for a living, and I’m often frustrated to see how much more sexy the marketing or brand designers’ work can look. But I don’t let myself fret for too long, because if you dig deeper, it is the quiet, solid, practical products that really make things happen. 
-
 Knowing when you need the quiet kind of design, and when you need it loud, is about knowing your business. Often, you need both at the same time to solve for user acquisition, but also to keep them coming back. Make sure you pick the right kind of designer for the job each time [👋](http://dockyard.com/contact/hire-us).
