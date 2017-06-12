@@ -10,7 +10,7 @@ published: true
 tags: Design, Design Process, Best Practices, Business, Design Thinking, User Experience, UX Design
 ---
 
- Earlier this spring, I was at a hotel in Queens NY and (as I often do) noticed a funny UX detail in the washroom. 
+ Earlier this spring, I was at a hotel in New York City and (as I often do) noticed a funny UX detail in the washroom. 
  
 ![Imgur](http://i.imgur.com/6g1bRM8.jpg)
  
@@ -39,14 +39,14 @@ The fact that things become invisible when you’re used to them is normal. It d
 The best way to work with this invisibility is to get fresh eyes on all the parts of the systems you rely on regularly. 
  
  ### Adding features is fun. Removing them is not
-Our natural response to any problem is to add something to solve it. Get a better tool. Add a process (go shopping, eat ice cream…). But in some situations, it’s like trying to fix an overcrowded storage closet by adding another clever storage container system. At some point, you need to reduce instead of adding.
+Our natural response to any problem is to add something to solve it. Get a better tool. Add a process (go shopping, eat ice cream…). But in some situations, it’s like trying to fix an overcrowded storage closet by adding another clever storage container system. At some point, you need to reduce instead of add.
  
-But reducing isn’t always easy or enjoyable short-term. Users might complain when a familiar feature is no longer available. Back in 2014, 37 Signals, a successful software company with several well-loved SAAS products, made a decision to kill all but one of them and become Basecamp. They definitely disappointed _some_ users short-term, when they announced several products will no longer be supported. But by putting all their energy behind one, they ensured that Basecamp will be a success for years to come.
+But reducing isn’t always easy or enjoyable short-term. Users might complain when a familiar feature is no longer available. Back in 2014, [37 Signals](https://37signals.com/), a successful software company with several well-loved SAAS products, made a decision to kill all but one of them and become Basecamp. They definitely disappointed _some_ users short-term, when they announced several products will no longer be supported. But by putting all of their energy behind one, they ensured that Basecamp will be a success for years to come.
  
 An outsider is more likely to notice when features or processes are redundant, and the system overall would benefit from removing them. Or, when a detail no longer works with a bigger change in the system, like that paper towel sign.
  
  ### The fix may be a lot of work… or it might be simple!
-Sometimes, we know a problem exists, but assume the fix would be  too expensive and complex to do now. While an audit of any sort often reveals a large or expensive underlying problem - it can do the opposite as well. Experienced UX designers are good at spotting the small things that, when fixed, would result in a greater benefit compared to the effort.
+Sometimes, we know a problem exists, but assume the fix would be too expensive and complex to do now. While an audit of any sort often reveals a large or expensive underlying problem - it can do the opposite as well. Experienced UX designers are good at spotting the small things that, when fixed, would result in a greater benefit compared to the effort.
  
  ## The UX audit gets at the big picture, _and_ the details.
  
@@ -55,6 +55,6 @@ Sometimes, we know a problem exists, but assume the fix would be  too expensive 
  
 This is what’s going on inside a UX designer’s head when they see anything, even a paper towel sign. We can’t help it – we think in systems, and map out the impact of even the smallest details. 
  
-The hotel did everything right, internally. But they could have prevented the outdated sign by bringing in an outsider to have a fresh look at their experience from time to time. Little details like this contribute to the overall perception of a business. Even small details that seem unimportant from the inside can impact a user’s experience to the point that trust is compromised. Sometimes a UX designer’s job is to make a case for why all the little details make all the difference. The small details _can_ be the big problem a business didn’t know they had.
+The hotel did everything right, internally. But they could have prevented the outdated sign by bringing in an outsider to have a fresh look at their experience from time to time. Little details like this contribute to the overall perception of a business. Even small details that seem unimportant from the inside can impact a user’s experience to the point that trust is compromised. Sometimes a UX designer’s job is to make a case for why the little details make all the difference. The small details _can_ be the big problem a business didn’t know they had.
  
 This is what we do at DockYard. We’d love to talk about how a UX audit or another strategic design engagement would serve your business needs. [Let’s talk.](https://dockyard.com/contact/hire-us)
