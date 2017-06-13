@@ -22,7 +22,7 @@ It looked like the hotel had recently switched to a greener approach throughout 
  
 An outside visitor would likely notice this detail, but I suspect that the hotel staff had become accustomed to seeing the same sign, to the point that it’s now invisible to them. They’d notice if it were missing or askew, but not that it’s no longer accurate.
  
- ## Some things are invisible from the inside
+## Some things are invisible from the inside
  
 As a UX designer I was intrigued by this sign, because it represents an opportunity to improve a system, and this type of opportunity is only visible from the outside. 
  
@@ -31,25 +31,28 @@ Some people call it “sanity check”, others “getting feedback”. When the 
 Here are a few things that make it a useful exercise.
  
 ### There are different levels of stakeholders
+
 Sometimes a UX glitch occurs because a detail has fallen in-between the responsibility areas of different stakeholders. Perhaps, here, one person was responsible for hanging signs, while someone else removed paper products and installed a hand dryer. A manager might be responsible for the look of the hotel overall, but they realistically wouldn’t have the time to check the details (every sentence on that sign). 
  
- ### Things become invisible
+### Things become invisible
+
 The fact that things become invisible when you’re used to them is normal. It does not speak to a low level of attention, or poor quality. It’s just human nature. 
  
 The best way to work with this invisibility is to get fresh eyes on all the parts of the systems you rely on regularly. 
  
- ### Adding features is fun. Removing them is not
+### Adding features is fun. Removing them is not
+
 Our natural response to any problem is to add something to solve it. Get a better tool. Add a process (go shopping, eat ice cream…). But in some situations, it’s like trying to fix an overcrowded storage closet by adding another clever storage container system. At some point, you need to reduce instead of add.
  
 But reducing isn’t always easy or enjoyable short-term. Users might complain when a familiar feature is no longer available. Back in 2014, [37 Signals](https://37signals.com/), a successful software company with several well-loved SAAS products, made a decision to kill all but one of them and become Basecamp. They definitely disappointed _some_ users short-term, when they announced several products will no longer be supported. But by putting all of their energy behind one, they ensured that Basecamp will be a success for years to come.
  
 An outsider is more likely to notice when features or processes are redundant, and the system overall would benefit from removing them. Or, when a detail no longer works with a bigger change in the system, like that paper towel sign.
  
- ### The fix may be a lot of work… or it might be simple!
+### The fix may be a lot of work… or it might be simple!
+
 Sometimes, we know a problem exists, but assume the fix would be too expensive and complex to do now. While an audit of any sort often reveals a large or expensive underlying problem - it can do the opposite as well. Experienced UX designers are good at spotting the small things that, when fixed, would result in a greater benefit compared to the effort.
  
- ## The UX audit gets at the big picture, _and_ the details.
- 
+## The UX audit gets at the big picture, _and_ the details. 
  
  ![Imgur](http://i.imgur.com/ghkA4rW.jpg)
  
