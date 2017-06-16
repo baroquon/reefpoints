@@ -7,7 +7,7 @@ twitter: "martndemus"
 github: martndemus
 summary: "What are the responsibilities of Controllers? Should I still use Controllers? Let's find out!"
 published: true
-tags: tags, separating each, with commas
+tags: Engineering, Ember
 ---
 
 There possibly is a lot of confusion around what Ember's Controllers are good for. I've seen some situations where Controllers have been avoided at all cost, where everything has been delegated to either the corresponding Route or to Components. I've also seen the flip side, where a Controller was used like a Component.
