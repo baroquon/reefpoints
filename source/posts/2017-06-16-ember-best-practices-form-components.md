@@ -125,3 +125,5 @@ And edit like this:
 ## Takeaways
 
 This is a fairly simple example, but thinking about where and how your application manipulates your models, and using components to encapsulate functionality, can save you from making double edits, or forgetting to make changes in one place and not another and introducing a bug.  Your forms might have more complicated actions for save, or different inputs and layouts, but you will save time by [taking the time to do things right](https://xkcd.com/1691/).
+
+Need more complex Ember support? [Here's how to get in touch](https://dockyard.com/contact/hire-us). 
