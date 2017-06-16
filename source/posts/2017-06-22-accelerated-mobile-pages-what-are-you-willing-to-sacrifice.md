@@ -31,7 +31,7 @@ By adopting this trend, content owners will become dependent on Google’s solut
 You’ll need to use AMP HTML, AMP JS, and AMP Cache.
  
 * **Your design.**
-You’ll need to keep your [CSS size under 50K](https://www.ampproject.org/docs/guides/responsive_amp), in somc cases resort to [using iFrames](https://www.ampproject.org/docs/guides/iframes) and [cut out dynamic content](https://www.ampproject.org/learn/about-how/) not supported by the proprietary code. 
+You’ll need to keep your [CSS size under 50K](https://www.ampproject.org/docs/guides/responsive_amp), in somc cases resort to [using iFrames](https://www.ampproject.org/docs/guides/iframes), and [cut out dynamic content](https://www.ampproject.org/learn/about-how/) not supported by the proprietary code. 
  
 * **Your analytics.**
 You’ll need to add AMP analytics in addition to any other analytic code you may be using on your non-AMP pages. Earlier this year, [issues were reported](http://marketingland.com/amp-bug-bad-google-analytics-208217) in tracking unique visits, sessions, bounce rate, and other metrics. [Until recently](http://marketingland.com/amp-bug-bad-google-analytics-208217), the complete user journey from AMP to non-AMP pages was also a mystery, causing incomplete information for site owners. 
