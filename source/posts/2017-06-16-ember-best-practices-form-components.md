@@ -120,7 +120,7 @@ And edit like this:
 {{widget-form model=model save=(action "save")}}
 ```
 
-(They're still identital but you can imagine some different CSS/HTML wrapping them in your create/edit pages.  Also now you can drop a form wherever you need it!)
+(They're still identical but much more DRY, and you can imagine some different CSS/HTML wrapping them in your create/edit pages.  Also now you can drop a form wherever you need it!)
 
 ## Takeaways
 
