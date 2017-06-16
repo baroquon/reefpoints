@@ -54,4 +54,4 @@ module.exports = function(defaults) {
 ## Conclusion
 There you have it. If you followed along with this guide your app should now be installable on the home screen and running a Service Worker that will take care of making your app's assets available offline. Ideas for next steps are making your app's data available offline using LocalStorage and/or IndexedDB, or sending push notifications to your users using the Service Worker's push notification API.
 
-If you need more help, [we'd be happy to do the heavy lifiting](https://dockyard.com/contact/hire-us). 
+If you need more help, [we'd be happy to do the heavy lifting](https://dockyard.com/contact/hire-us). 
