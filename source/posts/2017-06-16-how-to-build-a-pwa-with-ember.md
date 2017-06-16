@@ -20,13 +20,13 @@ Start with installing the [ember-web-app](https://github.com/san650/ember-web-ap
 The ember-web-app addon will use your configuration `manifest.js` to generate a web app manifest and add it to your build. If you now build and deploy your app, then visit it in a browser that supports web app manifest, you can install it to the home screen of that device. It also supports generating meta tags for Safari home screen installs out of the box.
 
 ## Making the app available offline
-To add a Service Worker for offline capability start with [ember-service-worker](http://github.com/dockyard/ember-service-worker), this addon will take care of building and installing a Service Worker script along with your Ember app. 
+To add a Service Worker for offline capability start with [ember-service-worker](http://github.com/dockyard/ember-service-worker). This addon will take care of building and installing a Service Worker script along with your Ember app. 
 
-Next you will need a few of ember-service-worker's plugin addons to add actual functionality. The first one is [ember-service-worker-index](http://github.com/dockyard/ember-service-worker-index), this will take care of making your `index.html` available offline. For most apps this plugin should work out of the box. If it doesn't, you can configure the plugin in your `ember-cli-build.js` file, the options you can configure are documented in the plugin's readme.
+Next you will need a few of ember-service-worker's plugin addons to add actual functionality. The first one is [ember-service-worker-index](http://github.com/dockyard/ember-service-worker-index), which will take care of making your `index.html` available offline. For most apps this plugin should work out of the box. If it doesn't, you can configure the plugin in your `ember-cli-build.js` file, using the options documented in the plugin's readme.
 
-The second plugin you will need is [ember-service-worker-asset-cache](http://github.com/dockyard/ember-service-worker-asset-cache), this will take care of making the files in the `assets` folder of your build available offline. Again, by default you do not need to configure anything, this addon will take care of making your assets available offline. However, if you have a lot of assets you might want to exclude some of the non-essential assets, as this plugin will aggressively try to cache a copy of the asset files when the Service Worker is installed, see the readme of the plugin to see how you can exclude some files.
+The second plugin you will need is [ember-service-worker-asset-cache](http://github.com/dockyard/ember-service-worker-asset-cache), to make the files in the `assets` folder of your build available offline. Again, by default, you do not need to configure anything: this addon will take care of making your assets available offline. However, if you have a lot of assets you might want to exclude some of the non-essential assets, as this plugin will aggressively try to cache a copy of the asset files when the Service Worker is installed. Use the readme of the plugin to see how you can exclude some files.
 
-If you did exclude some assets there is a third plugin you might want to install: [ember-service-worker-cache-first](http://github.com/dockyard/ember-service-worker-cache-first). This plugin will lazily make the configured assets available offline when they are requested.  This plugin does not work out of the box, so you will have to configure it to your app's specifics in `ember-cli-build.js`.
+If you did exclude some assets there is a third plugin you might want to install: [ember-service-worker-cache-first](http://github.com/dockyard/ember-service-worker-cache-first). This plugin will lazily make the configured assets available offline when they are requested. This plugin does not work out of the box, so you will have to configure it to your app's specifics in `ember-cli-build.js`.
 
 To put it all together, here's an example `ember-cli-build.js` file to give you an idea how you can configure your app:
 
@@ -53,3 +53,5 @@ module.exports = function(defaults) {
 
 ## Conclusion
 There you have it. If you followed along with this guide your app should now be installable on the home screen and running a Service Worker that will take care of making your app's assets available offline. Ideas for next steps are making your app's data available offline using LocalStorage and/or IndexedDB, or sending push notifications to your users using the Service Worker's push notification API.
+
+If you need more help, [we'd be happy to do the heavy lifiting](https://dockyard.com/contact/hire-us). 
