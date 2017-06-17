@@ -6,7 +6,7 @@ author: Nico Mihalich
 github: nicomihalich
 summary: "Reduce your Ember CRUD code with form components"
 published: true
-tags: Ember, Best Practices
+tags: Ember, Best Practices, Engineering
 ---
 
 A fair amount of web applications can be boiled down to simple CRUD (Create, Read, Update, Delete).  Thankfully Ember/Ember Data/JSON API make doing this pretty trivial.  Let's fake out a little example of the create template for our fancy new *MyWidgets™* application.
@@ -81,7 +81,7 @@ And edit like this:
 ```handlebars
 {{#widget-form model=model}}
   <button type="submit" {{action "save"}}>
-    Create Widget
+    Update Widget
   </button>
 {{/widget-form}}
 ```
