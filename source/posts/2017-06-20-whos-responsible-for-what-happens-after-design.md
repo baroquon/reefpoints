@@ -25,7 +25,7 @@ My instinct in these situations has been to ask questions. In any client interac
  
 **Example 1:** if I feel the audience for a product is not diverse, and it should be — I can ask how the client feels about target audience, and addressable market. Then, look for opportunity to overlap bigger addressable market through inclusion - rather than preaching inclusion before it’s become an institutional value. 
  
-**Example 2:** if I feel long term impact of a mechanism of user interaction or user selection can be to discriminate, or to harm users, I would ask about the company’s philosophy on how to treat users long term, as well as risk/liability management. If the potential for abusive practices within the tool we’re building does not quite get solved within the “treat users nicely just because” category, I could steer the conversation toward the risk/liability direction and explain the long-term risks. 
+**Example 2:** if I feel long-term impact of a mechanism of user interaction or user selection can be to discriminate, or to harm users, I would ask about the company’s philosophy on how to treat users long-term, as well as risk/liability management. If the potential for abusive practices within the tool we’re building does not quite get solved within the “treat users nicely just because” category, I could steer the conversation toward the risk/liability direction and explain the long-term risks. 
  
 It is a designer’s job to think about what happens after the design job is done, and the product or tool we made is running efficiently. Is it harming anyone? Is it serving the folks who need it most? 
  
