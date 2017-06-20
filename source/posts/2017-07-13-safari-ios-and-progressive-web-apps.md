@@ -10,7 +10,7 @@ published: true
 tags: PWA, Business
 ---
  
-Progressive Web Apps (PWAs) are gaining in popularity due to their ability to send push notifications, add to home screen prompts, and provide offline content, with one build for all devices. Since PWAs focus on the browser and are device agnostic, they allow for seamless adoption by all users, while cutting costs and maintenance for businesses. Outcomes for implementors like MakeMyTrip.com include [triple the conversion rates, 38% improvement in page load times, and 160% increase in sessions](https://developers.google.com/web/showcase/2017/make-my-trip). 
+Progressive Web Apps (PWAs) are gaining in popularity due to their ability to send push notifications, add to home screen prompts, and provide offline content, with one build for all devices. Since PWAs focus on the browser and are device agnostic, they allow for seamless adoption by all users, while cutting costs and maintenance for businesses. Outcomes for implementors like MakeMyTrip.com include [a tripled conversion rate, 38% improvement in page load times, and 160% increase in sessions](https://developers.google.com/web/showcase/2017/make-my-trip). 
  
 A lot of the functionality that PWAs provide is due to the addition of services workers. Currently, Chrome, Opera, Firefox, Samsung internet, and Edge [all support or plan to support, service workers](https://jakearchibald.github.io/isserviceworkerready/). But many still feel unsure about adopting PWAs due to the lack of full-throated support for service workers—and PWAs–from Apple. 
  
