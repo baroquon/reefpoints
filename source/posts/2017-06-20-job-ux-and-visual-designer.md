@@ -46,6 +46,10 @@ Because designers start projects and communicate directly with clients and the r
  
 If this working style interests you, we’d love to hear from you!  Individual applications only, please: we do not work with recruiters and aren’t looking to outsource work.
  
-To apply, email careers (at) dockyard.com with the subject “UX & Visual Designer” and include: your online portfolio, your experience level or resume, why you’re interested in DockYard specifically, and what you hope to do with your career in the next 3 years.
+To apply, **email careers (at) dockyard.com** with the subject “UX & Visual Designer” and include:
+- your portfolio
+- your experience level or resume
+- why you’re interested in DockYard specifically
+- what you hope to do with your career in the next 3 years
  
 Talk soon!
