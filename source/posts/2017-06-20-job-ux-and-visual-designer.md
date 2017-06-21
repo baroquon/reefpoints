@@ -38,7 +38,7 @@ Because designers start projects and communicate directly with clients and the r
 ## Responsibilities
 - Work directly with clients
 - Gather project requirements from various stakeholders
-- Create visual assets to support product discovery: from rough sketches to user flows to wireframes
+- Create visual assets to support product discovery: from rough sketches, to user flows, to wireframes
 - Create polished visual design layouts
 - Collaborate with HTML/CSS engineers to ensure quality and implementability
  
