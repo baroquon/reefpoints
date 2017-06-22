@@ -46,9 +46,9 @@ Now let's build a template for editing an existing widget.
 
 ### Changing requirements
 
-As we're doing this we might realize we forgot to add the description field for our widget! No problem, we just have to add it back to both forms.
+As we're doing this we might realize we forgot to add the description field for our widget. No problem. We just have to add it back to both forms.
 
-... wait a minute both are basically same and we're making the same edits! Maybe we realized this and copy/pasted; but even that should have set off a red flag.
+... wait a minute both are basically the same and we're making the same edits! Maybe we realized this and copy/pasted; but even that should have set off a red flag.
 
 ## Let's make it better
 
@@ -66,7 +66,7 @@ Let's move that template into a component, with one small change.
 </form>
 ```
 
-Since our save buttons are different, we can yield the area where the buttons are and add our different buttons in the create and edit templates.  Now our create form looks like this
+Since our save buttons are different, we can yield the area where the buttons are and add our different buttons in the create and edit templates. Now our create form looks like this:
 
 ```handlebars
 {{#widget-form model=model}}
@@ -120,10 +120,10 @@ And edit like this:
 {{widget-form model=model save=(action "save")}}
 ```
 
-(They're still identical but much more DRY, and you can imagine some different CSS/HTML wrapping them in your create/edit pages.  Also now you can drop a form wherever you need it!)
+(They're still identical but much more DRY, and you can imagine some different CSS/HTML wrapping them in your create/edit pages. Also now you can drop a form wherever you need it!)
 
 ## Takeaways
 
-This is a fairly simple example, but thinking about where and how your application manipulates your models, and using components to encapsulate functionality, can save you from making double edits, or forgetting to make changes in one place and not another and introducing a bug.  Your forms might have more complicated actions for save, or different inputs and layouts, but you will save time by [taking the time to do things right](https://xkcd.com/1691/).
+This is a fairly simple example, but thinking about where and how your application manipulates your models, and using components to encapsulate functionality, can save you from making double edits, or forgetting to make changes in one place and not another and introducing a bug. Your forms might have more complicated actions for save, or different inputs and layouts, but you will save time by [taking the time to do things right](https://xkcd.com/1691/).
 
 Need more complex Ember support? [Here's how to get in touch](https://dockyard.com/contact/hire-us). 
