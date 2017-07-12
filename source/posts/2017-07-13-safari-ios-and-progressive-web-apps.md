@@ -34,4 +34,4 @@ Even without this support, PWAs still work, just not as they were originally env
 
 Indications look positive. Webkit shows that both [service workers](https://webkit.org/status/#specification-service-workers) and [web app manifests](https://webkit.org/status/#specification-web-app-manifest) are ‘under consideration’, with the former given specific mention in the [five year plan](https://webkit.org/status/#specification-web-app-manifest). Speculation is that Apple could be slow to adopt due to their current reliance on apps and the App Store. Why promote technology that may eat into that owned pipeline? With Samsung, Google, and Microsoft currently running with this functionality, Apple may be hedging their bets. And with PWAs meaning an easier, single point of contact with consumers, will apps soon be a thing of the past? 
 
-Curious about how what it would take for your company to upgrade to a Progressive Web App? [Let’s talk](https://dockyard.com/contact/hire-us).
+Curious about what it would take for your company to upgrade to a Progressive Web App? [Let’s talk](https://dockyard.com/contact/hire-us).
