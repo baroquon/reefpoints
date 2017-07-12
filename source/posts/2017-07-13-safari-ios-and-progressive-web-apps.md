@@ -18,7 +18,7 @@ Interested in transitioning to a Progressive Web App but unsure about implementi
 
 ## What about PWAs doesn’t Safari/iOS readily support?
 
-As of today, Safari/iOS do not support service worker and web app manifest. Without these, many forward thinking components of PWAs will not work as intended including push notifications, homescreen installation, and offline mode. 
+As of today, Safari/iOS does not support service workers or web app manifests. Without these, many forward thinking components of PWAs will not work as intended including push notifications, homescreen installation, and offline mode. 
 
 ## Are there any browsers that support PWAs on Apple mobile devices? 
 
