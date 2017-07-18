@@ -11,7 +11,7 @@ tags: Ember, Best Practices, Engineering
 
 A fair amount of web applications can be boiled down to simple CRUD (Create, Read, Update, Delete).  Thankfully Ember/Ember Data/JSON API make doing this pretty trivial.  Let's fake out a little example of the create template for our fancy new *MyWidgets™* application.
 
-```
+```handlebars
 <form>
   <label for="widget-name">Name</label>
   {{one-way-input model.name id="widget-name" update=(action (mut model.name))}}
@@ -30,7 +30,7 @@ Great! We have inputs for name, if it's fancy or not, and a save button.
 
 Now let's build a template for editing an existing widget.
 
-```
+```handlebars
 <form>
   <label for="widget-name">Name</label>
   {{one-way-input model.name id="widget-name" update=(action (mut model.name))}}
