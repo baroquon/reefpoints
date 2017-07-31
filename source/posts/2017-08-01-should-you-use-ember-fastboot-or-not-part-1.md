@@ -10,7 +10,7 @@ published: true
 tags: ember
 ---
  
-<a href="https://www.youtube.com/watch?v=OInJBwS8VDQ&t=41m10s">DockYard.com was one of the world's first production FastBoot enabled applications</a>. We have had signifcant experience building FastBoot enabled websites for our us and our clients. Over the course of that time I have developed "opinions" on when apps should use FastBoot and if there is actual to implement it.
+<a href="https://www.youtube.com/watch?v=OInJBwS8VDQ&t=41m10s">DockYard.com was one of the world's first production FastBoot enabled applications</a>. We have had signifcant experience building FastBoot enabled websites for us and our clients. Over the course of that time I have developed "opinions" on when apps should use FastBoot and if the costs are too high to implement it.
 
 Let's start with agreeing on what FastBoot gets you: Server Side Rendering (SSR). The value of SSR to your company depends upon what your revenue model is. More likely than not this value is going to be tied to your SEO score. Ensuring that your app can be crawled by the most popular search engines is very important to many businesses. FastBoot will also help improve the <a href="https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint">First Meaningful Paint</a> on your app. This has a direct impact upon Page Rank, Conversion Rate, Bounce Rate. In other words, the faster your content is available to your visitors improved the quality of their visit.
 
