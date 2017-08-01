@@ -22,17 +22,17 @@ Now, one pull request from the server can include multiple files with HTTP2. Hav
 The bird's eye view description of this method is that we include every SVG on our app inline. This is done with the plugin [Ember SVGJar](https://www.npmjs.com/package/ember-svg-jar).  This, in a sense, gives you an icon font set, but purely done with SVG.
 
 There are some upfront advantages of having individual inline SVG files with SVGJar that should be outlined:
-- SVG assets used with CSS background property
-- SVG assets are included inline so you have full creative control over the SVG with CSS styling
-- Most performant way of including optimized SVG’s on a page
+* SVG assets used with CSS background property
+* SVG assets are included inline so you have full creative control over the SVG with CSS styling
+* Most performant way of including optimized SVGs on a page
 
 You can read up on how the plugin works in detail, but we still organize our SVG assets in an asset folder that is linked to SVGJar. The plugin will then take those SVG assets and inject them into the page where you include the handlebar helper.
 ```
 {{svg-jar "asset-name"}}
 ```
 
-The result is that the Ember app sees what SVG’s are needed and, thanks to SVGJar, pulls the asset from the asset folder, injecting the SVG code directly into the HTML before it gets sent to the server and then browser.
+The result is that the Ember app sees what SVGs are needed and, thanks to SVGJar, pulls the asset from the asset folder, injecting the SVG code directly into the HTML before it gets sent to the server and then browser.
 
-Simple and customizable inline SVG’s make for a great environment for SVG creativity and gets out of the way of the PWA. What more could you ask for?
+Simple and customizable inline SVGs make for a great environment for SVG creativity and gets out of the way of the PWA. What more could you ask for?
 
 Want to talk more about PWAs? [Drop us a line](https://dockyard.com/contact/hire-us).
