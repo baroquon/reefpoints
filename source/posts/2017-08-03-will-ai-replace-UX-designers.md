@@ -36,7 +36,7 @@ As a consultancy, we work with people who approach us and have a problem. Mostly
 
 **What HAL does**: HAL scours the digital world, accumulating all related matter that is of most value to the project. This happens instantly.
 
-One thing I often have to do, is sign up for a service to access the product. Would AI be able to do this - taking action on a confirmation email, etc? In that case would AI have their own email? (OH GOD, EXISTENTIAL CRISIS CLOSING IN).
+One thing I often have to do, is sign up for a service to access the product. Would AI be able to do this - taking action on a confirmation email, etc? In that case would AI have their own email? (EXISTENTIAL CRISIS CLOSING IN).
 
 ![Imgur](http://i.imgur.com/KBYscMT.jpg)
 
