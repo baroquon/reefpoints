@@ -12,7 +12,7 @@ tags: elixir, phoenix, authorization
 
 With the recent [Phoenix 1.3 release](http://phoenixframework.org/blog/phoenix-1-3-0-released), Phoenix introduced *Contexts*, which are dedicated modules that expose and group related functionality. One frequent question that has come up is where to handle authorization for domain operations. Should authorization be handled in the Web layer at the controller, or within the context? Both are valid approaches, so let's find out which approach is better and when.
 
-There are are a few things to consider when determining where to handle authorization. Decoupling authorization from the contexts can allow you to apply different business rules on a case-by-case basis for underlying domain operations, but in some cases, enforcing a business rule in a single place, uniformly, is more desirable.
+There are a few things to consider when determining where to handle authorization. Decoupling authorization from the contexts can allow you to apply different business rules on a case-by-case basis for underlying domain operations, but in some cases, enforcing a business rule in a single place, uniformly, is more desirable.
 
 Let's walk through a couple scenarios with code. Imagine the `CMS` system from the [phoenix context guide](https://hexdocs.pm/phoenix/contexts.html). In this system, we have `Accounts.User`'s and `CMS.Author`'s, and we chose to authorize CMS page updates in the controller before allowing `CMS.update_page/2` to be called:
 
