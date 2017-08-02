@@ -137,7 +137,7 @@ BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
        (v)ersion (k)ill (D)b-tables (d)istribution
 ```
 
-Normally, I will `ctrl + c` twice to exit `iex` and create a new one. However, sometimes you've already typed in a bunch of commands in it, and you definitely want to keep the session. Here is what you can do: `#iex:break`
+Normally, I will `ctrl + c` twice to exit `iex` and create a new one. However, sometimes you've already typed in a bunch of commands, and you definitely want to keep the session. Here is what you can do: `#iex:break`
 
 ```
 iex(2)> a = 1 + 1
