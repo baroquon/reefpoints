@@ -6,7 +6,7 @@ author: "Daniel Xu"
 twitter: "Daniel_Xu_For"
 github: "Daniel-Xu"
 published: true
-tags: Elixir
+tags: Elixir, Engineering
 ---
 
 ## alias `__MODULE__`
@@ -42,8 +42,7 @@ alias __MODULE__, as: SomeOtherName
 
 ## defstruct with @enforce_keys
 
-whenever you want to model your data with `maps`, you should also consider `struct` because `struct` is a `tagged map` which offers compile time checks on the key and allows us to do
-run-time checks on the struct's type, for example:
+Whenever you want to model your data with `maps`, you should also consider `struct` because `struct` is a `tagged map` which offers compile time checks on the key and allows us to do run-time checks on the struct's type, for example:
 
 you can't create a struct with field that is not defined. In the following example you can also see how we apply the first trick we just learned.
 
@@ -64,7 +63,7 @@ iex> IO.inspect Fun.Game.new()
 iex> ** (KeyError) key :step not found in: %{__struct__: Fun.Game, status: :init, time: nil}
 ```
 
-However, sometime you wanna ensure that some fields are present whenever you create a new struct. Fortunately, Elixir provides  `@enforce_keys` module attribute for that:
+However, sometimes you want to ensure that some fields are present whenever you create a new struct. Fortunately, Elixir provides  `@enforce_keys` module attribute for that:
 
 ```elixir
 defmodule Fun.Game do
@@ -98,7 +97,7 @@ iex> %Fun.Game{status: :won, time: nil}
 
 ## `v()` function in `iex`
 
-Whenever I wrote a `GenServer` module, I usually want to start the server and check the result in `iex`.
+Whenever I write a `GenServer` module, I usually want to start the server and check the result in `iex`.
 One thing that really bothers me is that I almost always forget to pattern match the process pid, like this:
 
 ```elixir
@@ -127,7 +126,7 @@ This trick saves me couple of seconds every time I use it, I hope that you will 
 
 ## cancel bad command in `iex`
 
-Have you ever had this kinda moment when you use `iex`:
+Have you ever had this kind of moment when you use `iex`:
 
 ```elixir
 iex(1)> a = 1 + 1'
@@ -155,7 +154,7 @@ From the code block above, you can see that we still have the session after canc
 
 ## bind value to an optional variable
 
-I'm sure most of people knew that you can bind a value to an optional variable like this:
+I'm sure most of people know that you can bind a value to an optional variable like this:
 
 ```elixir
 _dont_care = 1
@@ -173,4 +172,4 @@ defp accept_move(game, guess, _not_used) do
 end
 ```
 
-Thanks for reading this post and always share your Elixir tricks to the community.
+Thanks for reading this post and always share your Elixir tricks with the community.
