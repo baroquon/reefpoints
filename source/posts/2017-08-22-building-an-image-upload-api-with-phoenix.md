@@ -118,7 +118,7 @@ end
 
 ## Designing the Controller
 
-Create a new controller responsible for images. We simply need to call our module that we previously made
+Create a new controller responsible for images. We simply need to call our module that we previously made.
 
 ```elixir
 defmodule MyApp.ImageController do
