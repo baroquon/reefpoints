@@ -10,6 +10,8 @@ published: true
 tags: ember
 ---
 
+### TTFB
+
 <a href="https://en.wikipedia.org/wiki/Time_To_First_Byte">Time To First Byte</a>. If you are unfamiliar with this term, it is simply how long does it take the server to start respondnig back with the first byte of the request. With certain advances in technology like HTTP/2 TTFB has become less of an issue because you can load all of your assets in parallel.  With HTTP/1.1 you had to wait for each asset to finsh being received before requesting the next. As you can imagine, the longer it takes to even start receiving your asset, let alone the time it takes to get the entire asset, can really accumulate.
 
 TTFB becomes an issue for any FastBoot enabled web app because the `index.html` that it serves has all of the rules on what to download next. The browser cannot download in parallel assets it hasn't yet been instructed to fetch. So while the actual transfer time of the given `index.html` files from FastBoot may be trivial, especially when gzipped, the latency to start receiving the file can really add to the overall impression of how performant your application is. Let's look into why this is, how much latency FastBoot adds, and some strategies around this.
