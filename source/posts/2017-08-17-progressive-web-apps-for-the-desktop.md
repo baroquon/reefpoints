@@ -10,7 +10,7 @@ published: true
 tags: PWA, Business, UX
 ---
 
-![Imgur](http://i.imgur.com/VSaFGGU.png)
+!Imgur](http://i.imgur.com/VSaFGGU.png)
 
 Everything we do and create on our computers seems to benefit from the web. Actually, check that, everything except the majority of desktop applications. Go ahead, peruse your Applications/Programs directory on your computer and think about which ones have a web browser built-in, I’ll wait. And, aside from messaging or email applications, which ones actually authenticate you/themselves in any secure way? Or ever? 
 
