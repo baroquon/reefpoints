@@ -10,7 +10,7 @@ published: true
 tags: PWA, Business
 ---
 
-![Imgur](http://i.imgur.com/yeiuw3h.jpg)
+![Imgur](https://i.imgur.com/yeiuw3h.jpg)
 
 There may be nothing scarier than working in a vertical with a shrinking market, high price tag, scrutinized value, and massive competition. Higher education in the US is a sector that has seen all of these challenges over the past five years, the hardest of which could be yet to come with the [shortage of traditionally aged students and the recent changes to immigration policies](https://www.nytimes.com/2017/06/07/education/higher-education-seeks-answers-to-leaner-years.html). 
 
