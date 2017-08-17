@@ -10,7 +10,7 @@ published: true
 tags: Design
 ---
 
-![Imgur](http://i.imgur.com/aJ3lbmV.jpg)
+![Imgur](https://i.imgur.com/aJ3lbmV.jpg)
 
 There has been a ton of news recently about artificial intelligence (AI). And a lot of the conversations, at least the ones that garner attention, often focus on the idea that this movement will negatively impact human beings - about how the robots will take over all of our jobs; that humans will become irrelevant, sentenced to a life of serving the machines; that we are ultimately creating the next evolutionary superior being.
 
@@ -20,7 +20,7 @@ I'm a designer. I focus on user experience and interface design. Recently I've b
 
 As a consultancy, we work with people who approach us and have a problem. Mostly, I think it can be distilled down into two different types of projects. One is where a company already has a product and they want improvements and additions on existing design. The other would be a company who has an idea and wants us to help create it. In either case, business development will do their thing and create contracts, agreements, etc. Design gets on board during the initial kickoff meeting, after the deal is made and agreements are reached. So, for the sake of this post, that's where I'll start.  
 
-![Imgur](http://i.imgur.com/mc6UWWa.jpg)
+![Imgur](https://i.imgur.com/mc6UWWa.jpg)
 
 ## Kickoff Meeting
 
@@ -28,7 +28,7 @@ As a consultancy, we work with people who approach us and have a problem. Mostly
 
 **What HAL does**: As long as all documentation is available in a digital platform, HAL is able to digest this information instantly. HAL can listen to the conversation, interjecting where necessary. HAL keeps things on schedule and on topic, making sure that the correct conversations (goals, stakeholders, user groups, platform, etc.) happen. HAL can ask questions, pivoting the conversation and moving it in ways that help yield a better product. HAL doesn't need bathroom breaks, but understands that some people might, and allows time for that.
 
-![Imgur](http://i.imgur.com/MNMTTMw.jpg)
+![Imgur](https://i.imgur.com/MNMTTMw.jpg)
 
 ## Researching
 
@@ -38,7 +38,7 @@ As a consultancy, we work with people who approach us and have a problem. Mostly
 
 One thing I often have to do, is sign up for a service to access the product. Would AI be able to do this - taking action on a confirmation email, etc.? In that case would AI have their own email? (EXISTENTIAL CRISIS CLOSING IN).
 
-![Imgur](http://i.imgur.com/KBYscMT.jpg)
+![Imgur](https://i.imgur.com/KBYscMT.jpg)
 
 ## Identifying Users & Creating Flows
 
@@ -46,7 +46,7 @@ One thing I often have to do, is sign up for a service to access the product. Wo
 
 **What HAL does**: HAL understands the goal of the app and knows the parameters with which to abide in order to achieve that goal. From research & client feedback, HAL creates a list of user types - outlining all conceivable routes for those users while focusing on business goals and desired features.
 
-![Imgur](http://i.imgur.com/64Ys6yb.jpg)
+![Imgur](https://i.imgur.com/64Ys6yb.jpg)
 
 ## Sketching & Wireframing
 
@@ -56,7 +56,7 @@ One thing I often have to do, is sign up for a service to access the product. Wo
 
 (Side note - Does time between phases make something feel more substantial - does a longer wait imply better work?) 
 
-![Imgur](http://i.imgur.com/x7Jk7MK.jpg)
+![Imgur](https://i.imgur.com/x7Jk7MK.jpg)
 
 ## Styling
 
@@ -64,7 +64,7 @@ One thing I often have to do, is sign up for a service to access the product. Wo
 
 **What HAL does**: HAL references every digital product ever created, identifying trends that are popular in particular industries. HAL then presents options, highlighting decisions made (I chose this color because it corresponds to this percent of the industry, other similar products identify user groups who respond to this layout, etc.).
 
-![Imgur](http://i.imgur.com/cAzBRj4.jpg)
+![Imgur](https://i.imgur.com/cAzBRj4.jpg)
 
 ## Testing
 
