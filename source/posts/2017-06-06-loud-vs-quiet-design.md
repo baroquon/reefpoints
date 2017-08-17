@@ -12,11 +12,11 @@ tags: Design, Business
 
 Designers are pretty specific about what kind of notebook to use - and I’m no exception. There are a few I consistently like, and find practical. There are (many) others, that I find unusable. If a bookshop only has wrapped notebooks to pick from, I don’t buy one, or go with a known trusted brand, because I don’t want to be left  with a pretty but useless thing. 
 
-![Imgur](http://i.imgur.com/hus04WV.jpg)
+![Imgur](https://i.imgur.com/hus04WV.jpg)
 
 The single most important quality I look for in a notebook is contrast. For example, this notebook is a beautiful object - wrapped in cloth, and well-constructed. But because I couldn’t open it to check the pages, I didn’t even consider buying it as a notebook. A beautiful souvenir - yes, maybe. But never as a tool to get things done. I’m afraid it’s too high-contrast inside to offset the red edged pages. 
 
-![Imgur](http://i.imgur.com/Fj30xzS.jpg)
+![Imgur](https://i.imgur.com/Fj30xzS.jpg)
 
 ## The quiet design of my favorite notebooks
 
@@ -24,7 +24,7 @@ For me, a high-contrast notebook is useless. My personal favorites are the Moles
 
 The way these notebooks work for me is – **they get out of the way** and let me do the important thing: to write and to sketch. They’re not attracting attention to themselves. The Muji brand itself is built around “modesty and plainness” on purpose, because this way it can unobtrusively belong to many people’s lives. (That’s probably why designers love it!)
 
-![Imgur](http://i.imgur.com/d41XMzf.jpg)
+![Imgur](https://i.imgur.com/d41XMzf.jpg)
 
 Because of a “quiet” approach to design, the notebook is a great tool. It allows me as a user to focus on the task at hand. It’s flexible: I can complete several types of tasks (drawing, sketching, paper-airplane-making) using the same notebook. 
 
@@ -38,7 +38,7 @@ Of course, not all interfaces need to be low-key: we can take the opportunity to
 
 Quiet (calm) interfaces in visual, sound, or touch form are the subject of an insightful book by [Amber Case](http://caseorganic.com): *[Calm Technology](https://books.google.com/books/about/Calm_Technology.html?id=Mp88CwAAQBAJ&printsec=frontcover&source=kp_read_button#v=onepage&q&f=false)*. I read it last year, and will recommend it to anyone making large-scale decisions about UX design systems. Amber emphasizes that most technology use cases should be accomplished with the [minimum amount of attention](https://www.calmtech.com/) necessary to do the job, and even work on the periphery of our attention, rather than trying to be at the center of it. 
 
-![Imgur](http://i.imgur.com/Rboh4pD.jpg)
+![Imgur](https://i.imgur.com/Rboh4pD.jpg)
 
 ## Problem is, quiet design can be too quiet for its own good.
 
