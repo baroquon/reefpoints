@@ -12,7 +12,7 @@ tags: Design, Design Process, Best Practices, Business, Design Thinking, User Ex
 
  Earlier this spring, I was at a hotel in New York City and (as I often do) noticed a funny UX detail in the washroom. 
  
-![Imgur](http://i.imgur.com/6g1bRM8.jpg)
+![Imgur](https://i.imgur.com/6g1bRM8.jpg)
  
 The sign by itself looks correct. Sure, it could use an update for typography and clarity, but it makes sense for a hotel sign. It reminds people to wash their hands, and place the paper towels in a wastebasket. 
  
@@ -54,7 +54,7 @@ Sometimes, we know a problem exists, but assume the fix would be too expensive a
  
 ## The UX audit gets at the big picture, _and_ the details. 
  
- ![Imgur](http://i.imgur.com/ghkA4rW.jpg)
+ ![Imgur](https://i.imgur.com/ghkA4rW.jpg)
  
 This is what’s going on inside a UX designer’s head when they see anything, even a paper towel sign. We can’t help it – we think in systems, and map out the impact of even the smallest details. 
  
