@@ -12,7 +12,7 @@ tags: PWA, Progressive Web Apps, Business
 
 The speed of content delivery via mobile matters more every day. Competition extends beyond search engine results, to landing pages, and even deeper page engagement and conversions. Some would have you think speed is something that only an external force can fix. Facebook’s Instant Articles. Apple’s News format. Google’s AMP project. But what would you be willing to sacrifice to gain speed by implementing them?
  
-![Imgur](http://i.imgur.com/vP6xYKB.png)
+![Imgur](https://i.imgur.com/vP6xYKB.png)
  
 ## The allure of AMP.
  
