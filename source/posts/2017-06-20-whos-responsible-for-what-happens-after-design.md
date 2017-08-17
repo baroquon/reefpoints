@@ -10,7 +10,7 @@ published: true
 tags: Design, Design Process, Best Practices, Business, Design Thinking
 ---
 
-![Imgur](http://i.imgur.com/kOOUY8H.jpg)
+![Imgur](https://i.imgur.com/kOOUY8H.jpg)
 _Original photo by [Julia Caesar](https://unsplash.com/photos/asct7UP3YDE)_
  
 Designers are naturally positioned to think about the long-term impact of a product or tool. We focus on users and think of ethics and impact on the world outside of the immediate business problem.
