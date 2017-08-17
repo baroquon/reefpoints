@@ -10,7 +10,7 @@ published: true
 Tags: PWA, Business
 ---
 
-![Imgur](http://i.imgur.com/ypoKyKZ.png)
+![Imgur](https://i.imgur.com/ypoKyKZ.png)
 Mobile device users access the web several times a day. That’s not a startling fact. But what may be more so (and a change we can readily see coming) is that the number of people going online only using a mobile device is steadily increasing, [up 11% from last year](https://www.emarketer.com/Report/US-Digital-Users-eMarketer-Forecast-2017/2001987) 
 
 With this in mind, businesses need to be able to reach potential and current customers via mobile, and with a decent user experience, knowing that [half of all users abandon a site if it doesn't load in under 3 seconds](https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/). 
