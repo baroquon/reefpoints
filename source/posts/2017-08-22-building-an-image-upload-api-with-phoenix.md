@@ -10,6 +10,8 @@ published: true
 tags: engineering, elixir, phoenix
 ---
 
+![File Upload with Phoenix Logo in the background](https://i.imgur.com/xKrSHaM.png)
+
 For many API applications, there comes a time when the application needs to save images uploaded to the server either locally or on a CDN. Luckily for us, Elixir and Phoenix provide the tools we need to build a simple image upload API.
 
 ## The Simple API
