@@ -1,5 +1,0 @@
-.l-wrap--blog__filter
-  %strong.filter__header= "#{pluralize(blog.articles.select { |article| article.author == authorname }.size, 'post')} by #{authorname}"
-
-
-  = partial 'articles', :locals => { :articles => page_articles }
