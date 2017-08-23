@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "One and done: PWAs instead of apps, mobile sites, and responsive design"
+title: "One and done: PWAs instead of mobile apps, mobile sites, and responsive design"
 social: true
 author: Jessica Krywosa
 twitter: "@jesskry"
 github:
-summary: "Implementing and maintaining several properties and apps means longer development, more maintenance, and most importantly, user experience problems."
+summary: "Implementing and maintaining several properties and apps means longer development, more maintenance, and most importantly, differing user experiences."
 published: true
 Tags: PWA, Business
 ---
