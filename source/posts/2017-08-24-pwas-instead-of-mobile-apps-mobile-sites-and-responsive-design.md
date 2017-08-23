@@ -30,5 +30,3 @@ Unlike mobile apps, however, responsive sites are discoverable via search so you
 
 ## Progressive Web Apps
 Instead of having multiple properties, builds, and re-engagement campaigns, one Progressive Web App (PWA) can solve for all of these issues and provide even greater rewards. A PWA even provides enhanced functionality on mobile devices (auto form complete, camera use, etc.) making it easier for users to complete actions. Offline mode and a lighter, faster site mean using less data and ease of use for those in low or no connectivity areas. Push notifications mean easier ways to get timely information to users without email. Because of the increase in speed they bring, PWAs can also support higher search engine rankings. All of this in one platform with no need to build for iOS or Android separately.
-
-Curious about how you can transform your business by upgrading to a PWA? [Get in touch!](https://dockyard.com/contact/hire-us)
