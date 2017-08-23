@@ -10,9 +10,10 @@ tags: Design, Design Process, Design Thinking
 
 We live in an increasingly complex world. Your business doesn’t exist in a vacuum, and there’s so much to keep track of. When you have a problem that needs solving, it’s often hard to define what that problem is, who’s having it, and what the solution might look like. Everyone seems to have a different opinion. And just when you think you’re making progress trying to understand things, something changes. Or everything changes. No wonder folks become overloaded and frustrated&thinsp;&mdash;&thinsp;what a mess! 
 
-###Complex, dynamic systems often exist beyond understanding by any individual.
+### Complex, dynamic systems often exist beyond understanding by any individual.
 ![Aircraft Carrier](https://i.imgur.com/9X2i99sl.png)
-</br>Image Credit: [Telegraph](http://www.telegraph.co.uk/finance/newsbysector/industry/defence/10723462/HMS-Queen-Elizabeth-Britains-new-aircraft-carrier-in-detail.html)
+
+Image Credit: [Telegraph](http://www.telegraph.co.uk/finance/newsbysector/industry/defence/10723462/HMS-Queen-Elizabeth-Britains-new-aircraft-carrier-in-detail.html)
 
 No one person on an aircraft carrier understands all of the complex systems on board&thinsp;&mdash;&thinsp;not even the captain. And yet, that ship is able to function as it does due to a network of common understandings and cooperation. Design Thinking is a set of tools and methods we can deploy to make sense of the jumble before solving problems. The goal isn’t to simplify what’s inherently complex, but rather to embrace that complexity through better, shared understanding. 
 
@@ -26,9 +27,10 @@ We couldn’t possibly begin to redesign it without trying to make sense of it f
 
 First, we’d gain some level of shared understanding of the present system. Like that aircraft carrier, it seems like not one person understands the whole system. We’d talk to the product owners, engineers, support team, and existing users. We’d also make our own way around the app. Along the way, we’d create and validate mental models and sketches. 
 
-###The goal is orientation, not complete understanding.
+### The goal is orientation, not complete understanding.
 ![Neighborhood Map and Street Map comparison](https://i.imgur.com/ioyW0XI.jpg)
-</br>Image Credits: [Boston Discovery Guide](http://www.boston-discovery-guide.com/boston-neighborhoods.html), [Wikipedia](https://en.wikipedia.org/wiki/Template:Location_map_Boston)
+
+Image Credits: [Boston Discovery Guide](http://www.boston-discovery-guide.com/boston-neighborhoods.html), [Wikipedia](https://en.wikipedia.org/wiki/Template:Location_map_Boston)
 
 Second, we’d look toward the future. We’d talk to the business stakeholders, to gain their understanding of the problem we’re trying to solve, and for whom it is a problem. Do they all agree? We’d also examine the external contexts that the system will exist in: user, industry, and technology.
 

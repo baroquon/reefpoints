@@ -5,15 +5,15 @@ require 'active_support/inflector'
 
 Dir['./lib/*'].each { |f| require f }
 
-activate :blog do |blog|
-  blog.permalink = ":year/:month/:day/:title.html"
-  blog.sources = "posts/:year-:month-:day-:title.html"
-  blog.paginate = true
-  blog.tag_template = 'category.html'
-  blog.taglink = 'categories/:tag.html'
-  blog.author_template = 'author.html'
-  blog.authorlink = 'authors/:author.html'
-end
+# activate :blog do |blog|
+#   blog.permalink = ":year/:month/:day/:title.html"
+#   blog.sources = "posts/:year-:month-:day-:title.html"
+#   blog.paginate = true
+#   blog.tag_template = 'category.html'
+#   blog.taglink = 'categories/:tag.html'
+#   blog.author_template = 'author.html'
+#   blog.authorlink = 'authors/:author.html'
+# end
 
 class Utils
   def self.normalize_tag(tag)
@@ -47,6 +47,11 @@ module Middleman::Blog::BlogArticle
       article_tags = Array.wrap(article_tags)
     end
     Array.wrap(data['legacy_category']) + article_tags
+  end
+
+  def image
+    byebug
+    nil
   end
 
   def normalize_tag(tag)
@@ -98,7 +103,11 @@ helpers do
         emberEndVersion: article.ember_end_version,
         tags: article.tags.map { |tag| Utils.normalize_tag(tag).parameterize },
         shallow: article.shallow?,
-        date: article.date
+        date: article.date,
+        image: {
+          url: article.image[:url],
+          alt: article.image[:alt]
+        }
       }
     end
 
@@ -144,19 +153,8 @@ end
 
 set :markdown_engine, :redcarpet
 set :markdown, :tables => true, :layout_engine => :erb, :fenced_code_blocks => true, :lax_html_blocks => true, :renderer => ::Highlighter::HighlightedHTML.new
-activate :highlighter
-activate :author_pages
-activate :legacy_category
-activate :asset_hash, ignore: /images/
-ignore 'author.html.haml'
-page 'sitemap.xml', layout: false
-page 'new_sitemap.xml', layout: false
-page 'atom.xml', layout: false
-page 'new_atom.xml', layout: false
-page 'mailchimp.xml', layout: false
-page 'posts.json', layout: false
-
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
-set :haml, remove_whitespace: true
+# activate :highlighter
+# activate :author_pages
+# activate :legacy_category
+# activate :asset_hash, ignore: /images/
+# page 'posts.json', layout: false
