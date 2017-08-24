@@ -11,7 +11,6 @@ tags: PWA, Business, UX
 ---
 
 ![Imgur](https://i.imgur.com/TFvWnQQ.jpg)
-_[Source](https://c1.staticflickr.com/8/7024/6771773959_65f59ab751_b.jpg)_
 
 Hi, 
 
