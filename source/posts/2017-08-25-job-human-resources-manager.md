@@ -10,6 +10,8 @@ published: true
 tags: Job
 ---
 
+![Imgur](https://i.imgur.com/ec1DkJP.jpg)
+
 We are pleased to announce DockYard’s continued investment in our Employee Experience by seeking the unique person who can make a good thing even better! Our people are our most critical asset and ensuring we can sustain a commitment to them while we grow our company requires full-time attention. Up for the challenge?
 
 DockYard, a web application design and development consultancy, is seeking an HR Manager to join our growing team!  
