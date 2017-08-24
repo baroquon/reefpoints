@@ -19,7 +19,9 @@ especially around debugging. One of the subtle features is a new
 file/line of the provided module and function. For example, if you run
 the following in iex:
 
-    iex> open URI.decode_query     
+```console
+iex> open URI.decode_query
+```
     
 Elixir will open the URI module source code in your editor, at the
 line where `decode_query` is defined. This works for both your library
