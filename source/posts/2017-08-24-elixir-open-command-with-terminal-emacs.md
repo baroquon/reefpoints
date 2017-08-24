@@ -10,7 +10,7 @@ published: true
 tags: elixir, emacs, engineering
 ---
 
-![preview](https://i.imgur.com/BaH34ed.gif)
+![preview](https://i.imgur.com/ZoOHvvc.png)
 
 Elixir 1.5 includes
 some [excellent new features](https://elixir-lang.org/blog/2017/07/25/elixir-v1-5-0-released/),
