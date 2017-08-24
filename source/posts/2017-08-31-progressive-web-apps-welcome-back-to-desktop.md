@@ -5,12 +5,12 @@ social: true
 author: Matt Ludwig
 twitter: "@migdesigner"
 github:
-summary: "XXX"
+summary: "Desktop software should have push notifications, and PWA’s are the way to do it."
 published: true
 tags: PWA, Business, UX
 ---
 
-IMAGE
+![Imgur](https://i.imgur.com/TFvWnQQ.jpg)
 
 Hi, 
 
