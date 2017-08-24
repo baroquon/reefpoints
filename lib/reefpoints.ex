@@ -11,7 +11,7 @@ defmodule Reefpoints do
         post = %{
           "id" => slugify_post([year, month, day], slug_title),
           "title" => yaml["title"],
-          "employee" => yaml["author"],
+          "employee" => parameterize(yaml["author"]),
           "summary" => yaml["summary"],
           "legacy" => false,
           "date" => date,
@@ -93,6 +93,7 @@ defmodule Reefpoints do
       tag when tag in ~w(backbone.js backbone) -> "backbone"
       tag -> tag
     end
+    |> parameterize()
   end
 
   defp slugify_post(date, slug_title) do
@@ -104,6 +105,6 @@ defmodule Reefpoints do
   defp parameterize(name) do
     name 
     |> String.downcase()
-    |> String.replace(" ", "-")
+    |> String.replace(~r/\s+/, "-")
   end
 end
