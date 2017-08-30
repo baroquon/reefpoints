@@ -115,8 +115,10 @@ project name when it launches. Add the following to your
 
 ```elisp
 (setq server-name (replace-regexp-in-string "\n$" ""
-    (shell-command-to-string "current_project_name")))	
-(server-start)
+                    (shell-command-to-string "current_project_name")))
+(unless (server-running-p (symbol-value 'server-name))
+  (server-start)
+)
 ```
 
 We have Emacs shell out to our `current_project_name` script, then set
