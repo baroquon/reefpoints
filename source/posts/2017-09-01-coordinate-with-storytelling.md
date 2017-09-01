@@ -10,6 +10,8 @@ published: true
 Tags: Design
 ---
 
+![Imgur](http://i.imgur.com/Qmo74RD.jpg)
+
 I forget that many people dread conferences. So I was surprised to hear “oh that’s too bad” when I mentioned to a cafe stranger that I was in LA for one. Lucky for me, it was a digital design conference, [Awwwards conf](https://conference.awwwards.com/). Filled with intricate stonework illuminated by red and violet light, the Ace Hotel theater alone was inspiring. Throughout the two-day set of talks ranging from inspirational to technical, a common theme was hard to miss. Regardless of where technology takes us, storytelling will always be at the heart of digital design. In a world where the average attention span is shrinking, storytelling still captivates and sticks with an audience. 
 
 ## [storytelling] As a process
@@ -20,9 +22,9 @@ When I started my career a few years ago, I took an internship at a production c
 
 In digital design, we need to make sure the story being told isn’t an afterthought. Unlike a production company, a product might not explicitly tell a story, at least not in the traditional sense. Our work is often defined in terms of product features and user interactions. But that doesn’t diminish the unifying potential of a storytelling approach. We’d be missing out if we didn’t pay attention to the stories we tell.
 
-Before putting any pixels on the screen, a project starts with discovery. Discovery reveals any existing needs, and sets the foundation for a designer’s exploration. Using research from discovery, stories help us capture and sell an idea. It’s important to frame our approach and clarify concepts to get everyone on the same page. We do user interviews to uncover meaning, how something fits into or enhances a life. 
+Before putting any pixels on the screen, a project starts with discovery. Discovery reveals any existing needs and sets the foundation for a designer’s exploration. Using research from discovery, stories help us capture and sell an idea. It’s important to frame our approach and clarify concepts to get everyone on the same page. We do user interviews to uncover meaning, how something fits into or enhances a life. 
 
-Even if a client comes in with a well defined list of features they see a need for, it is important to validate them. Storytelling can contextualize the experience of using any feature, and help confirm whether it is necessary for the user. Presenting a compelling story will help the rest of the team, as well as the client, to get on board with removing or keeping specific features. A designer simply saying “I’m not designing that feature” without further explanation holds far less merit. 
+Even if a client comes in with a well-defined list of features they see a need for, it is important to validate them. Storytelling can contextualize the experience of using any feature, and help confirm whether it is necessary for the user. Presenting a compelling story will help the rest of the team, as well as the client, to get on board with removing or keeping specific features. A designer simply saying “I’m not designing that feature” without further explanation holds far less merit. 
 
 ## [storytelling] As a product
 
@@ -30,7 +32,9 @@ In product design, storytelling is less about selling something, and more about 
 
 Layout, type, color, hierarchy, language all contribute to the feeling a person gets when they use your product. This experience needs to be clearly defined early on in your workflow. Cindy Chastain defines this as an [“experience theme”](http://boxesandarrows.com/experience-themes/). Every product leaves the user with an emotional experience. Even something as simple as a word processor emits a certain feel. The layout of google docs says “I’m here to do business, and you can trust me” while something like Dropbox’s paper is all “be free and fly where the wind takes you”. 
 
-!IMAGE NEEDED!
+![Imgur](http://i.imgur.com/N6qZWn2.jpg) 
+
+![Imgur](http://i.imgur.com/AY9DCTg.jpg)
 
 Before designing the features, structure, and style of these two products, this emotion had to be defined upfront. For me, an experience theme is also useful for contextualizing my design decisions to a client. 
 	
