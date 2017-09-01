@@ -10,7 +10,7 @@ published: true
 Tags: PWA, Business
 ---
 
-![Imgur](https://i.imgur.com/vNJKMtJ.jpg)
+![Imgur](https://i.imgur.com/aObTM19.jpg)
 Mobile device users access the web several times a day. That’s not a startling fact. But what may be more so (and a change we can readily see coming) is that the number of people going online only using a mobile device is steadily increasing, [up 11% from last year](https://www.emarketer.com/Report/US-Digital-Users-eMarketer-Forecast-2017/2001987). 
 
 With this in mind, businesses need to be able to reach potential and current customers via mobile, and with a decent user experience, knowing that [half of all users abandon a site if it doesn't load in under 3 seconds](https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/). 
@@ -29,6 +29,10 @@ It’s great to be able to design a website that prioritizes mobile first and ad
 Unlike mobile apps, however, responsive sites are discoverable via search so you’ll be able to be found by those looking for you. You’ll also be able to promote your site to users on any device easier than needing to re-engage users on a mobile app. Responsive means one site to update and maintain but it falls short in taking advantage of a device’s functionality - even if some mobile apps don’t seem to take full advantage of them. Responsive has become yesterday's standard. 
 
 ## Progressive Web App
-Instead of having multiple properties, builds, and re-engagement campaigns, one Progressive Web App (PWA) can solve for all of these issues and provide even greater rewards. A PWA even provides enhanced functionality on mobile devices (auto form complete, camera use, etc.) making it easier for users to complete actions. Offline mode and a lighter, faster site mean using less data and ease of use for those in low or no connectivity areas. Push notifications mean easier ways to get timely information to users without email. Because of the increase in speed they bring, PWAs can also support higher search engine rankings. All of this in one platform with no need to build for iOS or Android separately.
+Where responsive sites may be yesterday’s standard, creating a single web property (PWA) that takes full advantage of an individual’s device are quickly becoming tomorrow’s.
+
+Push notifications mean easier ways to get timely information to users without email. A PWA even provides enhanced functionality on mobile devices (auto form complete, camera use, etc.) making it easier for users to complete actions. They enable organizations to provide one consistent user experience and to maintain one site for google to index for search.
+
+And the list of ways that Progressive Web Apps go beyond responsive sites continues: Offline mode and a lighter, faster site mean using less data and ease of use for those in low or no connectivity areas. Because of the increase in speed they bring, PWAs can also support higher search engine rankings. All of this in one platform with no need to build for iOS or Android separately.
 
 All in all, PWAs combine the efforts of mobile apps, mobile sites, and responsive sites through one build. They also elevate what your business will be able to do within the context of a user's device, providing a much more engaging and fast experience for those seeking the quickest solutions on the go. PWAs are a simpler way to engage with one build, one app, showcasing one vision of your brand giving users what they expect. 
