@@ -31,7 +31,7 @@ Unlike mobile apps, however, responsive sites are discoverable via search so you
 ## Progressive Web App
 Where responsive sites may be yesterday’s standard, creating a single web property (PWA) that takes full advantage of an individual’s device are quickly becoming tomorrow’s.
 
-PWAs enable organizations to provide one consistent user experience, not to mention maintaining only one site for google to index for search. Instead of costly, time consuming, and intrusive email reengagement campaigns, PWAs take advantage of push notifications, getting timely information to users without the need to check email. A PWA even provides enhanced functionality on mobile devices (auto form complete, camera use, etc.) making it easier for users to complete actions. 
+PWAs enable organizations to provide one consistent user experience, not to mention maintaining only one site for google to index for search. Instead of costly, time-consuming, and intrusive email re-engagement campaigns, PWAs take advantage of push notifications, getting timely information to users without the need to check email. A PWA even provides enhanced functionality on mobile devices (auto form complete, camera use, etc.) making it easier for users to complete actions. 
 
 Beyond this, Progressive Web Apps also provide offline mode and a lighter, faster site mean using less data and ease of use for those in low or no connectivity areas. Because of the increase in speed they bring, PWAs can also support higher search engine rankings. All of this in one platform with no need to build for iOS or Android separately.
 
