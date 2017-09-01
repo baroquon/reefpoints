@@ -30,11 +30,13 @@ Even if a client comes in with a well-defined list of features they see a need f
 
 In product design, storytelling is less about selling something, and more about emotional experiences. While pretty much every product has a clean and friendly marketing site selling a product’s meaning, the kind of storytelling that is often overlooked is the emotional experience of using any product. 
 
-Layout, type, color, hierarchy, language all contribute to the feeling a person gets when they use your product. This experience needs to be clearly defined early on in your workflow. Cindy Chastain defines this as an [“experience theme”](http://boxesandarrows.com/experience-themes/). Every product leaves the user with an emotional experience. Even something as simple as a word processor emits a certain feel. The layout of google docs says “I’m here to do business, and you can trust me” while something like Dropbox’s paper is all “be free and fly where the wind takes you”. 
+Layout, type, color, hierarchy, language all contribute to the feeling a person gets when they use your product. This experience needs to be clearly defined early on in your workflow. Cindy Chastain defines this as an [“experience theme”](http://boxesandarrows.com/experience-themes/). Every product leaves the user with an emotional experience. Even something as simple as a word processor emits a certain feel. The layout of Google Docs says “I’m here to do business, and you can trust me” while something like Dropbox’s Paper is all “be free and fly where the wind takes you”. 
 
 ![Imgur](http://i.imgur.com/N6qZWn2.jpg) 
+_Google Docs layout_
 
 ![Imgur](http://i.imgur.com/AY9DCTg.jpg)
+_Dropbox Paper layout_
 
 Before designing the features, structure, and style of these two products, this emotion had to be defined upfront. For me, an experience theme is also useful for contextualizing my design decisions to a client. 
 	
