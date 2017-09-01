@@ -7,7 +7,7 @@ twitter: "@jesskry"
 github:
 summary: "Implementing and maintaining several properties and apps means longer development, more maintenance, and most importantly, differing user experiences."
 published: true
-Tags: PWA, Business
+tags: PWA, Business
 ---
 
 ![Imgur](https://i.imgur.com/aObTM19.jpg)
