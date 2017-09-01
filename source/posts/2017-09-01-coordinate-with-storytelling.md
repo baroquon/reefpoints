@@ -2,12 +2,11 @@
 layout: post
 title: "Unite your cooks: coordinate with storytelling"
 social: true
-Author: Chris Bowers
+author: Chris Bowers
 twitter: "@chrisbowerss"
-github:
 summary: "In digital design, we need to make sure the story being told isn’t an afterthought."
 published: true
-Tags: Design
+tags: Design
 ---
 
 ![Imgur](https://i.imgur.com/Qmo74RD.jpg)
