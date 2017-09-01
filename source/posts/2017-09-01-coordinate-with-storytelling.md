@@ -14,7 +14,7 @@ Tags: Design
 
 I forget that many people dread conferences. So I was surprised to hear “oh that’s too bad” when I mentioned to a cafe stranger that I was in LA for one. Lucky for me, it was a digital design conference, [Awwwards conf](https://conference.awwwards.com/). Filled with intricate stonework illuminated by red and violet light, the Ace Hotel theater alone was inspiring. Throughout the two-day set of talks ranging from inspirational to technical, a common theme was hard to miss. Regardless of where technology takes us, storytelling will always be at the heart of digital design. In a world where the average attention span is shrinking, storytelling still captivates and sticks with an audience. 
 
-## [storytelling] As a process
+## Storytelling: As a process
 
 I describe the work that I do as creating digital tools. While this holds true, I was beginning to forget my role as a storyteller as well. The projects that I work on can easily last months, some in complex domains that I’m not familiar with at the start of the project. To move forward, all contributors need to be coordinated. To align stakeholders, developers, marketers, and designers over an extended period of time, I use stories as a roadmap.
 
@@ -26,7 +26,7 @@ Before putting any pixels on the screen, a project starts with discovery. Discov
 
 Even if a client comes in with a well-defined list of features they see a need for, it is important to validate them. Storytelling can contextualize the experience of using any feature, and help confirm whether it is necessary for the user. Presenting a compelling story will help the rest of the team, as well as the client, to get on board with removing or keeping specific features. A designer simply saying “I’m not designing that feature” without further explanation holds far less merit. 
 
-## [storytelling] As a product
+## Storytelling: As a product
 
 In product design, storytelling is less about selling something, and more about emotional experiences. While pretty much every product has a clean and friendly marketing site selling a product’s meaning, the kind of storytelling that is often overlooked is the emotional experience of using any product. 
 
