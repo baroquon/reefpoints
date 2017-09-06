@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Adding an Email Verification Flow With Phoenix”
+title: "Adding an Email Verification Flow With Phoenix"
 social: true
 author: Alex Garibay
 twitter: "_alexgaribay"
