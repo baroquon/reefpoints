@@ -22,7 +22,7 @@ Want to hug it out? Me too.
 ## PWAs allow push notifications for desktop software
 The question really is, why aren’t the makers of desktop applications leveraging their presence on the homescreen of desktops more? They should be building their wares in a way to have a direct 1:1 communication channel with their users. Instead, desktop software often doesn’t include a native connection to the Web and relies on sending an email rather than messages that push directly to users.
 
-![Example of desktop push notification](https://i.imgur.com/5AUb5Qr.png)
+![Example of desktop push notification](https://i.imgur.com/gWTkLvl.png)
 
 An evolution has taken place in browsers and in desktop operating systems. Without making much fuss about it, and with little fanfare, both have grown to a state where Progressive Web Apps can be built to fit any form factor, work online or offline seamlessly, and truly become a unique category of applications altogether. With this evolution, push notifications are now possible for desktop software. Users can be notified at the app level, with contextually-relevant messages, without relying on the inbox. Additionally, the same notifications can be employed to inform/prompt/help users during connectivity independent (offline) times, allowing for uninterrupted and continued working experiences (can I get a gig worker high-five?!). 
 
