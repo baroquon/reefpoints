@@ -36,7 +36,7 @@ involvement so we are more than happy to make the result of this effort freely a
 
 ### Who are we seeking?
 
-We'd like to source ideas and applications fro the community. We have a general idea around the architecture for this. But deployment is a complex issue. This will
-be a challenge no doubt. But one that we are confident that Elixir itself will make easier than it would be otherwise in other languages.
+We'd like to source ideas and applications from the community. We have a general idea around the architecture for this, but deployment is a complex issue. This will
+be a challenge no doubt. One that we are confident that Elixir itself will make easier than it would be otherwise in other languages.
 
 [Please apply on our Join Us page](https://dockyard.com/contact/join-us). We are looking forward to working with you and making Elixir the best platform ever.
