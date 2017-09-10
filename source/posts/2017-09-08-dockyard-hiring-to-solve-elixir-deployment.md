@@ -17,7 +17,7 @@ three years we have been the Platinum Sponsor at [ElixirConf](https://elixirconf
 for the [Phoenix Framework](http://phoenixframework.org/) when we hired [Chris McCord](https://twitter.com/chris_mccord) to work on Phoenix nearly year-round.
 
 Today we're proud to announce that we are extending our investment in Elixir by seeking an Elixir dev to lead the development for a first-class Elixir deployment
-library. This project will have direct oversign by [José Valim](https://twitter.com/josevalim). We plan to make the result of this effort 100% Open Source.
+library. This project will have direct oversight by the [Elixir Core Team](https://twitter.com/elixirlang). We plan to make the result of this effort 100% Open Source.
 
 Please see our recent ElixirConf announcement:
 
