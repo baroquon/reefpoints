@@ -10,7 +10,7 @@ published: true
 tags: Jobs
 ---
  
-**NEEDS HEADER IMAGE**
+![Imgur](https://i.imgur.com/ec1DkJP.jpg)
 
 DockYard is looking for a **senior-level Boston-based** designer to join our team. 
  
