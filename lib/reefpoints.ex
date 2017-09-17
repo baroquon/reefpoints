@@ -7,10 +7,12 @@ defmodule Reefpoints do
         yaml = YamlElixir.read_from_string(yaml)
         [_, year, month, day, slug_title] = Regex.run(~r/(\d{4})-(\d{2})-(\d{2})-([\w|-]+)\.md/, path)
 
+        slug_title = parameterize(slug_tile)
+        legacy_category = parameterize(yaml["legacy_category"])
         post_tags = normalize_tags(yaml["tags"])
         date = "#{year}-#{month}-#{day}T00:00:00"
         post = %{
-          "id" => slugify_post([year, month, day], slug_title),
+          "id" => slugify_post([year, month, day], slug_title, legacy_category),
           "title" => yaml["title"],
           "employee" => parameterize(yaml["author"]),
           "summary" => yaml["summary"],
@@ -99,12 +101,15 @@ defmodule Reefpoints do
     |> parameterize()
   end
 
-  defp slugify_post(date, slug_title) do
+  defp slugify_post(date, slug_title, legacy_category) do
     date
+    |> List.insert_at(0, legacy_category)
     |> List.insert_at(-1, slug_title)
+    |> Enum.filter(&(&1))
     |> Enum.join("/")
   end
 
+  defp parameterize(nil), do: nil
   defp parameterize(name) do
     name 
     |> String.downcase()
