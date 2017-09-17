@@ -6,6 +6,7 @@ defmodule Reefpoints do
         [_, yaml, body] = File.read!("source/posts/#{path}") |> String.split("---", parts: 3)
         yaml = YamlElixir.read_from_string(yaml)
         [_, year, month, day, slug_title] = Regex.run(~r/(\d{4})-(\d{2})-(\d{2})-([\w|-]+)\.md/, path)
+
         post_tags = normalize_tags(yaml["tags"])
         date = "#{year}-#{month}-#{day}T00:00:00"
         post = %{
@@ -62,6 +63,7 @@ defmodule Reefpoints do
       "backbone" -> "Backbone.js"
       "diy" -> "DIY"
       "es6" -> "ES6"
+      "progressive-web-apps" -> "Progressive Web Apps"
       tag ->
         tag
         |> String.split(" ")
@@ -91,6 +93,7 @@ defmodule Reefpoints do
       tag when tag in ~w(postgres postgresql) -> "postgres"
       tag when tag in ~w(javascript js) -> "javascript"
       tag when tag in ~w(backbone.js backbone) -> "backbone"
+      tag when tag in ~w(pwa progressive-web-app progressive-web-apps) -> "progressive-web-apps"
       tag -> tag
     end
     |> parameterize()
