@@ -33,7 +33,7 @@ needsToSeePrompt() {
 
 We can then call this method when our application route activates--that way the user sees this modal no matter which route they load. However, you may not want to inundate your users with these prompts every time they launch the app (after all, they may not actually _want_ your app on their homescreen). We decided to only show this prompt for logged in users (since our app required authentication) and to only show it once every two weeks.
 
-We updated our function to be aware of the the last time the user saw a prompt using [ember-moment](https://github.com/stefanpenner/ember-moment).
+We updated our function to be aware of the last time the user saw a prompt using [ember-moment](https://github.com/stefanpenner/ember-moment).
 
 ```javascript
 needsToSeePrompt(user) {
