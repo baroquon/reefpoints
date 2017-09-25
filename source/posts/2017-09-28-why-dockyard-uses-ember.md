@@ -20,7 +20,7 @@ One characteristic of modern web apps is that they “feel” like native applic
 In 2017, two of the predominant JavaScript frameworks for building Single Page Applications are Angular 2 and Ember.js. People often include React.js, as well; however, React.js is a library for building user interfaces, rather than a framework (it can be bundled with other libraries for teams interested in building and maintaining their own web framework).
 
 ## Ember.js’s Origin Begins with Apple
-As early as 2008, Apple was trying to solve the problem of building a robust, JS framework with a project known as SproutCore. A workshop in their Worldwide Developer Conference (WWDC) that year read:
+As early as 2008, Apple was trying to solve the problem of building a robust, JS framework with a project known as SproutCore. A workshop at their Worldwide Developer Conference (WWDC) that year read:
 
 > SproutCore is an open source, platform-independent, Cocoa-inspired JavaScript framework for creating web applications that look and feel like Desktop applications. Learn how to combine SproutCore with HTML5's standard offline data storage technologies to deliver a first-class user experience and exceptional performance in your web application.
 > ([Apple’s open secret: SproutCore is Cocoa for the Web](http://appleinsider.com/articles/08/06/16/apples_open_secret_sproutcore_is_cocoa_for_the_web.html))
@@ -80,7 +80,7 @@ there than _good_ Ember.js developers?
 
 ### Leverage the Learning Curve
 A competing frameworks homepage reads:
-_"Already know HTML, CSS and JavaScript? Read the guide and start building things in no time!"_
+_"Already know HTML, CSS, and JavaScript? Read the guide and start building things in no time!"_
 
 Compare this to Ember.js's homepage, which reads:
 _"A framework for creating ambitious web applications."_
@@ -103,10 +103,10 @@ We chose Ember.js because it would be easier for our clients to maintain, extend
 #### Onboarding New Developers
 Ember.js’s embrace of “convention over configuration” and its pursuit of an all-in-one solution pays dividends when it comes to onboarding new developers.
 
-Ember.js has tried-and-true best practices, which create a shared knowledgebase for the development team. There are fewer conversations around “what’s going on in this part of the codebase” because there is an “Ember Way” to implement much of the code. Compare that to a custom-crafted, frontend tech stack which may require Senior-level developer talent to understand, maintain, and extend responsibly.
+Ember.js has tried-and-true best practices, which create a shared knowledge base for the development team. There are fewer conversations around “what’s going on in this part of the codebase” because there is an “Ember Way” to implement much of the code. Compare that to a custom-crafted, frontend tech stack which may require Senior-level developer talent to understand, maintain, and extend responsibly.
 
 #### Invested in Web Standards
-Ember.js is developed with an eye towards standards such as W3C and ECMASCript TC39 (the standards body for the language). This ensures that the framework will keep pace with the HTML and JavaScript APIs it relies on and provides a degree of future-proofing, relative to other frameworks less invested in web standards.
+Ember.js is developed with an eye towards standards such as W3C and ECMAScript TC39 (the standards body for the language). This ensures that the framework will keep pace with the HTML and JavaScript APIs it relies on and provides a degree of future-proofing, relative to other frameworks less invested in web standards.
 
 Video: [Tom Dale discusses Engaging with Standards at Wicked Good Ember 2016](https://youtu.be/katGgAORrBw?t=3m40s)
 
