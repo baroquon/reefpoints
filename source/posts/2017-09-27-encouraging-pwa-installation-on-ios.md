@@ -18,7 +18,7 @@ We have spent a lot of time over the past few months talking about [Progressive 
 If you use an Android device, you have probably noticed that PWAs automatically prompt you to add the application to your homescreen but iOS still doesn't do this. If you're unaware of the differences, [mobile Safari does not support some key PWA features](https://dockyard.com/blog/2017/07/13/safari-ios-and-progressive-web-apps). [This is changing quickly, however](https://webkit.org/status/#specification-service-workers); the most recent release of iOS allows PWAs saved to your homescreen to be launched as a standalone application. This means your web app can launch without the cumbersome Safari UI. Unfortunately, one key thing is still missing: prompting the user to install the app.
 
 ## Adding to Homescreen on iOS
-The key to success for Progress Web Apps is adoption--if you want to compete with native applications, you want the user to install and launch the app the same way. On a recent client project, we thought a lot about client adoption on iPhone (a large percentage of our user base) and how we could encourage users to install our app. We decided to go with a modal prompt with clear and easy steps to install the app.
+The key to success for Progressive Web Apps is adoption--if you want to compete with native applications, you want the user to install and launch the app the same way. On a recent client project, we thought a lot about client adoption on iPhone (a large percentage of our user base) and how we could encourage users to install our app. We decided to go with a modal prompt with clear and easy steps to install the app.
 
 ![Add to homescreen modal](https://i.imgur.com/gOZBWBH.png)
 
