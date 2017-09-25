@@ -5,12 +5,12 @@ social: true
 author: Matt Ludwig
 twitter: "@migdesigner"
 github:
-summary: “With the gig economy services expanding to developing regions more and more every quarter, the need for a new wave of exceptional offline User Experiences is just a Progressive Web App away."
+summary: “With the gig economy services expanding to developing regions more and more every quarter, the need for a new wave of exceptional offline user experiences is just a Progressive Web App away."
 published: true
 tags: PWA, Business, UX
 ---
 
-![Imgur](https://i.imgur.com/ezKIpHJ.jpg)
+![No Internet Today](https://i.imgur.com/ezKIpHJ.jpg)
 
 Ever had an Uber or Lyft ride where the driver can’t get the ride session to close out in the app at the destination because the [data connection won’t go through](http://therideshareguy.com/what-to-do-about-the-uber-driver-app-crapping-out/)? Me too. Now, have you ever considered what it’s like for that same type of gig worker in a developing nation somewhere in the world, trying to make a living from the same job? (Ridesharing, on-demand deliveries, utility metering, space renting, rural infrastructure surveying, etc.) No? Well, then you probably can’t relate to the image above as much as they can. It’s rough. 
 
