@@ -25,14 +25,13 @@ Let's define exactly how this API is supposed to work:
 
 ## Update Your Dependencies
 
-To assist us with uploading images to S3, we will use [ExAws](https://github.com/CargoSense/ex_aws) to interact with the AWS API, [sweet_xml](https://github.com/kbrw/sweet_xml) for XML parsing, and [UUID]() to help generate random IDs. Update your `mix.exs` file to include both libraries as dependencies.
+To assist us with uploading images to S3, we will use [ExAws](https://github.com/CargoSense/ex_aws) to interact with the AWS API and [UUID]() to help generate random IDs. Update your `mix.exs` file to include both libraries as dependencies.
 
 ```elixir
 def deps do
   [
     ...,
     {:ex_aws, "~> 1.1"},
-    {:sweet_xml, "~> 0.6.5"},
     {:uuid, "~> 1.1"}
   ]
 end
@@ -48,7 +47,6 @@ def application do
       :ex_aws,
       :hackney,
       :poison,
-      :sweet_xml,
       :UUID
     ]
   ]
@@ -73,7 +71,6 @@ defmodule MyApp.AssetStore do
   Responsible for accepting files and uploading them to an asset store.
   """
   
-  import SweetXml
   alias ExAws.S3
   
   @doc """
@@ -87,6 +84,8 @@ defmodule MyApp.AssetStore do
   """
   @spec upload_image(String.t) :: s3_url :: String.t
   def upload_image(image_base64) do
+    image_bucket = "image_bucket"
+  
     # Decode the image
     {:ok, image_binary} = Base.decode64(image_base64)
 
@@ -98,13 +97,11 @@ defmodule MyApp.AssetStore do
 		  
     # Upload to S3
     {:ok, response} = 
-      S3.put_object("image_bucket", filename, image_binary)
+      S3.put_object(image_bucket, filename, image_binary)
       |> ExAws.request()
     
-    # Return the URL to the file on S3
-    response.body
-    |> SweetXml.xpath(~x"//Location/text()")
-    |> to_string()
+    # Generate the full URL to the newly uploaded image
+    "https://#{image_bucket}.s3.amazonaws.com/#{filename}"
   end
   
   # Generates a unique filename with a given extension
