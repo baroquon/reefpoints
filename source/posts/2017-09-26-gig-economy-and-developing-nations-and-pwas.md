@@ -5,7 +5,7 @@ social: true
 author: Matt Ludwig
 twitter: "@migdesigner"
 github:
-summary: “With the gig economy services expanding to developing regions more and more every quarter, the need for a new wave of exceptional offline user experiences is just a Progressive Web App away."
+summary: "With the gig economy services expanding to developing regions more and more every quarter, the need for a new wave of exceptional offline user experiences is just a Progressive Web App away."
 published: true
 tags: PWA, Business, UX
 ---
