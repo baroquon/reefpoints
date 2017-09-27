@@ -7,7 +7,7 @@ defmodule Reefpoints do
         yaml = YamlElixir.read_from_string(yaml)
         [_, year, month, day, slug_title] = Regex.run(~r/(\d{4})-(\d{2})-(\d{2})-([\w|-]+)\.md/, path)
 
-        slug_title = parameterize(slug_tile)
+        slug_title = parameterize(slug_title)
         legacy_category = parameterize(yaml["legacy_category"])
         post_tags = normalize_tags(yaml["tags"])
         date = "#{year}-#{month}-#{day}T00:00:00"
