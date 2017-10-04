@@ -10,7 +10,7 @@ tags: office
 ---
 
 We have been pretty busy here at DockYard and I haven't had a chance to
-follow up on the [previous post](/2011/12/04/its-not-a-vacation.html)
+follow up on the [previous post](https://dockyard.com/blog/2011/12/04/its-not-a-vacation.html)
 
 To recap: DockYard is a distributed team, we decided to switch it up for
 a week and go to the same city and work our asses off.

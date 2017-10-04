@@ -21,7 +21,7 @@ that date.**
 
 [Use the app live on Heroku](http://ember-rails-api.herokuapp.com/)
 
-In [Part 1](/ember/2013/01/07/building-an-ember-app-with-rails-api-part-1.html) I showed you how to setup a `Rails-API` app for Ember. Now let's build the app itself.
+In [Part 1](https://dockyard.com/blog/ember/2013/01/07/building-an-ember-app-with-rails-api-part-1.html) I showed you how to setup a `Rails-API` app for Ember. Now let's build the app itself.
 
 In this part I will go over building the Ember app from the perspective of a Rails developer. I will be making comparisons to where Ember resembles common patterns in Rails and even Ruby itself.
 

@@ -12,7 +12,7 @@ tags: opinion, business, consulting
 ---
 
 This is an update of [the previous post that reflected on the first six
-months of DockYard](/opinion/2012/06/21/lessons-learned-six-month-of-running-dockyard.html).
+months of DockYard](https://dockyard.com/blog/opinion/2012/06/21/lessons-learned-six-month-of-running-dockyard.html).
 A lot has changed over the past year and a half, and a lot has not. I
 won't do a point-by-point comparison to the previous post but I will
 address some as well as some of the feedback I got at the time. But

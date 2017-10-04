@@ -204,7 +204,7 @@ Solution: Limit reopen to before first instantiation
 	* Serving up wholly different HTML based on A/B bucket
 * Notify connected clients
 
-## The New [`ember-cli-deploy`](github.com/ember-cli/ember-cli-deploy)
+## The New [`ember-cli-deploy`](https://github.com/ember-cli/ember-cli-deploy)
 
 * Merged these three projects: `ember-deploy`, `front-end-builds`, `ember-cli-deploy`
 * Now, one project with 6 maintainers (and growing!)

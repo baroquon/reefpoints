@@ -20,9 +20,3 @@ between. So last night I wrote a simple function poorly named:
 the enum set to cycle. If the property is currently empty or if the
 property matches the last value in the set the property will be set to
 the first value, otherwise the property will be set to the next value.
-Try it out:
-
-<a class="jsbin-embed"
-href="http://emberjs.jsbin.com/agaKuCoL/1/embed?js,output">Ember
-Starter Kit</a><script
-src="http://static.jsbin.com/js/embed.js"></script>

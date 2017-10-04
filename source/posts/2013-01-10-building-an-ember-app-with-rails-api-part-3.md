@@ -20,9 +20,9 @@ that date.**
 
 [Use the app live on Heroku](http://ember-rails-api.herokuapp.com/)
 
-In [Part 1](/ember/2013/01/07/building-an-ember-app-with-rails-api-part-1.html) I showed you how to setup a `Rails-API` app for Ember.
+In [Part 1](https://dockyard.com/blog/ember/2013/01/07/building-an-ember-app-with-rails-api-part-1.html) I showed you how to setup a `Rails-API` app for Ember.
 
-In [Part 2](/ember/2013/01/09/building-an-ember-app-with-rails-api-part-2.html) I showed you the basics of building an Ember app, reading from a backend API and displaying that information.
+In [Part 2](https://dockyard.com/blog/ember/2013/01/09/building-an-ember-app-with-rails-api-part-2.html) I showed you the basics of building an Ember app, reading from a backend API and displaying that information.
 
 Today we're going to do some coding on the Rails side and the Ember side to add Creating, Updating, and Destroying records.
 
