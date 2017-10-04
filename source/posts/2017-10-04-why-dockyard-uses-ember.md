@@ -15,7 +15,7 @@ tags: ember, business development
 DockYard builds modern web applications for all platforms. This article is intended to provide an explanation as to why DockYard uses Ember.js as our frontend framework to do this.
 
 ## Modern Web Apps
-One characteristic of modern web apps is that they “feel” like native applications. They’re fast, fluid, and intuitive. This is made possible by [Single Page Application (SPA)](https://dockyard.com/blog/2016/06/13/how-technology-choices-affect-user-experience) architecture, which loads a single HTML page and dynamically updates it via JavaScript (JS) and HTML5 APIs. You also need a backend framework that can accommodate the many requests that come with these rich UIs, which is why we use [Elixir and Phoenix](https://dockyard.com/phoenix-consulting) on the backend (a topic for another article). Updating page content without requiring a page refresh was initially achieved via plain old Ajax calls, typically using jQuery; however, this did not provide a framework for organizing that JS code. It was a mess and typically resulted in something developers called “jQuery soup” – an unmaintainable collage of JS code spread throughout the application.
+One characteristic of modern web apps is that they “feel” like traditional mobile and desktop applications. They’re fast, fluid, and intuitive. This is made possible by [Single Page Application (SPA)](https://dockyard.com/blog/2016/06/13/how-technology-choices-affect-user-experience) architecture, which loads a single HTML page and dynamically updates it via JavaScript (JS) and HTML5 APIs. You also need a backend framework that can accommodate the many requests that come with these rich UIs, which is why we use [Elixir and Phoenix](https://dockyard.com/phoenix-consulting) on the backend (a topic for another article). Updating page content without requiring a page refresh was initially achieved via plain old Ajax calls, typically using jQuery; however, this did not provide a framework for organizing that JS code. It was a mess and typically resulted in something developers called “jQuery soup” – an unmaintainable collage of JS code spread throughout the application.
 
 In 2017, two of the predominant JavaScript frameworks for building Single Page Applications are Angular 2 and Ember.js. People often include React.js, as well; however, React.js is a library for building user interfaces, rather than a framework (it can be bundled with other libraries for teams interested in building and maintaining their own web framework).
 
@@ -27,7 +27,7 @@ As early as 2008, Apple was trying to solve the problem of building a robust, JS
 
 To unpack that a bit: Cocoa is the API for the Macintosh operating system (now called “macOS”); Cocoa applications are now built using Apple’s Swift programming language.
 
-Essentially, before Apple was raking in $28B per year via the App Store, they were trying to build Progressive Web Apps. Steve Jobs’s original vision for the iPhone supports with this:
+Essentially, before Apple was raking in $28B per year via the App Store, they were trying to build Progressive Web Apps. Steve Jobs’s original vision for the iPhone supports this with:
 
 > The full Safari engine is inside of iPhone. And so, you can write amazing Web 2.0 and Ajax apps that look exactly and behave exactly like apps on the iPhone. And these apps can integrate perfectly with iPhone services. They can make a call, they can send an email, they can look up a location on Google Maps. And guess what? There’s no SDK that you need! You’ve got everything you need if you know how to write apps using the most modern web standards to write amazing apps for the iPhone today. So developers, we think we’ve got a very sweet story for you. You can begin building your iPhone apps today.
 > ([Jobs’s original vision for the iPhone: No third-party native apps](https://9to5mac.com/2011/10/21/jobs-original-vision-for-the-iphone-no-third-party-native-apps/))
@@ -35,7 +35,7 @@ Essentially, before Apple was raking in $28B per year via the App Store, they we
 Fast-forwarding a bit – SproutCore 2.0 became Ember.js under the guidance of former Apple developer Tom Dale and Ruby on Rails core team member Yehuda Katz. The project combined Apple’s best practice application architecture with the developer-friendly ergonomics of Ruby on Rails.
 
 ## DockYard Adopts Ember.js
-DockYard got on the Ember.js train early, before it reached `v1.0.0`. We knew that it was the right tool for the jobs we wanted to be working on (ambitious web apps), so we never hedged our bets on Ember.js by picking up competing frameworks. We've organized the [Boston Ember.js Group](https://www.meetup.com/Boston-Ember-js/) since 2013 and hosted Wicked Good Ember in 2014, 2015, and 2016. 
+DockYard got on the Ember.js train early, before it reached `v1.0.0`. We knew that it was the right tool for the jobs we wanted to be working on (ambitious web apps), so we never hedged our bets on Ember.js by picking up competing frameworks. We've organized the [Boston Ember.js Group](https://www.meetup.com/Boston-Ember-js/) since 2013 and hosted Wicked Good Ember in [2014](https://wickedgoodember.com/2014), [2015](https://wickedgoodember.com/2015), and [2016](https://wickedgoodember.com/).
 
 ![Wicked Good Ember 2016](https://i.imgur.com/ByETXDs.jpg)
 
@@ -45,6 +45,7 @@ This specialist vs. generalist approach to frontend development has left a lot o
 
 1. We’ve been building the applications we want to build for the clients we want to work with.
 1. We’ve been able to develop our Ember.js expertise beyond that of other, generalist consultancies.
+1. It has attracted the best talent to DockYard.
 
 In short, we’ve interpreted “the right tool for the right job” to mean: find the right job.
 
