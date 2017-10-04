@@ -64,74 +64,77 @@ something very special happening here. It isn't just me. [Go search
 Twitter for `#EmberConf` and see for
 yourself](https://twitter.com/search?q=%23emberconf&src=tyah).
 
-<blockquote class="twitter-tweet" lang="en"><p>People are crying, having
-spiritual awakenings and overall life-affirming moments at <a
-href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
-… Think I want whatever’s in their punch</p>&mdash; Rob Conery
-(@robconery) <a
-href="https://twitter.com/robconery/statuses/449041727240695808">March
-27, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    People are crying, having spiritual awakenings and overall life-affirming moments at 
+    <a href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
+    … Think I want whatever’s in their punch
+  </p>
+  &mdash; Rob Conery
+  (@robconery) <a href="https://twitter.com/robconery/statuses/449041727240695808">March 27, 2014</a>
+</blockquote>
 charset="utf-8"></script>
-<blockquote class="twitter-tweet" lang="en"><p>IT’S HAPPENING!! HTMLbars
-eliminates &lt;script&gt; tags, {{bindAttr}}, and gives Ember the
-fastest bound templates on the planet. <a
-href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a></p>&mdash;
-Tom Dale (@tomdale) <a
-href="https://twitter.com/tomdale/statuses/448621833953083392">March 26,
-2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
-<blockquote class="twitter-tweet" lang="en"><p>This scene with <a
-href="https://twitter.com/tomdale">@tomdale</a> <a
-href="https://twitter.com/tehviking">@tehviking</a> and <a
-href="https://twitter.com/fivetanley">@fivetanley</a> sums up <a
-href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
-- so much love ❤️❤️❤️ <a
-  href="http://t.co/AEUEeiq97i">pic.twitter.com/AEUEeiq97i</a></p>&mdash;
-Dan Gebhardt (@dgeb) <a
-href="https://twitter.com/dgeb/statuses/449088566962814976">March 27,
-2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
-<blockquote class="twitter-tweet" lang="en"><p>Ember makes you a badass
-web developer. The productivity gains are unparalleled. Page flow is
-first class. <a
-href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
-<a
-href="http://t.co/DlKqmmdVEU">pic.twitter.com/DlKqmmdVEU</a></p>&mdash;
-John K. Paul (@johnkpaul) <a
-href="https://twitter.com/johnkpaul/statuses/448510256097001472">March
-25, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
-<blockquote class="twitter-tweet" lang="en"><p>Notes on the morning <a
-href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
-keynote by <a href="https://twitter.com/wycats">@wycats</a> <a
-href="https://twitter.com/tomdale">@tomdale</a> <a
-href="http://t.co/rYKEruaxRe">pic.twitter.com/rYKEruaxRe</a></p>&mdash;
-Michael Chan (@chantastic) <a
-href="https://twitter.com/chantastic/statuses/448517744900976641">March
-25, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
-<blockquote class="twitter-tweet" lang="en"><p>hug <a
-href="https://twitter.com/tomdale">@tomdale</a> achievement unlocked <a
-href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
-<a
-href="http://t.co/nLOBPGJwKL">pic.twitter.com/nLOBPGJwKL</a></p>&mdash;
-Ben Rosas (@ballPtPenguin) <a
-href="https://twitter.com/ballPtPenguin/statuses/449000521211203586">March
-27, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
-<blockquote class="twitter-tweet" lang="en"><p><a
-href="https://twitter.com/ebryn">@ebryn</a> <a
-href="https://twitter.com/EmberConf">@EmberConf</a> Such a wonderful
-experience. One of the best conferences I&#39;ve ever attended, it was
-like one big family finally united.</p>&mdash; Kasper Tidemann
-(@KasperTidemann) <a
-href="https://twitter.com/KasperTidemann/statuses/449044965855723520">March
-27, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    IT’S HAPPENING!! HTMLbars eliminates &lt;script&gt; tags, {{bindAttr}}, and gives Ember the
+    fastest bound templates on the planet.
+  <a href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
+  </p>
+  &mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/statuses/448621833953083392">March 26, 2014</a>
+</blockquote>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    This scene with 
+    <a href="https://twitter.com/tomdale">@tomdale</a> 
+    <a href="https://twitter.com/tehviking">@tehviking</a> and 
+    <a href="https://twitter.com/fivetanley">@fivetanley</a> sums up 
+    <a href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
+    - so much love ❤️❤️❤️ 
+    <a href="http://t.co/AEUEeiq97i">pic.twitter.com/AEUEeiq97i</a>
+  </p>
+  &mdash; Dan Gebhardt (@dgeb)
+  <a href="https://twitter.com/dgeb/statuses/449088566962814976">March 27, 2014</a>
+</blockquote>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+      Ember makes you a badass web developer. The productivity gains are unparalleled. Page flow is first class. 
+    <a href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
+    <a href="http://t.co/DlKqmmdVEU">pic.twitter.com/DlKqmmdVEU</a>
+  </p>
+  &mdash; John K. Paul (@johnkpaul)
+  <a href="https://twitter.com/johnkpaul/statuses/448510256097001472">March 25, 2014</a>
+</blockquote>
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    Notes on the morning <a href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
+    keynote by 
+    <a href="https://twitter.com/wycats">@wycats</a>
+    <a href="https://twitter.com/tomdale">@tomdale</a> 
+    <a href="http://t.co/rYKEruaxRe">pic.twitter.com/rYKEruaxRe</a>
+  </p>
+  &mdash; Michael Chan (@chantastic) 
+  <a href="https://twitter.com/chantastic/statuses/448517744900976641">March 25, 2014</a>
+</blockquote>
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    hug <a href="https://twitter.com/tomdale">@tomdale</a> achievement unlocked 
+    <a href="https://twitter.com/search?q=%23emberconf&amp;src=hash">#emberconf</a>
+    <a href="http://t.co/nLOBPGJwKL">pic.twitter.com/nLOBPGJwKL</a>
+  </p>
+  &mdash; Ben Rosas (@ballPtPenguin) 
+  <a href="https://twitter.com/ballPtPenguin/statuses/449000521211203586">March 27, 2014</a>
+</blockquote>
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+  <a href="https://twitter.com/ebryn">@ebryn</a> 
+  <a href="https://twitter.com/EmberConf">@EmberConf</a> 
+  Such a wonderful experience. One of the best conferences I&#39;ve ever attended, it was
+  like one big family finally united.
+  </p>
+  &mdash; Kasper Tidemann (@KasperTidemann) 
+  <a href="https://twitter.com/KasperTidemann/statuses/449044965855723520">March 27, 2014</a>
+</blockquote>

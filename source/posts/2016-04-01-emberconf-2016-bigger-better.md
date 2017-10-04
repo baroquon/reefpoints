@@ -25,18 +25,19 @@ year.
 
 ![](http://images3.cloudhdr.com/users/63df8506-b9d4-11e2-944b-eebc857a8e43/thumbnails/c961d5f8-f614-11e5-912c-ca74e7c7373d/hd_P3293226.jpg)
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">.<a href="https://twitter.com/sugarpirate_">@sugarpirate_</a>
-takes the stage at <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> //
-<a href="https://twitter.com/hashtag/emberjs?src=hash">#emberjs</a> <a
-href="https://twitter.com/DockYard">@DockYard</a> <a
-href="https://t.co/aWMmgIaIMp">pic.twitter.com/aWMmgIaIMp</a></p>&mdash;
-Mike North (@michaellnorth) <a
-href="https://twitter.com/michaellnorth/status/715245083927314432">March
-30, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    .<a href="https://twitter.com/sugarpirate_">@sugarpirate_</a>
+    takes the stage at 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> //
+    <a href="https://twitter.com/hashtag/emberjs?src=hash">#emberjs</a> 
+    <a href="https://twitter.com/DockYard">@DockYard</a> 
+    <a href="https://t.co/aWMmgIaIMp">pic.twitter.com/aWMmgIaIMp</a>
+  </p>
+  &mdash; Mike North (@michaellnorth) 
+  <a href="https://twitter.com/michaellnorth/status/715245083927314432">March 30, 2016</a>
+</blockquote>
 
 First, I'd like to point out how great of a job [Leah Silber][leah] has done
 building and organizing EmberConf. This year the attendance was just shy
@@ -51,21 +52,22 @@ of that keynote should play out over the next year or so to help
 position Ember as the best choice for [Progressive Web
 Applications][pwa].
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Enjoying <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> so
-far w <a href="https://twitter.com/bcardarella">@bcardarella</a> <a
-href="https://twitter.com/jeremy_w_rowe">@jeremy_w_rowe</a> <a
-href="https://twitter.com/tundal45">@tundal45</a> <a
-href="https://twitter.com/atonse">@atonse</a> <a
-href="https://twitter.com/sweatypitts">@sweatypitts</a> <a
-href="https://twitter.com/hashtag/emberjs?src=hash">#emberjs</a> <a
-href="https://t.co/J7Tr8fWTex">pic.twitter.com/J7Tr8fWTex</a></p>&mdash;
-Tracy Lee | ladyleet (@ladyleet) <a
-href="https://twitter.com/ladyleet/status/714869714799894528">March 29,
-2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Enjoying 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> so
+    far w 
+    <a href="https://twitter.com/bcardarella">@bcardarella</a> 
+    <a href="https://twitter.com/jeremy_w_rowe">@jeremy_w_rowe</a> 
+    <a href="https://twitter.com/tundal45">@tundal45</a> 
+    <a href="https://twitter.com/atonse">@atonse</a> 
+    <a href="https://twitter.com/sweatypitts">@sweatypitts</a> 
+    <a href="https://twitter.com/hashtag/emberjs?src=hash">#emberjs</a> 
+    <a href="https://t.co/J7Tr8fWTex">pic.twitter.com/J7Tr8fWTex</a>
+  </p>
+  &mdash; Tracy Lee | ladyleet (@ladyleet) 
+  <a href="https://twitter.com/ladyleet/status/714869714799894528">March 29, 2016</a>
+</blockquote>
 
 I was really impressed with how many people were interested in
 [Elixir][elixir].
@@ -84,17 +86,17 @@ run the conference and
 more down time creates less incentive for companies to send employees,
 but I personally find the most value from networking.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Climbing right after <a
-href="https://twitter.com/EmberConf">@EmberConf</a> with these great
-emberiños 💪👍 <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> <a
-href="https://t.co/TsWWZ1c2mF">pic.twitter.com/TsWWZ1c2mF</a></p>&mdash;
-Filipe Bragança (@filipecrosk) <a
-href="https://twitter.com/filipecrosk/status/715409635033817088">March
-31, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Climbing right after 
+    <a href="https://twitter.com/EmberConf">@EmberConf</a> 
+    with these great emberiños 💪👍 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> 
+    <a href="https://t.co/TsWWZ1c2mF">pic.twitter.com/TsWWZ1c2mF</a>
+  </p>
+  &mdash; Filipe Bragança (@filipecrosk) 
+  <a href="https://twitter.com/filipecrosk/status/715409635033817088">March 31, 2016</a>
+</blockquote>
 
 I am aware of DockYard's place in the Ember community. Thinking
 back to the earlier [RailsConfs][railsconf], and companies that were in a similiar
@@ -104,17 +106,18 @@ stuck to. I'm trying not to repeat that. At times I found
 myself gravitating towards friends but after a few minutes I'd excuse
 myself so I could meet new people.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Thanks <a href="https://twitter.com/DockYard">@DockYard</a>
-for sponsoring amazing time at <a
-href="https://twitter.com/GroundKontrol">@GroundKontrol</a> <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> <a
-href="https://t.co/2NEiXp4ZbO">pic.twitter.com/2NEiXp4ZbO</a></p>&mdash;
-Tom Chen (@tchen) <a
-href="https://twitter.com/tchen/status/715042486171910144">March 30,
-2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Thanks 
+    <a href="https://twitter.com/DockYard">@DockYard</a>
+    for sponsoring amazing time at 
+    <a href="https://twitter.com/GroundKontrol">@GroundKontrol</a> 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> 
+    <a href="https://t.co/2NEiXp4ZbO">pic.twitter.com/2NEiXp4ZbO</a>
+  </p>
+  &mdash; Tom Chen (@tchen) 
+  <a href="https://twitter.com/tchen/status/715042486171910144">March 30, 2016</a>
+</blockquote>
 
 Tuesday night we hosted an event at [Ground Kontrol][gk]. For those
 unfamiliar, Ground Kontrol is a video arcade with a bar. We rented the
@@ -127,15 +130,14 @@ skills as kid. Or I am just rusty. Or it was the controller... all of
 the controllers. Also, I am really out of touch with modern arcade games
 as I was completely unaware of this [Killer Queen][killer-queen] game.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Killer Queen at Ground Control at 9! Ping us and let us know
-if you can make it!<a
-href="https://twitter.com/hashtag/EmberConf?src=hash">#EmberConf</a></p>&mdash;
-Ember Weekend (@emberweekend) <a
-href="https://twitter.com/emberweekend/status/715347575491002369">March
-31, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Killer Queen at Ground Control at 9! Ping us and let us know if you can make it!
+    <a href="https://twitter.com/hashtag/EmberConf?src=hash">#EmberConf</a>
+  </p>
+  &mdash; Ember Weekend (@emberweekend) 
+  <a href="https://twitter.com/emberweekend/status/715347575491002369">March 31, 2016</a>
+</blockquote>
 
 A good conference leaves you feeling energized and wanting more,
 EmberConf has done that for me every year. A great conference gives you
@@ -147,88 +149,87 @@ good reason for that. Twenty years from now I'm not going to give a shit
 about which library rendered which obscure demo the fastest. But I will
 remember...
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Who is a better puppy? <a
-href="https://twitter.com/bcardarella">@bcardarella</a> or <a
-href="https://twitter.com/mikepack_">@mikepack_</a> ? Follow
-&quot;modernweb&quot; on snapchat for the full story <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> <a
-href="https://t.co/VBPruOLft2">pic.twitter.com/VBPruOLft2</a></p>&mdash;
-Tracy Lee | ladyleet (@ladyleet) <a
-href="https://twitter.com/ladyleet/status/714298487857262592">March 28,
-2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Who is a better puppy? 
+    <a href="https://twitter.com/bcardarella">@bcardarella</a> or 
+    <a href="https://twitter.com/mikepack_">@mikepack_</a>? 
+    Follow &quot;modernweb&quot; on snapchat for the full story 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> 
+    <a href="https://t.co/VBPruOLft2">pic.twitter.com/VBPruOLft2</a>
+  </p>
+  &mdash; Tracy Lee | ladyleet (@ladyleet) 
+  <a href="https://twitter.com/ladyleet/status/714298487857262592">March 28, 2016</a>
+</blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Having some fun with the tomster at <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> <a
-href="https://twitter.com/EmberConf">@EmberConf</a> 🇨🇴 <a
-href="https://t.co/zjFd3ll5EB">pic.twitter.com/zjFd3ll5EB</a></p>&mdash;
-Julián Cárdenas Mazo (@juliankmazo) <a
-href="https://twitter.com/juliankmazo/status/715343497956438016">March
-31, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Having some fun with the tomster at 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> 
+    <a href="https://twitter.com/EmberConf">@EmberConf</a> 🇨🇴 
+    <a href="https://t.co/zjFd3ll5EB">pic.twitter.com/zjFd3ll5EB</a>
+  </p>
+  &mdash; Julián Cárdenas Mazo (@juliankmazo) 
+  <a href="https://twitter.com/juliankmazo/status/715343497956438016">March 31, 2016</a>
+</blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Kudos to <a
-href="https://twitter.com/thejameskyle">@thejameskyle</a> for the most
-visually entertaining talk at <a
-href="https://twitter.com/hashtag/EmberConf?src=hash">#EmberConf</a> <a
-href="https://t.co/INwmqboMVo">pic.twitter.com/INwmqboMVo</a></p>&mdash;
-Wedge Salad Antilles (@suzidao) <a
-href="https://twitter.com/suzidao/status/715297031703568384">March 30,
-2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Kudos to 
+    <a href="https://twitter.com/thejameskyle">@thejameskyle</a> 
+    for the most visually entertaining talk at 
+    <a href="https://twitter.com/hashtag/EmberConf?src=hash">#EmberConf</a> 
+    <a href="https://t.co/INwmqboMVo">pic.twitter.com/INwmqboMVo</a>
+  </p>
+  &mdash; Wedge Salad Antilles (@suzidao) 
+  <a href="https://twitter.com/suzidao/status/715297031703568384">March 30, 2016</a>
+</blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">I love <a href="https://twitter.com/EmberConf">@emberconf</a>
-<a href="https://twitter.com/hashtag/ImgPlay?src=hash">#ImgPlay</a> <a
-href="https://t.co/plZWIsoyku">pic.twitter.com/plZWIsoyku</a></p>&mdash;
-Emanuele Tozzato (@mekdigital) <a
-href="https://twitter.com/mekdigital/status/714954113050501122">March
-29, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    I love <a href="https://twitter.com/EmberConf">@emberconf</a>
+    <a href="https://twitter.com/hashtag/ImgPlay?src=hash">#ImgPlay</a> 
+    <a href="https://t.co/plZWIsoyku">pic.twitter.com/plZWIsoyku</a>
+  </p>
+  &mdash; Emanuele Tozzato (@mekdigital) 
+  <a href="https://twitter.com/mekdigital/status/714954113050501122">March 29, 2016</a>
+</blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Loved my new Ember socks :) thanks <a
-href="https://twitter.com/EmberConf">@EmberConf</a> <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> <a
-href="https://twitter.com/hashtag/portland?src=hash">#portland</a> <a
-href="https://twitter.com/hashtag/socks?src=hash">#socks</a> <a
-href="https://t.co/X2odXYlgVK">pic.twitter.com/X2odXYlgVK</a></p>&mdash;
-Filipe Bragança (@filipecrosk) <a
-href="https://twitter.com/filipecrosk/status/714592198868611072">March
-28, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Loved my new Ember socks :) thanks 
+    <a href="https://twitter.com/EmberConf">@EmberConf</a> 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> 
+    <a href="https://twitter.com/hashtag/portland?src=hash">#portland</a> 
+    <a href="https://twitter.com/hashtag/socks?src=hash">#socks</a> 
+    <a href="https://t.co/X2odXYlgVK">pic.twitter.com/X2odXYlgVK</a>
+  </p>
+  &mdash; Filipe Bragança (@filipecrosk) 
+  <a href="https://twitter.com/filipecrosk/status/714592198868611072">March 28, 2016</a>
+</blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">So good seeing <a
-href="https://twitter.com/cball_">@cball_</a> at <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a>!
-❤️💛💚💙💜 see you at <a
-href="https://twitter.com/WickedGoodEmber">@wickedgoodember</a>? <a
-href="https://twitter.com/hashtag/emberjs?src=hash">#emberjs</a> <a
-href="https://t.co/fpW6HlinlA">pic.twitter.com/fpW6HlinlA</a></p>&mdash;
-Tracy Lee | ladyleet (@ladyleet) <a
-href="https://twitter.com/ladyleet/status/715719754661502977">April 1,
-2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    So good seeing <a href="https://twitter.com/cball_">@cball_</a> at 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a>!
+    ❤️💛💚💙💜 see you at 
+    <a href="https://twitter.com/WickedGoodEmber">@wickedgoodember</a>? 
+    <a href="https://twitter.com/hashtag/emberjs?src=hash">#emberjs</a> 
+    <a href="https://t.co/fpW6HlinlA">pic.twitter.com/fpW6HlinlA</a>
+  </p>
+  &mdash; Tracy Lee | ladyleet (@ladyleet) 
+  <a href="https://twitter.com/ladyleet/status/715719754661502977">April 1, 2016</a>
+</blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-dir="ltr">Farewell Ember Conf, until next time. <a
-href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> <a
-href="https://t.co/7PsVcd7lsR">pic.twitter.com/7PsVcd7lsR</a></p>&mdash;
-tomguisuru (@tomoguisuru) <a
-href="https://twitter.com/tomoguisuru/status/715415989110747136">March
-31, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    Farewell Ember Conf, until next time. 
+    <a href="https://twitter.com/hashtag/emberconf?src=hash">#emberconf</a> 
+    <a href="https://t.co/7PsVcd7lsR">pic.twitter.com/7PsVcd7lsR</a>
+  </p>
+  &mdash; tomguisuru (@tomoguisuru) 
+  <a href="https://twitter.com/tomoguisuru/status/715415989110747136">March 31, 2016</a>
+</blockquote>
 
 ...the people.
 

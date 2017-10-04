@@ -11,13 +11,25 @@ tags: engineering, elixir, testing
 In other lanugages mocking/stubbing are part of your regular toolbelt, in Elixir Jose has
 come out against them 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I will fight against mocks, stubs and YAML in Elixir with all my... friendliness and energy to promote proper education on those topics.</p>&mdash; José Valim (@josevalim) <a href="https://twitter.com/josevalim/status/641617411242913792">September 9, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    I will fight against mocks, stubs and YAML in Elixir with all my... friendliness and energy to promote proper education on those topics.
+  </p>
+  &mdash; José Valim (@josevalim) 
+  <a href="https://twitter.com/josevalim/status/641617411242913792">September 9, 2015</a>
+</blockquote>
 
 Instead he suggests
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/bcardarella">@bcardarella</a> for tests, create a simple module (or an agent if you need flexibility) that will be used by your app during your tests</p>&mdash; José Valim (@josevalim) <a href="https://twitter.com/josevalim/status/641619543543152640">September 9, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">
+    <a href="https://twitter.com/bcardarella">@bcardarella</a> 
+    for tests, create a simple module (or an agent if you need flexibility) that will be used by your app during your tests
+  </p>
+  &mdash; José Valim (@josevalim) 
+  <a href="https://twitter.com/josevalim/status/641619543543152640">September 9, 2015</a>
+</blockquote>
 
 I've been trying to practice this until the other day when I was
 building a library that was adapter based. I wanted to unit test the
@@ -128,9 +140,7 @@ differently than I've been used to over the past few years. If this
 topic is of interest to you check out my talk from [ElixirDaze][elixirdaze] on Building and Testing
 Phoenix APIs
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/zoP-XFuWstw" frameborder="0"
-allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zoP-XFuWstw" frameborder="0" allowfullscreen></iframe>
 
 [ecto]: https://github.com/elixir-lang/ecto/blob/master/lib/ecto/repo.ex#L83-L100
 [send]: http://elixir-lang.org/docs/stable/elixir/Process.html#send/3

@@ -24,7 +24,15 @@ Ember 1.13 came with the release of [improved actions][improved-actions].
 A side effect of this feature is that it enables us to move away from
 `{{view 'select'}}` and simply use DOM `<select>` elements with actions.
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">trouble with forms/form elements in ember?&#10;&#10;Turn out in 1.13.3 you can just use &quot;THE DOM&quot;&#10;&#10;<a href="http://t.co/9U73q0KOOE">http://t.co/9U73q0KOOE</a></p>&mdash; Stefan Penner (@stefanpenner) <a href="https://twitter.com/stefanpenner/status/618530886162579456">July 7, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en">
+  <p lang="en" dir="ltr">
+    trouble with forms/form elements in ember?&#10;&#10;Turn out in 1.13.3 you can just use &quot;THE DOM&quot;&#10;&#10;
+    <a href="http://t.co/9U73q0KOOE">http://t.co/9U73q0KOOE</a>
+  </p>
+  &mdash; Stefan Penner (@stefanpenner) 
+  <a href="https://twitter.com/stefanpenner/status/618530886162579456">July 7, 2015</a>
+</blockquote>
 
 His linked JSBin links to Ember canary and no longer works, but a clone
 modified to use 1.13 is available [here][jsbin].

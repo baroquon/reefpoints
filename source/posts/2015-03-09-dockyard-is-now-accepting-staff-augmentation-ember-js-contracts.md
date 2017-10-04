@@ -22,5 +22,4 @@ Development. We can help your team finish existing features, guide
 your team on how to properly build an Ember.js application, and help you
 hit your delivery deadline.
 
-<a href="https://dockyard.com/contact">Visit our contact page and choose
-"Staff Augmentation" for the Budget</a>
+[Visit our contact page and choose "Staff Augmentation" for the Budget](https://dockyard.com/contact)

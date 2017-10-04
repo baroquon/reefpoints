@@ -6,7 +6,7 @@ author: Brian Cardarella
 twitter: "bcardarella"
 github: bcardarella
 summary: "We believe that Progressive Web Apps are the only real choice companies have for building mobile apps today. Learn why."
-published: true
+published: false
 tags: pwa, opinion, business
 ---
 

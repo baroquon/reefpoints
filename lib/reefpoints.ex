@@ -7,36 +7,39 @@ defmodule Reefpoints do
         yaml = YamlElixir.read_from_string(yaml)
         [_, year, month, day, slug_title] = Regex.run(~r/(\d{4})-(\d{2})-(\d{2})-([\w|-]+)\.md/, path)
 
-        slug_title = parameterize(slug_title)
-        legacy_category = parameterize(yaml["legacy_category"])
-        post_tags = normalize_tags(yaml["tags"])
-        date = "#{year}-#{month}-#{day}T00:00:00"
-        post = %{
-          "id" => slugify_post([year, month, day], slug_title, legacy_category),
-          "title" => yaml["title"],
-          "employee" => parameterize(yaml["author"]),
-          "summary" => yaml["summary"],
-          "legacy" => false,
-          "date" => date,
-          "tags" => post_tags,
-          "body" => body
-        }
+        if yaml["published"] do
+          slug_title = parameterize(slug_title)
+          legacy_category = parameterize(yaml["legacy_category"])
+          post_tags = normalize_tags(yaml["tags"])
+          date = "#{year}-#{month}-#{day}T00:00:00"
+          post = %{
+            "id" => slugify_post([year, month, day], slug_title, legacy_category),
+            "title" => yaml["title"],
+            "employee" => parameterize(yaml["author"]),
+            "summary" => yaml["summary"],
+            "legacy" => false,
+            "date" => date,
+            "tags" => post_tags,
+            "body" => body
+          }
 
-        post =
-          body
-          |> Earmark.as_html!()
-          |> Floki.find("img")
-          |> case do
-            [] -> post
-            tag ->
-              src = Floki.attribute(tag, "src") |> List.first()
-              alt = Floki.attribute(tag, "alt") |> List.first()
-              Map.merge(post, %{"illustration" => src, "illustration_alt" => alt})
-          end
+          post =
+            body
+            |> Earmark.as_html!()
+            |> Floki.find("img")
+            |> case do
+              [] -> post
+              tag ->
+                src = Floki.attribute(tag, "src") |> List.first()
+                alt = Floki.attribute(tag, "alt") |> List.first()
+                Map.merge(post, %{"illustration" => src, "illustration_alt" => alt})
+            end
 
-        posts = List.insert_at(posts, -1, post)
-        tags = Enum.concat(tags, post_tags)
+          posts = List.insert_at(posts, -1, post)
+          tags = Enum.concat(tags, post_tags)
+        end
 
+        IO.write(".")
         %{"posts" => posts, "tags" => tags}
       end)
 
@@ -52,6 +55,7 @@ defmodule Reefpoints do
     json = Poison.encode!(%{"posts" => data["posts"], "tags" => tags})
 
     File.write("posts.json", json)
+    IO.puts("\n#{length(data["posts"])} posts and #{length(data["tags"])} tags")
   end
 
   defp tag_name(tag) do
