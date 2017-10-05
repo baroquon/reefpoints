@@ -18,7 +18,9 @@ Like in previous years, Maeda emphasized computational design as the type of des
  
 When you design something, and it works well, that’s powerful. Good designers take responsibility, and **[ask questions](https://dockyard.com/blog/2017/06/20/whos-responsible-for-what-happens-after-design)**, about how the products we make affect users long-term. But after reading "The Experience Economy", I realized that as designed experiences and businesses based on those experiences become more sophisticated, our responsibility for the outcome grows accordingly.
  
-> “The experiences we have affect who we are, what we can accomplish, and where we are going, and we will increasingly ask companies to stage experiences that change us.” [source](https://books.google.com/books?id=5hs-tyRrSXMC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false)
+> “The experiences we have affect who we are, what we can accomplish, and where we are going, and we will increasingly ask companies to stage experiences that change us.”
+>
+> <cite>[source](https://books.google.com/books?id=5hs-tyRrSXMC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false)</cite>
  
 ## How we’re working with transforming experiences
  

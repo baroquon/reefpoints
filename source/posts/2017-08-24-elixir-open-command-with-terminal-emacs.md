@@ -54,6 +54,7 @@ project and calls `emacsclient` with the appropriate server name.
 Let's break it down.
 
 > Note: we must save a couple bash scripts inside `/usr/local/bin`
+
 instead of defining them somewhere in user-land. We have to do this
 because Elixir and Emacs load our shell environment differently from
 user-land, so things like our `.bash_profile` won't be loaded.

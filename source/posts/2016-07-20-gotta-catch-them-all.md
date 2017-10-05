@@ -98,8 +98,10 @@ whatever you're making will not make a difference. This game offers us a reminde
 for me of real change in the physical world that can happen when an interaction
 is built just right.
 
->[_"Broken tech culture is seeing the success of Pokémon Go & attributing it to AR
-instead of a huge 25-year-old global cultural phenomenon."_](https://twitter.com/anildash/status/753261028801187840)
+> "Broken tech culture is seeing the success of Pokémon Go & attributing it to AR
+> instead of a huge 25-year-old global cultural phenomenon."
+> 
+> <cite>[Anil Dash](https://twitter.com/anildash/status/753261028801187840)</cite>
 
 # Cory T: Expert user point of view
 

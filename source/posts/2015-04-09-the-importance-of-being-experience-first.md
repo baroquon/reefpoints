@@ -51,7 +51,8 @@ as opposed to Design First, which suggests that anyone who isn't a designer has
 their contributions take a backseat.
 
 > "That experience is essentially a story, a narrative which ultimately enjoins
-> us to a brand." – [Om Malik, Gigaom](https://gigaom.com/2013/10/22/square-airbnb-and-why-experience-really-is-design/)
+> us to a brand."
+> <cite>[Om Malik, Gigaom](https://gigaom.com/2013/10/22/square-airbnb-and-why-experience-really-is-design/)</cite>
 
 In other words, it’s obvious that we place value on things that fulfill both
 form and function. The popularity of beautiful user experiences, both online and

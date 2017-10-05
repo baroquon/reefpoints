@@ -26,7 +26,7 @@ world"](http://www.fastcompany.com/magazine/160/bill-nguyen-startups).
 In summary:
 
 > When Steve [Jobs] describes the post-PC world, all the things that were written in the PC world are almost doomed to fail. Everything that Facebook built as a technology was based on old technology. It was all around this premise that you'll sit in front of this machine that has no idea who you are, so you have to tell it--who you are and what you like.
-
+>
 > IBM didn't survive the PC, none of the PC guys survived the web, and I don't think any of the web guys will survive the post-PC world
 
 Now, if you ignore some of the bullshit Bill is spouting (as the article

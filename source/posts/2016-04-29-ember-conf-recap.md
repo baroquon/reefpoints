@@ -35,7 +35,8 @@ Ember with [ServiceWorkers][sw] and other PWA tools that (recently) have been ad
 to (mobile) browsers.
 
 Because of these developments I would like to dub this year:
-> __"Year of Progress and Progressive Web Apps"__.
+
+__"Year of Progress and Progressive Web Apps"__.
 
 There is another thing I want to mention: [Living Styleguides][styleguides].
 Chris LoPresto gave a talk about this. I did not yet know of this movement

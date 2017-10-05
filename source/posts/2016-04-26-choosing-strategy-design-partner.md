@@ -21,9 +21,9 @@ With every agency pitching what can feel like the same experience and capabiliti
 
 ## The Client Should Always Come First
 
->“A gossip talks about other people. A bore talks about himself. A brilliant conversationalist talks to you about yourself.”
+> “A gossip talks about other people. A bore talks about himself. A brilliant conversationalist talks to you about yourself.”
 >
->—Unknown
+> <cite>Unknown</cite>
 
 In a similar vein, an agency that understands the importance of objectives in design will move quickly from talking about their reputation, to a deeper conversation about you and your business goals. They’ll get excited about what could be accomplished together. 
 
@@ -33,9 +33,9 @@ Are they asking deep questions about your goals?  Your past successes and failur
 
 ## Become Comfortable by Being Uncomfortable
 
->“If it scares you, it might be a good thing to try.”
+> “If it scares you, it might be a good thing to try.”
 >
->—Seth Godin
+> <cite>Seth Godin</cite>
 
 As you answer the agency’s questions, also pay attention to the kinds of questions they ask. Are they making you uncomfortable with some of those questions? That’s OK.  
 
@@ -45,9 +45,9 @@ Strategic designers routinely chart a course through uncertain seas. They should
 
 ## Direct vs. Indirect Experience
 
->“Experience is simply the name we give our mistakes.”
+> “Experience is simply the name we give our mistakes.”
 >
->—Oscar Wilde
+> <cite>Oscar Wilde</cite>
 
 A claim of “experience” is no guarantee of a favorable outcome. Experience is a set of responses to particular business problems (not yours), in particular contexts (not yours, either). That’s why duplicating a successful company’s business model or solution rarely works out. Despite what best-selling business books seem to suggest, there’s no single recipe for success. Every challenge is fresh, and every solution begins with a blank page.
  
@@ -59,9 +59,9 @@ In some cases, an agency’s lack of direct experience can be an asset rather th
 
 ## Experts Are Made, Not Born
 
->“An expert is someone who tells you why you can’t do something.”
+> “An expert is someone who tells you why you can’t do something.”
 >
->—Sir Alec Issigonis, designer of the Morris Mini (predecessor to the Mini Cooper)
+> <cite>Sir Alec Issigonis, designer of the Morris Mini (predecessor to the Mini Cooper)</cite>
 
 An agency should be able to show how fast they can learn your business. Even in the earliest meetings, they should bring insights and a pain hypothesis. They’re outsiders to your private domain, so the attempt means more than getting the details right. 
 
@@ -71,9 +71,9 @@ A rich set of design-thinking tools and methods will enable the agency to wrap t
 
 ## It’s Decision Time
 
->“Trust yourself, you know more than you think you think you do.”
+> “Trust yourself, you know more than you think you think you do.”
 >
->—Dr. Benjamin Spock
+> <cite>Dr. Benjamin Spock</cite>
 
 Like hiring the right team member, finding the right agency partner is as much about _who they are_ as _what they know_. To ensure a good fit, the agency should care as much about figuring out if you’re a good client for them, as you do figuring out if they’re a good agency for you.
 

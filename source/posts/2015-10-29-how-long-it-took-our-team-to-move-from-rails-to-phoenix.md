@@ -21,13 +21,13 @@ book which was only 160 pages of material. Part 1 introduces early
 [Functional Programming][fp] concepts and the [Elixir][elixir] standard library. In my
 mind, this is enough to make the switch.
 
-> **“It was cool being able to contribute to a Phoenix app without prior
+> “It was cool being able to contribute to a Phoenix app without prior
 > experience with the framework thanks to the similarity in structure
 > with Rails. Elixir is the biggest hurdle, but a quick read through the
 > key concepts is enough to make you productive - not to mention
-> learning a new language is fun!”**
+> learning a new language is fun!”
 >
-> *-- Romina Vargas, DockYard Engineer*
+> <cite>Romina Vargas, DockYard Engineer</cite>
 
 At the higher level of writing actions, routes, tests, models, queries, etc... there is so much
 overlap with the concepts that exist in Rails that it was simply a
@@ -40,13 +40,13 @@ benefit here is that a lot of that domain knowledge on how to build
 Rails apps can be transferred over to building Phoenix
 apps.
 
-> **“Ruby on Rails had a pretty steep learning curve. Not only did I have
+> “Ruby on Rails had a pretty steep learning curve. Not only did I have
 > to study a new programming language, I had to master the MVC framework
 > as well. But with RoR under my belt, the learning curve for Elixir and
 > Phoenix was significantly reduced. Plus pattern matching makes
-> everything way easier!”**
+> everything way easier!”
 >
-> *-- Marin Abernethy, DockYard Engineer*
+> <cite>Marin Abernethy, DockYard Engineer</cite>
 
 Now, don't get me wrong. I am not suggesting that after this one week
 that you should be ramped up on the complexities of Elixir and the

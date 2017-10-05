@@ -210,6 +210,7 @@ It looks correct, but when we evaluate the AST, we will get an error:
 ![](https://i.imgur.com/M7fHcmu.png)
 
 How come? It's because we forget an important concept:
+
 > unquote injects AST into AST returned by quote.
 
 `{1, 2, 3}` is not an AST literal, so we need to get the quoted expressions. first by using `Macro.escape`.
@@ -405,5 +406,4 @@ Also, there are two great resouces:
 
 Great book to read. A lot of practical examples in the book that teach you how to write macros.
 
-* [understanding macro blog series](http://theerlangelist.com/article/macros_1) by [Saša Jurić
-](https://twitter.com/sasajuric)
+* [understanding macro blog series](http://theerlangelist.com/article/macros_1) by [Saša Jurić](https://twitter.com/sasajuric)

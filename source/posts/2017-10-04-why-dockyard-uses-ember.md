@@ -23,14 +23,14 @@ In 2017, two of the predominant JavaScript frameworks for building Single Page A
 As early as 2008, Apple was trying to solve the problem of building a robust, JS framework with a project known as SproutCore. A workshop at their Worldwide Developer Conference (WWDC) that year read:
 
 > SproutCore is an open source, platform-independent, Cocoa-inspired JavaScript framework for creating web applications that look and feel like Desktop applications. Learn how to combine SproutCore with HTML5's standard offline data storage technologies to deliver a first-class user experience and exceptional performance in your web application.
-> ([Apple’s open secret: SproutCore is Cocoa for the Web](http://appleinsider.com/articles/08/06/16/apples_open_secret_sproutcore_is_cocoa_for_the_web.html))
+> <cite>[Apple’s open secret: SproutCore is Cocoa for the Web](http://appleinsider.com/articles/08/06/16/apples_open_secret_sproutcore_is_cocoa_for_the_web.html)</cite>
 
 To unpack that a bit: Cocoa is the API for the Macintosh operating system (now called “macOS”); Cocoa applications are now built using Apple’s Swift programming language.
 
 Essentially, before Apple was raking in $28B per year via the App Store, they were trying to build Progressive Web Apps. Steve Jobs’s original vision for the iPhone supports this with:
 
 > The full Safari engine is inside of iPhone. And so, you can write amazing Web 2.0 and Ajax apps that look exactly and behave exactly like apps on the iPhone. And these apps can integrate perfectly with iPhone services. They can make a call, they can send an email, they can look up a location on Google Maps. And guess what? There’s no SDK that you need! You’ve got everything you need if you know how to write apps using the most modern web standards to write amazing apps for the iPhone today. So developers, we think we’ve got a very sweet story for you. You can begin building your iPhone apps today.
-> ([Jobs’s original vision for the iPhone: No third-party native apps](https://9to5mac.com/2011/10/21/jobs-original-vision-for-the-iphone-no-third-party-native-apps/))
+> <cite>[Jobs’s original vision for the iPhone: No third-party native apps](https://9to5mac.com/2011/10/21/jobs-original-vision-for-the-iphone-no-third-party-native-apps/)</cite>
 
 Fast-forwarding a bit – SproutCore 2.0 became Ember.js under the guidance of former Apple developer Tom Dale and Ruby on Rails core team member Yehuda Katz. The project combined Apple’s best practice application architecture with the developer-friendly ergonomics of Ruby on Rails.
 

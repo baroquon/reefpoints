@@ -18,7 +18,7 @@ large and I believe most important part of my job at DockYard was
 helping get projects started right.
 
 ![designer at work](https://i.imgur.com/xQ3DXsy.jpg)
-> _A stereotypical UX designer at work. Sticky notes in bright colors are essential._
+*A stereotypical UX designer at work. Sticky notes in bright colors are essential.*
 
 We call this initial phase of a project design discovery, and believe
 that a design-first approach saves a lot of money and frustration by
@@ -40,7 +40,7 @@ you’re building should do, and which features you’ll build first to make
 that possible.
 
 ![paper and pen prototypes](https://i.imgur.com/4A8ahwJ.jpg)
-> _Feeling “done” with discovering something doesn’t always look complex._
+*Feeling “done” with discovering something doesn’t always look complex.*
 
 If all goes well, the end result should look suspiciously simple.
 Obvious, even. You’ll have gotten rid of many creative but complex
@@ -53,9 +53,9 @@ of fuzzy imagined dream-like things you could possibly do to a realistic
 and actionable schedule.
 
 ![river grass underwater](https://i.imgur.com/oDu1uJ3.gif)
-> _The feeling of summer and possibility is similar to the beginning of
+> The feeling of summer and possibility is similar to the beginning of
 > discovery. It won’t last forever, but enjoy it while it does!
-> [Image Credit](http://www.designartpractice.com/blog/38)_
+> <cite>[Image Credit](http://www.designartpractice.com/blog/38)</cite>
 
 Discovery is a process that turns a strong desire to have a vacation,
 plus a list of ideas and dreams into something you can reliably act
