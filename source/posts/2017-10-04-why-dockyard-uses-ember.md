@@ -5,7 +5,7 @@ social: true
 author: Michael Dupuis
 twitter: "michaeldupuisjr"
 github: michaeldupuisjr
-summary: "And how it meets the top 3 needs of our clients better than competing web frameworks."
+summary: "Learn how Ember meets the top 3 needs of DockYard's clients better than any other competing web framework."
 published: true
 tags: ember, business development
 ---
