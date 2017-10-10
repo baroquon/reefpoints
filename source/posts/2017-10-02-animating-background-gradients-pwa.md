@@ -34,9 +34,9 @@ This is a modification of the trick above, but instead of transitioning `backgro
 
 <p data-height="265" data-theme-id="0" data-slug-hash="GMgpEW" data-default-tab="css,result" data-user="jdsteinbach" data-embed-version="2" data-pen-title="Transitioning Gradient: Pseudo-Element Position" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jdsteinbach/pen/GMgpEW/">Transitioning Gradient: Pseudo-Element Position</a> by James Steinbach (<a href="https://codepen.io/jdsteinbach">@jdsteinbach</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-### Use a Overlay
+### Use an Overlay
 
-This fits a separate use case. In this method, we don’t get the visual effect of a "moving" background. Rather, one color changes. In this instance we create a gradient that fades to transparent in `background-image`, then transition the `background-color` behind it. Only one of the colors changes, but if the the entire `background-gradient` is semi-transparent, the entire gradient appears to change color. If you use `mix-blend-mode` (and it's actually supported in your users' browsers), you can create some really interesting effects with color blending.
+This fits a separate use case. In this method, we don’t get the visual effect of a "moving" background. Rather, one color changes. In this instance, we create a gradient that fades to transparent in `background-image`, then transition the `background-color` behind it. Only one of the colors changes, but if the entire `background-gradient` is semi-transparent, the entire gradient appears to change color. If you use `mix-blend-mode` (and it's actually supported in your users' browsers), you can create some really interesting effects with color blending.
 
 <p data-height="265" data-theme-id="0" data-slug-hash="RLNrdq" data-default-tab="css,result" data-user="jdsteinbach" data-embed-version="2" data-pen-title="Transitioning Gradient: Pseudo-Element Overlay" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jdsteinbach/pen/RLNrdq/">Transitioning Gradient: Pseudo-Element Overlay</a> by James Steinbach (<a href="https://codepen.io/jdsteinbach">@jdsteinbach</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
@@ -65,7 +65,7 @@ In the SVG, we're using `viewBox="0 0 1 1"` so that all the internal coordinates
 
 When the SVG stretches differently from its 1:1 aspect ratio, we want to keep it scaled nicely. That's what we gain from `preserveAspectRatio="xMidYMid slice"`. The SVG's internal elements will expand to cover the SVG's rendered size. If you're familiar with CSS, this is the equivalent of telling the SVG's contents to behave like `background-size: cover` and `background-position: center`. If you're going with a horizontal or angled gradient, you may need to adjust that value to get the desired visual effect.
 
-The `defs` element in an SVG contains elements that can be used to mask or fill other elements, but aren’t visually rendered on their own. Our first element there is `mask` that contains a `rect` - the mask will be used on a visible element outside of `defs`; the `rect` ensures that the `mask` takes up space. Then we find a `linearGradient` element: we'll draw a white gradient from opaque to transparent with two `stop` elements. For the `mask` to work as desired, their `stop-color` needs to be white, but you can modify them or add more as desired to create more complex stripe patterns.
+The `defs` element in an SVG contains elements that can be used to mask or fill other elements but aren’t visually rendered on their own. Our first element there is `mask` that contains a `rect` - the mask will be used on a visible element outside of `defs`; the `rect` ensures that the `mask` takes up space. Then we find a `linearGradient` element: we'll draw a white gradient from opaque to transparent with two `stop` elements. For the `mask` to work as desired, their `stop-color` needs to be white, but you can modify them or add more as desired to create more complex stripe patterns.
 
 The `mask` is told to use this `linearGradient` to create its masking pattern.
 
