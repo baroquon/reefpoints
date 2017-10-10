@@ -25,7 +25,7 @@ I didn’t know it at the time, but that position had nearly all of what I would
 1. **Fulfillment:** suggestions I and my colleague made for improving the product were implemented on a near daily basis, making it easy to see the positive impacts we were having. 
 1. **Respect:** I was never micro-managed, second-guessed, or glossed over. That doesn’t mean I wasn’t challenged to defend my stances (or that I wasn’t occasionally just flat out wrong), but I always felt heard and valued. 
 1. **Growth:** whenever I didn’t quite understand something, I was given the time and opportunity to learn about it. Mistakes or misperceptions were explained rather than simply dismissed with a quick “Because X.”
-1. **Stimulation:** every day was different, because I never knew what I’d find. That in and of itself made the work constantly engaging; I was never stagnant. 
+1. **Stimulation:** every day was different because I never knew what I’d find. That in and of itself made the work constantly engaging; I was never stagnant. 
 1. **Clear Communication:** my manager was blunt - she managed 2 entire departments, she had to be. At the time, I had never experienced management of this ilk, and I was a bit taken aback…initially. Turns out, clear and direct communication is *great*. 
 1. **Principles:** while plenty of my work directly contributed to making this product better, a lot of it never moved past the drawing board. Testing was rigorous, discussion and healthy debate occurred often, and sometimes, items got scrapped for the greater good. Saying “no” to a feature that would ultimately be detrimental to the product, even though it might seem cool, shows careful dedication to a set of principles that put Quality front and center. 
 
@@ -33,14 +33,14 @@ Each and every one of those elements applies directly to Trust, Quality, or both
 
 That position only existed for about a year, but it had a big impact on me. I still list it on my resume. 
 
-I’ve since worked with four different organizations of varying sizes (from under 20 full time staff, to thousands), at different levels of seniority, serving the multitudinous capacities that can fall within the realm of Project and Product Management. But especially relevant for this post: I’ve worked within many different teams and many different cultural settings. 
+I’ve since worked with four different organizations of varying sizes (from under 20 full-time staff, to thousands), at different levels of seniority, serving the multitudinous capacities that can fall within the realm of Project and Product Management. But especially relevant for this post: I’ve worked within many different teams and many different cultural settings. 
 
 Guess what? Nearly all the best things about any of my past roles can be summed up as the presence of Trust and Quality. And, coincidentally, nearly all the worst things about any of my past roles can be summed up the *absence* of Trust and Quality. 
 
 Which, at last, brings me back to DockYard. As a 100% remote organization, they inherently bestow a *massive* amount of Trust upon each and every employee. And it’s palpable. Up until this point in this post, I’ve been an employee at DockYard for 5 whole days. During that time - in addition to the typical onboarding duties one undertakes when starting any new job - I have:
 * better familiarized myself with GitHub’s project management and workflow tools.
 * tested out a couple different builds in staging.
-* suggested a teensy enhancement to a product (which made it in time for [High Tide’s](https://hightide.earth/) unveiling!).
+* suggested a teensy enhancement to a product (which made it in time for our Progressive Web App example, [High Tide’s](https://hightide.earth/), unveiling!).
 * met up with some colleagues to cowork in person for an afternoon.
 * identified a few areas in our internal workflow that can be improved (let’s see if future me gets it done!).
 * started to get up to speed on four separate initiatives.
@@ -53,15 +53,14 @@ All of them!
 
 No, I’m kidding. None of them! Seriously, *none* of them. 
 
-I was shown the ropes a bit, given some high level info about what was going on and what was to come, and told to ask questions about anything at any time. I couldn’t wait to get started. 
+I was shown the ropes a bit, given some high-level info about what was going on and what was to come, and told to ask questions about anything at any time. I couldn’t wait to get started. 
 
 And that’s Trust. It motivates, it inspires, it makes you feel *human*.
 
 Which leaves Quality. If you know anything about DockYard, you know our reputation for quality. I was lucky enough to have proof: one of my former companies worked closely with DockYard to create some amazing products. So, certainly as a client, I knew Quality was important to DockYard, and that was important to me; when you need something not just done, but done exceptionally well, it’s invaluable to be able to consistently rely on someone to deliver. That’s DockYard.
 
-Internally, though, the value of Quality is much more multifaceted. It means a safe and enjoyable work culture. It means time and effort set aside specifically for you to work on what you want. It means real investment into your development and growth. It means a recognition of the complexities of everyday life, and not just the willingness, but the desire to support employees through their journey, as they support the organization through its own. 
+Internally, though, the value of Quality is much more multifaceted. It means a safe and enjoyable work culture. It means time and effort set aside specifically for you to work on what you want. It means real investment in your development and growth. It means a recognition of the complexities of everyday life, and not just the willingness, but the desire to support employees through their journey, as they support the organization through its own. 
 
 In short, it means someplace you actually do get excited about working for - and with - every day. 
 
 At least, five days in you do ;) 
-
