@@ -3,12 +3,14 @@ layout: post
 title: "Animating Background Gradients to Make Your PWA More Native"
 social: true
 author: James Steinbach
-twitter: "jdsteinbach"
+twitter: "@jdsteinbach"
 github: jdsteinbach
 summary: "We can’t currently transition a CSS gradient, but by using an SVG mask, we can create a gradient and transition all its colors."
 published: true
 tags: engineering, css, animation, svg, progressive-web-apps
 ---
+
+![Animating a Gradient in CSS](https://i.imgur.com/5YFPBS7.jpg)
 
 Right now, you can’t transition a gradient in CSS. This is because the various gradient syntaxes (`linear-gradient`, `radial-gradient`, `repeating-linear-gradient`, and `conic-gradient`) are all values of the `background-image` property. CSS doesn’t currently support transitions or animations on `background-image`, thus gradient can’t be transitioned. Behold:
 
