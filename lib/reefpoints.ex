@@ -7,6 +7,10 @@ defmodule Reefpoints do
         yaml = YamlElixir.read_from_string(yaml)
         [_, year, month, day, slug_title] = Regex.run(~r/(\d{4})-(\d{2})-(\d{2})-([\w|-]+)\.md/, path)
 
+        yaml = Enum.reduce(yaml, %{}, fn({key, value}, acc) ->
+          Map.put(acc, String.downcase(key), value)
+        end)
+
         if yaml["published"] do
           slug_title = parameterize(slug_title)
           legacy_category = parameterize(yaml["legacy_category"])
