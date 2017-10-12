@@ -4,7 +4,7 @@ title: “DockYard’s Progressive Web App Named ‘App of the Month’ by Cruis
 social: true
 author: Jessica Krywosa
 twitter: “DockYard”
-github: DockYar
+github: DockYard
 summary: “High Tide showcases a simplified PWA while providing elegant design and functionality.”
 published: true
 tags: press-release
