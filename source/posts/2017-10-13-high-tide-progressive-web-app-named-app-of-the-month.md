@@ -1,9 +1,9 @@
 ---
 layout: post
-title: “DockYard’s Progressive Web App Named ‘App of the Month’ by Cruising World”
+title: DockYard’s Progressive Web App Named ‘App of the Month’ by Cruising World
 social: true
 author: Jessica Krywosa
-twitter: “DockYard”
+twitter: DockYard
 github: DockYard
 summary: “High Tide showcases a simplified PWA while providing elegant design and functionality.”
 published: true
