@@ -9,7 +9,7 @@ published: true
 tags: Progressive Web Applications, Business, UX
 ---
 
-ADD IMAGE
+![Software rot could be solved with a PWA rewrite](https://i.imgur.com/z2zH13Y.png)
 
 Do you smell that? Seriously, what is that? Did someone microwave fish for lunch again?!?? No? Weird...I can’t put my finger on it, but something definitely smells like it’s past its prime around here. 
 
