@@ -14,7 +14,7 @@ tags: engineering, css, animation, svg, progressive-web-apps
 
 Right now, you can’t transition a gradient in CSS. This is because the various gradient syntaxes (`linear-gradient`, `radial-gradient`, `repeating-linear-gradient`, and `conic-gradient`) are all values of the `background-image` property. CSS doesn’t currently support transitions or animations on `background-image`, thus gradient can’t be transitioned. Behold:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="OxPWRm" data-default-tab="css,result" data-user="jdsteinbach" data-embed-version="2" data-pen-title="Transitioning Gradient: Background Transition" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jdsteinbach/pen/OxPWRm/">Transitioning Gradient: Background Transition</a> by James Steinbach (<a href="https://codepen.io/jdsteinbach">@jdsteinbach</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+See the pen [Transitioning Gradient: Background Transition](https://codepen.io/jdsteinbach/pen/OxPWRm/) on CodePen.
 
 This is a pretty frustrating limitation. Gradients are made of 3 parts: direction (linear) or position (radial), color values, and color stops. All those values are numbers: a browser should be mathematically capable of transitioning them. Some [browsers recently started transitioning between background images in `url()`](https://codepen.io/jdsteinbach/pen/LzLegx?editors=0110) so it's unfortunate that browsers won’t transition gradients now.
 
@@ -28,19 +28,19 @@ Some people have figured out some sneaky tricks for pretending to animate a grad
 
 If your gradient needs to move, you can draw it larger than the element that uses it and transition the `background-position` property. (Yes, I know this is not a performant transition: I'm not recommending it, just acknowledging that it's a working hack.)
 
-<p data-height="265" data-theme-id="0" data-slug-hash="eGmpmP" data-default-tab="css,result" data-user="jdsteinbach" data-embed-version="2" data-pen-title="Transitioning Gradient: Background Position" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jdsteinbach/pen/eGmpmP/">Transitioning Gradient: Background Position</a> by James Steinbach (<a href="https://codepen.io/jdsteinbach">@jdsteinbach</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+See the pen [Transitioning Gradient: Background Position](https://codepen.io/jdsteinbach/pen/eGmpmP/) on CodePen.
 
 ### Move a Pseudo-Element
 
 This is a modification of the trick above, but instead of transitioning `background-position`, it uses the `::before` pseudo-element, makes it twice as tall as the containing element, and then transitions `transform` for a very performant animation. You get the same visual effect, but it's much nicer on your device's processor.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="GMgpEW" data-default-tab="css,result" data-user="jdsteinbach" data-embed-version="2" data-pen-title="Transitioning Gradient: Pseudo-Element Position" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jdsteinbach/pen/GMgpEW/">Transitioning Gradient: Pseudo-Element Position</a> by James Steinbach (<a href="https://codepen.io/jdsteinbach">@jdsteinbach</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+See the pen [Transitioning Gradient: Pseudo-Element](https://codepen.io/jdsteinbach/pen/GMgpEW/) on CodePen.
 
 ### Use an Overlay
 
 This fits a separate use case. In this method, we don’t get the visual effect of a "moving" background. Rather, one color changes. In this instance, we create a gradient that fades to transparent in `background-image`, then transition the `background-color` behind it. Only one of the colors changes, but if the entire `background-gradient` is semi-transparent, the entire gradient appears to change color. If you use `mix-blend-mode` (and it's actually supported in your users' browsers), you can create some really interesting effects with color blending.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="RLNrdq" data-default-tab="css,result" data-user="jdsteinbach" data-embed-version="2" data-pen-title="Transitioning Gradient: Pseudo-Element Overlay" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jdsteinbach/pen/RLNrdq/">Transitioning Gradient: Pseudo-Element Overlay</a> by James Steinbach (<a href="https://codepen.io/jdsteinbach">@jdsteinbach</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+See the pen [Transitioning Gradient: Pseudo-Element Overlay](https://codepen.io/jdsteinbach/pen/RLNrdq/) on CodePen.
 
 ## A New(er) Trick
 
@@ -48,7 +48,7 @@ None of these techniques matched our use case, however. We needed to transition 
 
 We start by putting an actual SVG into the markup as the immediate child of the element that we want the gradient to cover. Let's look at that SVG & talk through the code it contains:
 
-```
+```svg
 <svg class="bg-mask" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
   <defs>
     <mask id="mask" fill="url(#gradient)">
@@ -75,8 +75,7 @@ Outside of `defs` we have a lone `rect` - this is the only SVG element visible t
 
 This brings us to CSS. Here we can transition or animate the `background-color` on the element itself, and the `fill` color on the visible rectangle. Ta-da! Both colors in the gradient transitioning together!
 
-<p data-height="265" data-theme-id="0" data-slug-hash="jGEqVV" data-default-tab="html,result" data-user="jdsteinbach" data-embed-version="2" data-pen-title="Transitioning Gradient: SVG Mask" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jdsteinbach/pen/jGEqVV/">Transitioning Gradient: SVG Mask</a> by James Steinbach (<a href="https://codepen.io/jdsteinbach">@jdsteinbach</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+See the pen [Transitioning Gradient: SVG Mask](https://codepen.io/jdsteinbach/pen/jGEqVV/) on CodePen.
 
 ## Gotchas
 
@@ -96,4 +95,4 @@ Using a CSS filter also introduced a new constraint: the blur filter starts from
 
 ## Conclusion
 
-We can’t currently transition a CSS gradient, but by using an SVG mask, we can create a gradient and transition all its colors.
+We can’t currently transition a CSS gradient, but by using an SVG mask, we can create a gradient and transition all its colors. I'd love to see browser vendors support transitions on gradients at some point in the future, however. That transitionability would likely function similar to `clip-path: polygon()` and SVG `path` values: browsers require those values to have the same number of points in order to transition them. That would be a reasonable limitation on transitioned gradients. Until then, however, an SVG mask provides the most performant way to transition multiple colors in a gradient.
