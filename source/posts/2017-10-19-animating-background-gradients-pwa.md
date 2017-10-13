@@ -10,7 +10,7 @@ published: true
 tags: engineering, css, animation, svg, progressive-web-apps
 ---
 
-![Animating a Gradient in CSS](https://i.imgur.com/5YFPBS7.jpg)
+![Animating a Gradient in CSS](https://i.imgur.com/sDBDIVN.jpg)
 
 Right now, you can’t transition a gradient in CSS. This is because the various gradient syntaxes (`linear-gradient`, `radial-gradient`, `repeating-linear-gradient`, and `conic-gradient`) are all values of the `background-image` property. CSS doesn’t currently support transitions or animations on `background-image`, thus gradient can’t be transitioned. Behold:
 
@@ -46,7 +46,7 @@ See the pen [Transitioning Gradient: Pseudo-Element Overlay](https://codepen.io/
 
 None of these techniques matched our use case, however. We needed to transition _both_ colors in the gradient without any visible motion. We found a good solution using an **SVG mask.**
 
-We start by putting an actual SVG into the markup as the immediate child of the element that we want the gradient to cover. Let's look at that SVG & talk through the code it contains:
+We start by putting an actual SVG into the markup as the immediate child of the element that we want the gradient to cover. Let's look at that SVG and talk through the code it contains:
 
 ```svg
 <svg class="bg-mask" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
@@ -63,7 +63,7 @@ We start by putting an actual SVG into the markup as the immediate child of the 
 </svg>
 ```
 
-In the SVG, we're using `viewBox="0 0 1 1"` so that all the internal coordinates are based of a 1px relative grid. With CSS, we can stretch the SVG to cover its parent; this `viewBox` just simplifies our math.
+In the SVG, we're using `viewBox="0 0 1 1"` so that all the internal coordinates are based off of a 1px relative grid. With CSS, we can stretch the SVG to cover its parent; this `viewBox` just simplifies our math.
 
 When the SVG stretches differently from its 1:1 aspect ratio, we want to keep it scaled nicely. That's what we gain from `preserveAspectRatio="xMidYMid slice"`. The SVG's internal elements will expand to cover the SVG's rendered size. If you're familiar with CSS, this is the equivalent of telling the SVG's contents to behave like `background-size: cover` and `background-position: center`. If you're going with a horizontal or angled gradient, you may need to adjust that value to get the desired visual effect.
 
