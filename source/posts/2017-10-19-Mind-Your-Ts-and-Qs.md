@@ -7,7 +7,7 @@ twitter: "sly48"
 github: bitter-buffalo
 summary: "My decision to apply my talents as a Project Manager at DockYard came down to two simple, yet huge, reasons."
 published: true
-tags: 
+tags: project-management
 ---
 
 ![Trust and Quality Matter ](https://i.imgur.com/C3YICy3.jpg)
