@@ -2,6 +2,7 @@ defmodule Reefpoints do
   def build do
     data =
       File.ls!("source/posts")
+      |> Enum.reverse()
       |> Enum.reduce(%{"posts" => [], "tags" => []}, fn(path, %{"posts" => posts, "tags" => tags}) ->
         [_, yaml, body] = File.read!("source/posts/#{path}") |> String.split("---", parts: 3)
         yaml = YamlElixir.read_from_string(yaml)
@@ -36,8 +37,10 @@ defmodule Reefpoints do
               tag ->
                 src = Floki.attribute(tag, "src") |> List.first()
                 alt = Floki.attribute(tag, "alt") |> List.first()
-                Map.merge(post, %{"illustration" => src, "illustration_alt" => alt})
+                body = Regex.split(~r/^\s+!\[.+\]\(.+\)/, body) |> List.last()
+                Map.merge(post, %{"illustration" => src, "illustration_alt" => alt, "body" => body})
             end
+
 
           posts = List.insert_at(posts, -1, post)
           tags = Enum.concat(tags, post_tags)
